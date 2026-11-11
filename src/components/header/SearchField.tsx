@@ -1,13 +1,13 @@
 import { useState, type FormEvent } from 'react';
 import { Search } from 'lucide-react';
 import { useNavigate } from '@tanstack/react-router';
-import { Button } from '@/components/ui/button';
 import { siteSearchQuerySchema } from '@/lib/demo-validation';
 
 export function SearchField({ className = '' }: { className?: string }) {
   const [query, setQuery] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
+
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const result = siteSearchQuerySchema.safeParse(query);
@@ -18,6 +18,7 @@ export function SearchField({ className = '' }: { className?: string }) {
     setError('');
     void navigate({ to: '/tim-kiem', search: { q: result.data } });
   };
+
   return (
     <form
       onSubmit={submit}
@@ -29,15 +30,15 @@ export function SearchField({ className = '' }: { className?: string }) {
         aria-label="Tìm kiếm toàn trang"
         value={query}
         maxLength={120}
-        onChange={(event) => { setQuery(event.target.value.slice(0, 120)); setError(''); }}
+        onChange={(event) => {
+          setQuery(event.target.value.slice(0, 120));
+          setError('');
+        }}
         aria-invalid={Boolean(error)}
         aria-describedby={error ? 'site-search-error' : undefined}
         placeholder="TÌM KIẾM"
         className="w-full min-w-0 bg-transparent placeholder:text-muted-foreground placeholder:uppercase focus:outline-none"
       />
-      <Button type="submit" variant="ghost" size="icon" aria-label="Tìm kiếm" className="size-8 shrink-0">
-        <Search className="size-4" aria-hidden="true" />
-      </Button>
       {error && <span id="site-search-error" role="alert" className="sr-only">{error}</span>}
     </form>
   );

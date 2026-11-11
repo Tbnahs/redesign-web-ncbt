@@ -16,6 +16,7 @@ import { Route as HoatDongRouteImport } from './routes/hoat-dong'
 import { Route as HoatDongMsmvDiaPhuongRouteImport } from './routes/hoat-dong-msmv-dia-phuong'
 import { Route as HoiDapRouteImport } from './routes/hoi-dap'
 import { Route as LienHeRouteImport } from './routes/lien-he'
+import { Route as TimKiemRouteImport } from './routes/tim-kiem'
 import { Route as TinTucRouteImport } from './routes/tin-tuc'
 import { Route as TraCuuRouteImport } from './routes/tra-cuu'
 import { Route as TruyXuatNguonGocRouteImport } from './routes/truy-xuat-nguon-goc'
@@ -73,6 +74,11 @@ const HoiDapRoute = HoiDapRouteImport.update({
 const LienHeRoute = LienHeRouteImport.update({
   id: '/lien-he',
   path: '/lien-he',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TimKiemRoute = TimKiemRouteImport.update({
+  id: '/tim-kiem',
+  path: '/tim-kiem',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TinTucRoute = TinTucRouteImport.update({
@@ -204,6 +210,7 @@ export interface FileRoutesByFullPath {
   '/hoat-dong-msmv-dia-phuong': typeof HoatDongMsmvDiaPhuongRoute
   '/hoi-dap': typeof HoiDapRouteWithChildren
   '/lien-he': typeof LienHeRoute
+  '/tim-kiem': typeof TimKiemRoute
   '/tin-tuc': typeof TinTucRouteWithChildren
   '/tra-cuu': typeof TraCuuRoute
   '/truy-xuat-nguon-goc': typeof TruyXuatNguonGocRouteWithChildren
@@ -233,6 +240,7 @@ export interface FileRoutesByTo {
   '/e-learning': typeof ELearningRoute
   '/hoat-dong-msmv-dia-phuong': typeof HoatDongMsmvDiaPhuongRoute
   '/lien-he': typeof LienHeRoute
+  '/tim-kiem': typeof TimKiemRoute
   '/tra-cuu': typeof TraCuuRoute
   '/gioi-thieu/chuc-nang-nhiem-vu': typeof GioiThieuChucNangNhiemVuRoute
   '/gioi-thieu/co-cau-to-chuc': typeof GioiThieuCoCauToChucRoute
@@ -264,6 +272,7 @@ export interface FileRoutesById {
   '/hoat-dong-msmv-dia-phuong': typeof HoatDongMsmvDiaPhuongRoute
   '/hoi-dap': typeof HoiDapRouteWithChildren
   '/lien-he': typeof LienHeRoute
+  '/tim-kiem': typeof TimKiemRoute
   '/tin-tuc': typeof TinTucRouteWithChildren
   '/tra-cuu': typeof TraCuuRoute
   '/truy-xuat-nguon-goc': typeof TruyXuatNguonGocRouteWithChildren
@@ -298,6 +307,7 @@ export interface FileRouteTypes {
     | '/hoat-dong-msmv-dia-phuong'
     | '/hoi-dap'
     | '/lien-he'
+    | '/tim-kiem'
     | '/tin-tuc'
     | '/tra-cuu'
     | '/truy-xuat-nguon-goc'
@@ -327,6 +337,7 @@ export interface FileRouteTypes {
     | '/e-learning'
     | '/hoat-dong-msmv-dia-phuong'
     | '/lien-he'
+    | '/tim-kiem'
     | '/tra-cuu'
     | '/gioi-thieu/chuc-nang-nhiem-vu'
     | '/gioi-thieu/co-cau-to-chuc'
@@ -357,6 +368,7 @@ export interface FileRouteTypes {
     | '/hoat-dong-msmv-dia-phuong'
     | '/hoi-dap'
     | '/lien-he'
+    | '/tim-kiem'
     | '/tin-tuc'
     | '/tra-cuu'
     | '/truy-xuat-nguon-goc'
@@ -390,6 +402,7 @@ export interface RootRouteChildren {
   HoatDongMsmvDiaPhuongRoute: typeof HoatDongMsmvDiaPhuongRoute
   HoiDapRoute: typeof HoiDapRouteWithChildren
   LienHeRoute: typeof LienHeRoute
+  TimKiemRoute: typeof TimKiemRoute
   TinTucRoute: typeof TinTucRouteWithChildren
   TraCuuRoute: typeof TraCuuRoute
   TruyXuatNguonGocRoute: typeof TruyXuatNguonGocRouteWithChildren
@@ -444,6 +457,13 @@ declare module '@tanstack/react-router' {
       path: '/lien-he'
       fullPath: '/lien-he'
       preLoaderRoute: typeof LienHeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tim-kiem': {
+      id: '/tim-kiem'
+      path: '/tim-kiem'
+      fullPath: '/tim-kiem'
+      preLoaderRoute: typeof TimKiemRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tin-tuc': {
@@ -705,6 +725,7 @@ const rootRouteChildren: RootRouteChildren = {
   HoatDongMsmvDiaPhuongRoute: HoatDongMsmvDiaPhuongRoute,
   HoiDapRoute: HoiDapRouteWithChildren,
   LienHeRoute: LienHeRoute,
+  TimKiemRoute: TimKiemRoute,
   TinTucRoute: TinTucRouteWithChildren,
   TraCuuRoute: TraCuuRoute,
   TruyXuatNguonGocRoute: TruyXuatNguonGocRouteWithChildren,

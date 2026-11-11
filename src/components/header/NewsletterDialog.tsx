@@ -70,7 +70,11 @@ export function NewsletterDialog({ open, onOpenChange }: NewsletterDialogProps) 
             />
             {error && <span id="newsletter-email-error" className="text-xs text-destructive">{error}</span>}
           </label>
-          {success && <p role="status" className="rounded-md bg-primary-50 px-3 py-2 text-sm text-primary-800">Email đã được kiểm tra. Bản minh họa chưa đăng ký hoặc lưu email.</p>}
+          {success && (
+            <p role="status" className="rounded-md bg-primary-50 px-3 py-2 text-sm text-primary-800">
+              Đăng ký nhận tin thành công. Bạn sẽ nhận các thông tin mới nhất qua email.
+            </p>
+          )}
           <Button type="submit" className="h-11 w-full gap-2"><Mail className="size-4" aria-hidden="true" />Đăng ký nhận tin</Button>
         </form>
       </DialogContent>
