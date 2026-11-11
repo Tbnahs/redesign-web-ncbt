@@ -19,7 +19,9 @@ export function BrandLogo({ tone = "light", compact = false }: BrandLogoProps) {
         >
           {brand.siteName}
         </span>
-        <span className={`block text-xs ${isDark ? "text-navy-200" : "text-neutral-500"}`}>
+        <span
+          className={`hidden text-xs md:block ${isDark ? "text-navy-200" : "text-neutral-500"}`}
+        >
           {brand.siteSubtitle}
         </span>
       </span>

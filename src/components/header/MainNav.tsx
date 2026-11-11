@@ -3,8 +3,8 @@ import { mainNav, type NavItem } from "@/config/navigation";
 
 export function MainNav() {
   return (
-    <nav aria-label="Menu chính" className="hidden bg-navy-900 text-white lg:block">
-      <ul className="mx-auto flex max-w-7xl items-stretch justify-center px-4 sm:px-6 lg:px-8">
+    <nav aria-label="Menu chính" className="hidden w-full bg-navy-900 text-white lg:block">
+      <ul className="mx-auto box-border flex w-full max-w-[1680px] items-stretch justify-center px-6">
         {mainNav.map((item) => (
           <NavEntry key={item.path} item={item} />
         ))}

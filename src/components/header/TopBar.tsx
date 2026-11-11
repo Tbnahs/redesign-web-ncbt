@@ -17,45 +17,38 @@ interface TopBarProps {
 
 export function TopBar({ menuOpen, onOpenMenu }: TopBarProps) {
   return (
-    <div className="border-b border-neutral-200 bg-white">
-      <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <BrandLogo compact />
-
-        <div className="hidden flex-1 items-center justify-center gap-3 xl:flex">
-          <AuthLinks />
-          <SearchField className="max-w-[190px]" />
+    <div className="w-full border-b border-neutral-200 bg-white">
+      <div className="mx-auto w-full max-w-[1680px] px-6">
+        <div className="flex w-full items-center gap-3 py-3 max-[1279px]:flex-wrap">
+          <BrandLogo compact />
+          <AuthLinks className="shrink-0 whitespace-nowrap" />
+          <SearchField className="min-w-[160px] max-w-[360px] flex-[1_1_200px] shrink-0" />
           <FollowNotice />
-          <WeatherWidget />
+          <SharesCounter className="flex shrink-0 px-2.5 py-1 text-xs sm:text-sm" />
+
+          <div className="ml-auto flex shrink-0 items-center gap-2 whitespace-nowrap">
+            <LanguageSwitcher />
+            <span
+              className="hidden shrink-0 items-center justify-center rounded border-2 border-navy-900 px-2 py-0.5 text-xs font-bold tracking-wide text-navy-900 md:flex"
+              aria-label="GS1"
+            >
+              {brand.gs1Badge}
+            </span>
+            <button
+              type="button"
+              aria-label="Mở menu"
+              aria-expanded={menuOpen}
+              aria-haspopup="dialog"
+              onClick={onOpenMenu}
+              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-navy-900 text-white transition-colors duration-200 hover:bg-navy-700"
+            >
+              <Menu className="h-5 w-5" aria-hidden="true" />
+            </button>
+          </div>
         </div>
 
-        <div className="ml-auto flex items-center gap-2 sm:gap-4">
-          <SharesCounter className="hidden 2xl:flex" />
-          <div className="hidden items-center gap-3 xl:flex 2xl:hidden">
-            <AuthLinks />
-            <SearchField className="max-w-[190px]" />
-            <FollowNotice />
-          </div>
-          <div className="hidden sm:block">
-            <LanguageSwitcher />
-          </div>
-
-          <span
-            className="hidden items-center justify-center rounded border-2 border-navy-900 px-2 py-0.5 text-xs font-bold tracking-wide text-navy-900 md:flex"
-            aria-label="GS1"
-          >
-            {brand.gs1Badge}
-          </span>
-
-          <button
-            type="button"
-            aria-label="Mở menu"
-            aria-expanded={menuOpen}
-            aria-haspopup="dialog"
-            onClick={onOpenMenu}
-            className="flex h-10 w-10 items-center justify-center rounded-md bg-navy-900 text-white transition-colors duration-200 hover:bg-navy-700"
-          >
-            <Menu className="h-5 w-5" aria-hidden="true" />
-          </button>
+        <div className="flex w-full items-center justify-end pb-2 pt-0">
+          <WeatherWidget />
         </div>
       </div>
     </div>
@@ -70,7 +63,7 @@ function FollowNotice() {
       <Button
         type="button"
         onClick={() => setOpen(true)}
-        className="h-10 whitespace-nowrap bg-primary-500 px-4 text-sm font-bold text-white hover:bg-primary-600"
+        className="h-10 shrink-0 whitespace-nowrap bg-primary-500 px-4 text-sm font-bold text-white hover:bg-primary-600"
       >
         THEO DÕI
       </Button>

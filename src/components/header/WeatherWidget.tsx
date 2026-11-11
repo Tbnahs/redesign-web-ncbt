@@ -12,7 +12,7 @@ export function WeatherWidget() {
   };
 
   return (
-    <div className="flex items-center gap-3 rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-1.5 text-sm">
+    <div className="flex items-center gap-2 rounded-lg border border-neutral-200 bg-neutral-50 px-2.5 py-1 text-sm whitespace-nowrap xl:gap-2.5">
       <div className="relative flex items-center">
         <label className="sr-only" htmlFor="weather-province">
           Chọn tỉnh thành
@@ -21,7 +21,7 @@ export function WeatherWidget() {
           id="weather-province"
           value={province.name}
           onChange={(event) => handleProvinceChange(event.target.value)}
-          className="cursor-pointer appearance-none bg-transparent pr-5 font-bold text-navy-900 focus:outline-none"
+          className="cursor-pointer appearance-none bg-transparent pr-4 font-bold text-navy-900 focus:outline-none"
         >
           {provinces.map((item) => (
             <option key={item.name} value={item.name}>
@@ -40,7 +40,7 @@ export function WeatherWidget() {
       {weather.status === "loading" && <span className="text-neutral-500">Đang tải...</span>}
       {weather.status === "error" && <span className="text-neutral-500">Không có dữ liệu</span>}
       {weather.status === "ready" && (
-        <div className="flex items-center gap-3 whitespace-nowrap">
+        <div className="flex items-center gap-2 whitespace-nowrap">
           <span className="flex items-center gap-1 font-bold text-primary-600">
             <Thermometer className="h-4 w-4" aria-hidden="true" />
             {Math.round(weather.data.temperature)}°C
