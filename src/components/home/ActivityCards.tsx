@@ -1,8 +1,8 @@
-import type { LucideIcon } from 'lucide-react';
-import { ArrowRight, Barcode, Fingerprint, GraduationCap, Leaf, Stethoscope } from 'lucide-react';
-import { SectionHeading } from '@/components/common/SectionHeading';
-import activities from '@/data/activities.json';
-import type { ActivityItem } from '@/types/content';
+import type { LucideIcon } from "lucide-react";
+import { ArrowRight, Barcode, Fingerprint, GraduationCap, Leaf, Stethoscope } from "lucide-react";
+import { SectionHeading } from "@/components/common/SectionHeading";
+import activities from "@/data/activities.json";
+import type { ActivityItem } from "@/types/content";
 
 const activityItems: ActivityItem[] = activities;
 
@@ -36,7 +36,10 @@ export function ActivityCards() {
               <p className="flex-1 text-sm leading-relaxed text-neutral-600">{item.description}</p>
               <span className="inline-flex items-center gap-2 text-sm font-bold text-primary-500">
                 Xem chi tiết
-                <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+                <ArrowRight
+                  className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1"
+                  aria-hidden="true"
+                />
               </span>
             </a>
           );

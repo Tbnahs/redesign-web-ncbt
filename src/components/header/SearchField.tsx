@@ -1,22 +1,22 @@
-import { useState, type FormEvent } from 'react';
-import { Search } from 'lucide-react';
-import { useNavigate } from '@tanstack/react-router';
-import { siteSearchQuerySchema } from '@/lib/demo-validation';
+import { useState, type FormEvent } from "react";
+import { Search } from "lucide-react";
+import { useNavigate } from "@tanstack/react-router";
+import { siteSearchQuerySchema } from "@/lib/demo-validation";
 
-export function SearchField({ className = '' }: { className?: string }) {
-  const [query, setQuery] = useState('');
-  const [error, setError] = useState('');
+export function SearchField({ className = "" }: { className?: string }) {
+  const [query, setQuery] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const result = siteSearchQuerySchema.safeParse(query);
     if (!result.success) {
-      setError(result.error.issues[0]?.message ?? 'Vui lòng nhập từ khóa cần tìm.');
+      setError(result.error.issues[0]?.message ?? "Vui lòng nhập từ khóa cần tìm.");
       return;
     }
-    setError('');
-    void navigate({ to: '/tim-kiem', search: { q: result.data } });
+    setError("");
+    void navigate({ to: "/tim-kiem", search: { q: result.data } });
   };
 
   return (
@@ -32,14 +32,18 @@ export function SearchField({ className = '' }: { className?: string }) {
         maxLength={120}
         onChange={(event) => {
           setQuery(event.target.value.slice(0, 120));
-          setError('');
+          setError("");
         }}
         aria-invalid={Boolean(error)}
-        aria-describedby={error ? 'site-search-error' : undefined}
+        aria-describedby={error ? "site-search-error" : undefined}
         placeholder="TÌM KIẾM"
         className="w-full min-w-0 bg-transparent placeholder:text-muted-foreground placeholder:uppercase focus:outline-none"
       />
-      {error && <span id="site-search-error" role="alert" className="sr-only">{error}</span>}
+      {error && (
+        <span id="site-search-error" role="alert" className="sr-only">
+          {error}
+        </span>
+      )}
     </form>
   );
 }

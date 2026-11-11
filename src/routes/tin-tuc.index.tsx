@@ -5,10 +5,11 @@ import { siteHead } from "@/lib/site-meta";
 
 export const Route = createFileRoute("/tin-tuc/")({
   component: NewsIndex,
-  head: () => siteHead({
-    title: "Tin tức | Trung tâm Mã số, Mã vạch Quốc gia",
-    description: "Tin tức, sự kiện và thông báo mới nhất từ Trung tâm Mã số, Mã vạch Quốc gia.",
-  }),
+  head: () =>
+    siteHead({
+      title: "Tin tức | Trung tâm Mã số, Mã vạch Quốc gia",
+      description: "Tin tức, sự kiện và thông báo mới nhất từ Trung tâm Mã số, Mã vạch Quốc gia.",
+    }),
 });
 
 function NewsIndex() {

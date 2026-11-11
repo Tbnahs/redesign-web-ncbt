@@ -11,14 +11,16 @@ export type PersonalFieldErrors = Partial<Record<keyof PersonalFields, string>>;
 
 export function validatePersonalFields(values: PersonalFields): PersonalFieldErrors {
   const errors: PersonalFieldErrors = {};
-  if (isBlank(values.fullName)) errors.fullName = 'Vui lòng nhập họ tên';
-  else if (values.fullName.trim().length < 2) errors.fullName = 'Họ tên cần ít nhất 2 ký tự';
+  if (isBlank(values.fullName)) errors.fullName = "Vui lòng nhập họ tên";
+  else if (values.fullName.trim().length < 2) errors.fullName = "Họ tên cần ít nhất 2 ký tự";
 
-  if (isBlank(values.email)) errors.email = 'Vui lòng nhập email';
-  else if (!isValidEmail(values.email)) errors.email = 'Email chưa đúng định dạng, ví dụ: ten@gmail.com';
+  if (isBlank(values.email)) errors.email = "Vui lòng nhập email";
+  else if (!isValidEmail(values.email))
+    errors.email = "Email chưa đúng định dạng, ví dụ: ten@gmail.com";
 
-  if (isBlank(values.phone)) errors.phone = 'Vui lòng nhập số điện thoại';
-  else if (!isValidPhone(values.phone)) errors.phone = 'Số điện thoại chưa đúng, ví dụ: 0912 345 678';
+  if (isBlank(values.phone)) errors.phone = "Vui lòng nhập số điện thoại";
+  else if (!isValidPhone(values.phone))
+    errors.phone = "Số điện thoại chưa đúng, ví dụ: 0912 345 678";
 
   return errors;
 }
@@ -32,5 +34,5 @@ export function isValidEmail(value: string): boolean {
 }
 
 export function isValidPhone(value: string): boolean {
-  return PHONE_PATTERN.test(value.replace(/[\s.-]/g, ''));
+  return PHONE_PATTERN.test(value.replace(/[\s.-]/g, ""));
 }

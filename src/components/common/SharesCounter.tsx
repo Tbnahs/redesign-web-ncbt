@@ -1,11 +1,11 @@
-import { Share2 } from 'lucide-react';
-import { brand } from '@/config/brand';
+import { Share2 } from "lucide-react";
+import { brand } from "@/config/brand";
 
 interface SharesCounterProps {
   className?: string;
 }
 
-export function SharesCounter({ className = '' }: SharesCounterProps) {
+export function SharesCounter({ className = "" }: SharesCounterProps) {
   return (
     <div
       className={`items-center gap-2 rounded-full bg-primary-50 px-3 py-1.5 text-sm whitespace-nowrap ${className}`}

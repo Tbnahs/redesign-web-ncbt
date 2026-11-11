@@ -1,5 +1,5 @@
-import { Link, useRouterState } from '@tanstack/react-router';
-import { mainNav, type NavItem } from '@/config/navigation';
+import { Link, useRouterState } from "@tanstack/react-router";
+import { mainNav, type NavItem } from "@/config/navigation";
 
 export function MainNav() {
   return (
@@ -16,20 +16,24 @@ export function MainNav() {
 function NavEntry<T extends NavItem>({ item }: { item: T }) {
   const children = item.children ?? [];
   const pathname = useRouterState({ select: (state) => state.location.pathname });
-  const isActive = pathname === item.path || (item.path !== '/' && pathname.startsWith(`${item.path}/`));
+  const isActive =
+    pathname === item.path || (item.path !== "/" && pathname.startsWith(`${item.path}/`));
 
   return (
     <li className="group relative">
       <Link
         to={item.path}
-        activeOptions={{ exact: item.path === '/' }}
+        activeOptions={{ exact: item.path === "/" }}
         className={`relative flex h-12 items-center px-4 text-sm font-bold tracking-wide transition-colors duration-200 ${
-            isActive ? 'bg-white/10 text-white' : 'text-white/85 hover:bg-white/10 hover:text-white'
-          }`}
+          isActive ? "bg-white/10 text-white" : "text-white/85 hover:bg-white/10 hover:text-white"
+        }`}
       >
         {item.label}
         {isActive && (
-          <span className="absolute inset-x-4 bottom-0 h-[3px] rounded-t-sm bg-primary-400" aria-hidden="true" />
+          <span
+            className="absolute inset-x-4 bottom-0 h-[3px] rounded-t-sm bg-primary-400"
+            aria-hidden="true"
+          />
         )}
       </Link>
 
@@ -41,10 +45,10 @@ function NavEntry<T extends NavItem>({ item }: { item: T }) {
                 <Link
                   to={child.path}
                   className={`block px-5 py-2.5 text-sm transition-colors duration-200 ${
-                      pathname === child.path
-                        ? 'bg-primary-50 font-medium text-primary-600'
-                        : 'text-neutral-700 hover:bg-primary-50 hover:text-primary-600'
-                    }`}
+                    pathname === child.path
+                      ? "bg-primary-50 font-medium text-primary-600"
+                      : "text-neutral-700 hover:bg-primary-50 hover:text-primary-600"
+                  }`}
                 >
                   {child.label}
                 </Link>

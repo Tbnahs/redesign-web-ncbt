@@ -1,14 +1,14 @@
-import { Menu } from 'lucide-react';
-import { BrandLogo } from '@/components/common/BrandLogo';
-import { SharesCounter } from '@/components/common/SharesCounter';
-import { AuthLinks } from '@/components/header/AuthLinks';
-import { LanguageSwitcher } from '@/components/header/LanguageSwitcher';
-import { SearchField } from '@/components/header/SearchField';
-import { WeatherWidget } from '@/components/header/WeatherWidget';
-import { NewsletterDialog } from '@/components/header/NewsletterDialog';
-import { Button } from '@/components/ui/button';
-import { useState } from 'react';
-import { brand } from '@/config/brand';
+import { Menu } from "lucide-react";
+import { BrandLogo } from "@/components/common/BrandLogo";
+import { SharesCounter } from "@/components/common/SharesCounter";
+import { AuthLinks } from "@/components/header/AuthLinks";
+import { LanguageSwitcher } from "@/components/header/LanguageSwitcher";
+import { SearchField } from "@/components/header/SearchField";
+import { WeatherWidget } from "@/components/header/WeatherWidget";
+import { NewsletterDialog } from "@/components/header/NewsletterDialog";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { brand } from "@/config/brand";
 
 interface TopBarProps {
   menuOpen: boolean;

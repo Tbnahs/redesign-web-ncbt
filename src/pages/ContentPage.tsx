@@ -1,7 +1,7 @@
-import { Link } from '@tanstack/react-router';
-import { ArrowRight, CircleCheck as CheckCircle2 } from 'lucide-react';
-import { SectionLayout } from '@/components/common/SectionLayout';
-import type { InfoPage } from '@/types/content';
+import { Link } from "@tanstack/react-router";
+import { ArrowRight, CircleCheck as CheckCircle2 } from "lucide-react";
+import { SectionLayout } from "@/components/common/SectionLayout";
+import type { InfoPage } from "@/types/content";
 
 interface ContentPageProps {
   page: InfoPage;
@@ -33,7 +33,10 @@ export function ContentPage({ page }: ContentPageProps) {
                   key={benefit}
                   className="flex items-start gap-3 rounded-xl border border-neutral-200 bg-white p-4 transition-all duration-200 hover:-translate-y-0.5 hover:border-primary-200 hover:shadow-md"
                 >
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-success-500" aria-hidden="true" />
+                  <CheckCircle2
+                    className="mt-0.5 h-5 w-5 shrink-0 text-success-500"
+                    aria-hidden="true"
+                  />
                   <span className="text-sm leading-relaxed text-neutral-700">{benefit}</span>
                 </li>
               ))}
@@ -50,7 +53,9 @@ export function ContentPage({ page }: ContentPageProps) {
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-500 text-sm font-bold text-white shadow-sm">
                     {index + 1}
                   </span>
-                  <span className="pt-1.5 text-[15px] leading-relaxed text-neutral-700">{step}</span>
+                  <span className="pt-1.5 text-[15px] leading-relaxed text-neutral-700">
+                    {step}
+                  </span>
                 </li>
               ))}
             </ol>
@@ -59,15 +64,22 @@ export function ContentPage({ page }: ContentPageProps) {
 
         <div className="flex flex-col items-start gap-4 rounded-xl bg-navy-900 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
           <div className="space-y-1">
-            <p className="text-lg font-bold text-white">Bạn cần tư vấn về {page.title.toLowerCase()}?</p>
-            <p className="text-sm text-navy-200">Liên hệ để được hướng dẫn chi tiết theo nhu cầu của doanh nghiệp.</p>
+            <p className="text-lg font-bold text-white">
+              Bạn cần tư vấn về {page.title.toLowerCase()}?
+            </p>
+            <p className="text-sm text-navy-200">
+              Liên hệ để được hướng dẫn chi tiết theo nhu cầu của doanh nghiệp.
+            </p>
           </div>
           <Link
             to="/lien-he"
             className="group inline-flex shrink-0 items-center gap-2 rounded-md bg-primary-500 px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-colors duration-200 hover:bg-primary-400 hover:text-white"
           >
             Liên hệ tư vấn
-            <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+            <ArrowRight
+              className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1"
+              aria-hidden="true"
+            />
           </Link>
         </div>
       </article>

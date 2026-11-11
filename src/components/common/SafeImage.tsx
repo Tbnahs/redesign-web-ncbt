@@ -1,4 +1,4 @@
-import type { ImgHTMLAttributes, SyntheticEvent } from 'react';
+import type { ImgHTMLAttributes, SyntheticEvent } from "react";
 
 export type SafeImageProps = ImgHTMLAttributes<HTMLImageElement> & {
   fallbackSrc?: string;
@@ -6,21 +6,21 @@ export type SafeImageProps = ImgHTMLAttributes<HTMLImageElement> & {
 
 export function SafeImage({
   src,
-  fallbackSrc = '/images/news-placeholder.svg',
+  fallbackSrc = "/images/news-placeholder.svg",
   onError,
-  alt = '',
+  alt = "",
   ...props
 }: SafeImageProps) {
   const handleError = (event: SyntheticEvent<HTMLImageElement>) => {
     const target = event.currentTarget;
-    const nextSrc = target.dataset.fallbackApplied === 'true' ? undefined : fallbackSrc;
+    const nextSrc = target.dataset.fallbackApplied === "true" ? undefined : fallbackSrc;
 
     if (!nextSrc) {
       onError?.(event);
       return;
     }
 
-    target.dataset.fallbackApplied = 'true';
+    target.dataset.fallbackApplied = "true";
     target.src = nextSrc;
     target.onerror = null;
     onError?.(event);

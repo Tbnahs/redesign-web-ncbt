@@ -1,15 +1,15 @@
-import { useState } from 'react';
-import { UkFlag, VietnamFlag } from '@/components/icons/FlagIcons';
+import { useState } from "react";
+import { UkFlag, VietnamFlag } from "@/components/icons/FlagIcons";
 
-type Language = 'vi' | 'en';
+type Language = "vi" | "en";
 
 const languages: { code: Language; label: string; Flag: typeof UkFlag }[] = [
-  { code: 'vi', label: 'Tiếng Việt', Flag: VietnamFlag },
-  { code: 'en', label: 'English', Flag: UkFlag },
+  { code: "vi", label: "Tiếng Việt", Flag: VietnamFlag },
+  { code: "en", label: "English", Flag: UkFlag },
 ];
 
 export function LanguageSwitcher() {
-  const [language, setLanguage] = useState<Language>('vi');
+  const [language, setLanguage] = useState<Language>("vi");
   const [englishNotice, setEnglishNotice] = useState(false);
 
   return (
@@ -26,10 +26,10 @@ export function LanguageSwitcher() {
               aria-pressed={isActive}
               onClick={() => {
                 setLanguage(code);
-                setEnglishNotice(code === 'en');
+                setEnglishNotice(code === "en");
               }}
               className={`flex h-6 w-9 overflow-hidden rounded-sm shadow-sm transition-all duration-200 hover:scale-105 ${
-                isActive ? 'ring-2 ring-primary-500 ring-offset-1' : 'opacity-70 hover:opacity-100'
+                isActive ? "ring-2 ring-primary-500 ring-offset-1" : "opacity-70 hover:opacity-100"
               }`}
             >
               <Flag className="h-full w-full" />

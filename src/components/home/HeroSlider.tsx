@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
-import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
-import { SafeImage } from '@/components/common/SafeImage';
-import banners from '@/data/banners.json';
-import type { Banner } from '@/types/content';
-import { mediaUrl } from '@/data/media';
+import { useEffect, useState } from "react";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { SafeImage } from "@/components/common/SafeImage";
+import banners from "@/data/banners.json";
+import type { Banner } from "@/types/content";
+import { mediaUrl } from "@/data/media";
 
 const slides: Banner[] = banners;
 const AUTO_ADVANCE_MS = 6000;
@@ -37,7 +37,7 @@ export function HeroSlider() {
           alt=""
           aria-hidden="true"
           className={`absolute inset-0 -z-10 h-full w-full object-cover transition-opacity duration-700 ${
-            index === active ? 'opacity-100' : 'opacity-0'
+            index === active ? "opacity-100" : "opacity-0"
           }`}
         />
       ))}
@@ -55,7 +55,10 @@ export function HeroSlider() {
             className="group inline-flex items-center gap-2 rounded-md bg-primary-500 px-6 py-3 font-bold text-white shadow-lg transition-colors duration-200 hover:bg-primary-400 hover:text-white"
           >
             {slide.ctaLabel}
-            <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+            <ArrowRight
+              className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1"
+              aria-hidden="true"
+            />
           </a>
         </div>
       </div>
@@ -79,7 +82,7 @@ export function HeroSlider() {
               aria-label={`Chuyển đến banner ${index + 1}`}
               aria-current={index === active}
               className={`h-2.5 rounded-full transition-all duration-300 ${
-                index === active ? 'w-8 bg-accent-400' : 'w-2.5 bg-white/50 hover:bg-white/80'
+                index === active ? "w-8 bg-accent-400" : "w-2.5 bg-white/50 hover:bg-white/80"
               }`}
             />
           ))}

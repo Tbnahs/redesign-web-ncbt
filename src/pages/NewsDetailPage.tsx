@@ -1,17 +1,24 @@
-import { useEffect } from 'react';
-import { Link } from '@tanstack/react-router';
-import { Calendar, ChevronRight, Facebook, Link2, Printer, Twitter } from 'lucide-react';
-import { SafeImage } from '@/components/common/SafeImage';
-import { getCategoryLabel } from '@/config/navigation';
-import { getArticleBySlug, getRecentArticles } from '@/data/newsRepository';
-import { formatDate, formatDateLong } from '@/utils/date';
+import { useEffect } from "react";
+import { Link } from "@tanstack/react-router";
+import { Calendar, ChevronRight, Facebook, Link2, Printer, Twitter } from "lucide-react";
+import { SafeImage } from "@/components/common/SafeImage";
+import { getCategoryLabel } from "@/config/navigation";
+import { getArticleBySlug, getRecentArticles } from "@/data/newsRepository";
+import { formatDate, formatDateLong } from "@/utils/date";
 
 function Breadcrumbs({ category, title }: { category: string; title: string }) {
   return (
-    <nav aria-label="Đường dẫn" className="flex flex-wrap items-center gap-1.5 text-sm text-neutral-500">
-      <Link to="/" className="hover:text-primary-600">Trang chủ</Link>
+    <nav
+      aria-label="Đường dẫn"
+      className="flex flex-wrap items-center gap-1.5 text-sm text-neutral-500"
+    >
+      <Link to="/" className="hover:text-primary-600">
+        Trang chủ
+      </Link>
       <ChevronRight className="h-3.5 w-3.5" aria-hidden="true" />
-      <Link to="/tin-tuc" className="hover:text-primary-600">Tin tức</Link>
+      <Link to="/tin-tuc" className="hover:text-primary-600">
+        Tin tức
+      </Link>
       <ChevronRight className="h-3.5 w-3.5" aria-hidden="true" />
       <Link to="/tin-tuc/$slug" params={{ slug: category }} className="hover:text-primary-600">
         {getCategoryLabel(category)}
@@ -23,17 +30,17 @@ function Breadcrumbs({ category, title }: { category: string; title: string }) {
 }
 
 function ShareBar({ title }: { title: string }) {
-  const shareUrl = typeof window !== 'undefined' ? window.location.href : '';
+  const shareUrl = typeof window !== "undefined" ? window.location.href : "";
   const shareText = encodeURIComponent(title);
 
   const links = [
     {
-      label: 'Facebook',
+      label: "Facebook",
       href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
       icon: Facebook,
     },
     {
-      label: 'Twitter',
+      label: "Twitter",
       href: `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${shareText}`,
       icon: Twitter,
     },
@@ -87,7 +94,9 @@ function RecentArticles() {
 
   return (
     <aside className="space-y-4">
-      <h2 className="border-l-4 border-primary-500 pl-3 text-lg font-bold text-navy-900">Bài viết mới</h2>
+      <h2 className="border-l-4 border-primary-500 pl-3 text-lg font-bold text-navy-900">
+        Bài viết mới
+      </h2>
       <ol className="space-y-3">
         {recent.map((article, index) => (
           <li key={article.id}>
@@ -127,7 +136,9 @@ export function NewsDetailPage({ slug }: { slug: string }) {
     return (
       <section className="mx-auto max-w-3xl px-4 py-20 text-center sm:px-6 lg:px-8">
         <h1 className="text-2xl font-bold text-navy-900">Không tìm thấy bài viết</h1>
-        <p className="mt-3 text-neutral-600">Bài viết bạn tìm kiếm không tồn tại hoặc đã bị di chuyển.</p>
+        <p className="mt-3 text-neutral-600">
+          Bài viết bạn tìm kiếm không tồn tại hoặc đã bị di chuyển.
+        </p>
         <Link
           to="/tin-tuc"
           className="mt-6 inline-block rounded-md bg-primary-500 px-5 py-2.5 text-sm font-bold text-white transition-colors duration-200 hover:bg-primary-600"
@@ -158,7 +169,11 @@ export function NewsDetailPage({ slug }: { slug: string }) {
           </div>
 
           <div className="mt-6 overflow-hidden rounded-xl">
-            <SafeImage src={article.thumbnail} alt={article.title} className="w-full object-cover" />
+            <SafeImage
+              src={article.thumbnail}
+              alt={article.title}
+              className="w-full object-cover"
+            />
           </div>
 
           <div className="mt-6 space-y-4">

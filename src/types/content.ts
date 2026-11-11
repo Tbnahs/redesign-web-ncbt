@@ -25,7 +25,7 @@ export interface NewsData {
 }
 
 export function isNewsData(data: unknown): data is NewsData {
-  return typeof data === 'object' && data !== null && 'featured' in data && 'items' in data;
+  return typeof data === "object" && data !== null && "featured" in data && "items" in data;
 }
 
 export interface StatItem {
@@ -50,7 +50,7 @@ export interface FaqItem {
   answer: string;
 }
 
-export type QuestionStatus = 'answered' | 'pending';
+export type QuestionStatus = "answered" | "pending";
 
 export interface QuestionItem {
   id: string;

@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { Link } from '@tanstack/react-router';
-import { Plus } from 'lucide-react';
-import { AccordionItem } from '@/components/common/AccordionItem';
-import { SectionLayout } from '@/components/common/SectionLayout';
-import { faqItems, qaTopics } from '@/data/qaRepository';
+import { useState } from "react";
+import { Link } from "@tanstack/react-router";
+import { Plus } from "lucide-react";
+import { AccordionItem } from "@/components/common/AccordionItem";
+import { SectionLayout } from "@/components/common/SectionLayout";
+import { faqItems, qaTopics } from "@/data/qaRepository";
 
 export function FaqPage() {
   const [openId, setOpenId] = useState<string | null>(null);
@@ -16,7 +16,8 @@ export function FaqPage() {
           Câu hỏi thường gặp
         </h1>
         <p className="text-lg leading-relaxed text-neutral-600">
-          Tổng hợp câu hỏi được hỏi nhiều nhất theo từng chủ đề về mã số mã vạch và các hoạt động của Trung tâm.
+          Tổng hợp câu hỏi được hỏi nhiều nhất theo từng chủ đề về mã số mã vạch và các hoạt động
+          của Trung tâm.
         </p>
       </header>
 
@@ -47,7 +48,9 @@ export function FaqPage() {
       <div className="mt-10 flex flex-col items-start gap-4 rounded-xl bg-primary-50 p-6 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="font-bold text-navy-900">Chưa tìm thấy câu trả lời?</p>
-          <p className="text-sm text-neutral-600">Gửi câu hỏi của bạn, Trung tâm sẽ phản hồi sớm nhất.</p>
+          <p className="text-sm text-neutral-600">
+            Gửi câu hỏi của bạn, Trung tâm sẽ phản hồi sớm nhất.
+          </p>
         </div>
         <Link
           to="/hoi-dap/tao-cau-hoi"

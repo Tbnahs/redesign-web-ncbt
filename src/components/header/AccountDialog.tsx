@@ -1,11 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Eye, EyeOff, LockKeyhole, UserRound } from "lucide-react";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogTitle,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -20,7 +15,8 @@ interface AccountDialogProps {
   initialTab?: AccountTab;
 }
 
-const inputClass = "h-11 border-neutral-300 bg-background text-foreground placeholder:text-muted-foreground";
+const inputClass =
+  "h-11 border-neutral-300 bg-background text-foreground placeholder:text-muted-foreground";
 
 export function AccountDialog({ open, onOpenChange, initialTab = "login" }: AccountDialogProps) {
   const [tab, setTab] = useState<AccountTab>(initialTab);
@@ -49,14 +45,15 @@ export function AccountDialog({ open, onOpenChange, initialTab = "login" }: Acco
 
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const result = tab === "login"
-      ? signInSchema.safeParse({ email: values.email ?? "", password: values.password ?? "" })
-      : signUpSchema.safeParse({
-          fullName: values.fullName ?? "",
-          email: values.email ?? "",
-          password: values.password ?? "",
-          confirmPassword: values.confirmPassword ?? "",
-        });
+    const result =
+      tab === "login"
+        ? signInSchema.safeParse({ email: values.email ?? "", password: values.password ?? "" })
+        : signUpSchema.safeParse({
+            fullName: values.fullName ?? "",
+            email: values.email ?? "",
+            password: values.password ?? "",
+            confirmPassword: values.confirmPassword ?? "",
+          });
 
     if (!result.success) {
       setErrors(getFormErrors(result.error));
@@ -65,11 +62,24 @@ export function AccountDialog({ open, onOpenChange, initialTab = "login" }: Acco
     }
 
     setErrors({});
-    setSuccess(tab === "login" ? "Kiểm tra thành công. Đây là bản giao diện minh họa, chưa có đăng nhập thật." : "Đăng ký minh họa thành công. Thông tin chưa được lưu.");
+    setSuccess(
+      tab === "login"
+        ? "Kiểm tra thành công. Đây là bản giao diện minh họa, chưa có đăng nhập thật."
+        : "Đăng ký minh họa thành công. Thông tin chưa được lưu.",
+    );
   };
 
-  const renderField = (field: string, label: string, type: string, placeholder: string, autoComplete: string) => (
-    <label className="grid gap-1.5 text-sm font-medium text-foreground" htmlFor={`account-${field}`}>
+  const renderField = (
+    field: string,
+    label: string,
+    type: string,
+    placeholder: string,
+    autoComplete: string,
+  ) => (
+    <label
+      className="grid gap-1.5 text-sm font-medium text-foreground"
+      htmlFor={`account-${field}`}
+    >
       {label}
       <Input
         id={`account-${field}`}
@@ -85,12 +95,23 @@ export function AccountDialog({ open, onOpenChange, initialTab = "login" }: Acco
         aria-describedby={errors[field] ? `account-${field}-error` : undefined}
         className={inputClass}
       />
-      {errors[field] && <span id={`account-${field}-error`} className="text-xs text-destructive">{errors[field]}</span>}
+      {errors[field] && (
+        <span id={`account-${field}-error`} className="text-xs text-destructive">
+          {errors[field]}
+        </span>
+      )}
     </label>
   );
 
-  const passwordField = (field: "password" | "confirmPassword", label: string, autoComplete: string) => (
-    <label className="grid gap-1.5 text-sm font-medium text-foreground" htmlFor={`account-${field}`}>
+  const passwordField = (
+    field: "password" | "confirmPassword",
+    label: string,
+    autoComplete: string,
+  ) => (
+    <label
+      className="grid gap-1.5 text-sm font-medium text-foreground"
+      htmlFor={`account-${field}`}
+    >
       {label}
       <span className="relative block">
         <Input
@@ -115,11 +136,19 @@ export function AccountDialog({ open, onOpenChange, initialTab = "login" }: Acco
             onClick={() => setShowPassword((current) => !current)}
             className="absolute inset-y-0 right-1 inline-flex w-10 items-center justify-center rounded-sm text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
-            {showPassword ? <EyeOff className="size-4" aria-hidden="true" /> : <Eye className="size-4" aria-hidden="true" />}
+            {showPassword ? (
+              <EyeOff className="size-4" aria-hidden="true" />
+            ) : (
+              <Eye className="size-4" aria-hidden="true" />
+            )}
           </button>
         )}
       </span>
-      {errors[field] && <span id={`account-${field}-error`} className="text-xs text-destructive">{errors[field]}</span>}
+      {errors[field] && (
+        <span id={`account-${field}-error`} className="text-xs text-destructive">
+          {errors[field]}
+        </span>
+      )}
     </label>
   );
 
@@ -133,22 +162,45 @@ export function AccountDialog({ open, onOpenChange, initialTab = "login" }: Acco
             </span>
             <div>
               <DialogTitle className="text-lg font-bold">Tài khoản</DialogTitle>
-              <DialogDescription className="mt-1 text-xs">Giao diện minh họa, không lưu thông tin.</DialogDescription>
+              <DialogDescription className="mt-1 text-xs">
+                Giao diện minh họa, không lưu thông tin.
+              </DialogDescription>
             </div>
           </div>
         </div>
 
-        <Tabs value={tab} onValueChange={(value) => { setTab(value as AccountTab); reset(); }} className="px-5 pb-6 pt-5 sm:px-7">
+        <Tabs
+          value={tab}
+          onValueChange={(value) => {
+            setTab(value as AccountTab);
+            reset();
+          }}
+          className="px-5 pb-6 pt-5 sm:px-7"
+        >
           <TabsList className="grid h-11 w-full grid-cols-2 rounded-md bg-muted">
-            <TabsTrigger value="login" className="rounded-sm">Đăng nhập</TabsTrigger>
-            <TabsTrigger value="register" className="rounded-sm">Đăng kí</TabsTrigger>
+            <TabsTrigger value="login" className="rounded-sm">
+              Đăng nhập
+            </TabsTrigger>
+            <TabsTrigger value="register" className="rounded-sm">
+              Đăng kí
+            </TabsTrigger>
           </TabsList>
           <TabsContent value="login" className="mt-5">
             <form className="grid gap-4" onSubmit={submit} noValidate>
               {renderField("email", "Email", "email", "ten@email.com", "email")}
               {passwordField("password", "Mật khẩu", "current-password")}
-              {success && <p role="status" className="rounded-md bg-primary-50 px-3 py-2 text-sm text-primary-800">{success}</p>}
-              <Button type="submit" className="h-11 w-full gap-2"><LockKeyhole className="size-4" aria-hidden="true" />Đăng nhập</Button>
+              {success && (
+                <p
+                  role="status"
+                  className="rounded-md bg-primary-50 px-3 py-2 text-sm text-primary-800"
+                >
+                  {success}
+                </p>
+              )}
+              <Button type="submit" className="h-11 w-full gap-2">
+                <LockKeyhole className="size-4" aria-hidden="true" />
+                Đăng nhập
+              </Button>
             </form>
           </TabsContent>
           <TabsContent value="register" className="mt-5">
@@ -157,8 +209,18 @@ export function AccountDialog({ open, onOpenChange, initialTab = "login" }: Acco
               {renderField("email", "Email", "email", "ten@email.com", "email")}
               {passwordField("password", "Mật khẩu", "new-password")}
               {passwordField("confirmPassword", "Nhập lại mật khẩu", "new-password")}
-              {success && <p role="status" className="rounded-md bg-primary-50 px-3 py-2 text-sm text-primary-800">{success}</p>}
-              <Button type="submit" className="h-11 w-full gap-2"><UserRound className="size-4" aria-hidden="true" />Tạo tài khoản</Button>
+              {success && (
+                <p
+                  role="status"
+                  className="rounded-md bg-primary-50 px-3 py-2 text-sm text-primary-800"
+                >
+                  {success}
+                </p>
+              )}
+              <Button type="submit" className="h-11 w-full gap-2">
+                <UserRound className="size-4" aria-hidden="true" />
+                Tạo tài khoản
+              </Button>
             </form>
           </TabsContent>
         </Tabs>

@@ -9,7 +9,9 @@ import { routeTree } from "@/routeTree.gen";
 // network the test run lacks, and jsdom never loads the stylesheets React waits on.
 describe("App routing", () => {
   it("uses a local fallback image when a source media URL is missing", () => {
-    expect(mediaUrl("/__l5e/assets-v1/not-found/placeholder.jpg")).toBe("/images/news-placeholder.svg");
+    expect(mediaUrl("/__l5e/assets-v1/not-found/placeholder.jpg")).toBe(
+      "/images/news-placeholder.svg",
+    );
   });
 
   it("matches a page for / instead of falling back to not found", () => {
