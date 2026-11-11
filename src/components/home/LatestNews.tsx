@@ -1,5 +1,6 @@
 import { Link } from '@tanstack/react-router';
 import { Calendar } from 'lucide-react';
+import { SafeImage } from '@/components/common/SafeImage';
 import { SectionHeading } from '@/components/common/SectionHeading';
 import { formatDate } from '@/utils/date';
 import { featuredArticle, allArticles } from '@/data/newsRepository';
@@ -12,7 +13,7 @@ function FeaturedArticle({ article }: { article: NewsArticle }) {
       params={{ slug: article.slug }}
       className="group relative block h-full min-h-[320px] overflow-hidden rounded-xl bg-navy-900 shadow-md sm:min-h-[420px]"
     >
-      <img
+      <SafeImage
         src={article.thumbnail}
         alt=""
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -39,7 +40,7 @@ function CompactArticle({ article }: { article: NewsArticle }) {
       params={{ slug: article.slug }}
       className="group flex items-center gap-4 rounded-xl border border-neutral-200 bg-white p-3 transition-all duration-200 hover:border-primary-200 hover:shadow-md"
     >
-      <img
+      <SafeImage
         src={article.thumbnail}
         alt=""
         className="h-24 w-28 shrink-0 rounded-lg object-cover sm:w-36"

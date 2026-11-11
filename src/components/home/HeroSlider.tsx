@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { SafeImage } from '@/components/common/SafeImage';
 import banners from '@/data/banners.json';
 import type { Banner } from '@/types/content';
 import { mediaUrl } from '@/data/media';
@@ -30,7 +31,7 @@ export function HeroSlider() {
       className="relative isolate h-[520px] overflow-hidden bg-navy-900 sm:h-[580px] lg:h-[640px]"
     >
       {slides.map((item, index) => (
-        <img
+        <SafeImage
           key={item.id}
           src={mediaUrl(item.image)}
           alt=""

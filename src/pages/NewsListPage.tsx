@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useLocation } from '@tanstack/react-router';
 import { Calendar, Tag } from 'lucide-react';
+import { SafeImage } from '@/components/common/SafeImage';
 import { Pagination } from '@/components/common/Pagination';
 import { getCategoryLabel, newsCategories } from '@/config/navigation';
 import { allArticles } from '@/data/newsRepository';
@@ -13,7 +14,7 @@ function NewsCard({ article }: { article: NewsArticle }) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-xl border border-neutral-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-primary-200 hover:shadow-lg">
       <Link to="/tin-tuc/$slug" params={{ slug: article.slug }} className="relative block aspect-[16/9] overflow-hidden">
-        <img
+        <SafeImage
           src={article.thumbnail}
           alt={article.title}
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"

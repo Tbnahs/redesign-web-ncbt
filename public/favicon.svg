@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="NBC favicon">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#4ea0df"/>
+      <stop offset="100%" stop-color="#1f6db4"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bg)"/>
+  <rect x="28" y="28" width="72" height="72" rx="14" fill="#ffffff" opacity="0.12"/>
+  <g fill="#ffffff">
+    <rect x="34" y="38" width="6" height="44" rx="3"/>
+    <rect x="46" y="38" width="6" height="44" rx="3"/>
+    <rect x="58" y="38" width="6" height="44" rx="3"/>
+    <rect x="70" y="38" width="6" height="44" rx="3"/>
+    <rect x="82" y="38" width="6" height="44" rx="3"/>
+    <rect x="34" y="34" width="54" height="6" rx="3"/>
+    <rect x="34" y="84" width="54" height="6" rx="3"/>
+    <rect x="44" y="52" width="10" height="10" rx="2"/>
+    <rect x="58" y="52" width="10" height="10" rx="2"/>
+    <rect x="72" y="52" width="10" height="10" rx="2"/>
+    <rect x="44" y="66" width="10" height="10" rx="2"/>
+    <rect x="58" y="66" width="10" height="10" rx="2"/>
+    <rect x="72" y="66" width="10" height="10" rx="2"/>
+  </g>
+</svg>

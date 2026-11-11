@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from '@tanstack/react-router';
 import { Calendar, ChevronRight, Facebook, Link2, Printer, Twitter } from 'lucide-react';
+import { SafeImage } from '@/components/common/SafeImage';
 import { getCategoryLabel } from '@/config/navigation';
 import { getArticleBySlug, getRecentArticles } from '@/data/newsRepository';
 import { formatDate, formatDateLong } from '@/utils/date';
@@ -157,7 +158,7 @@ export function NewsDetailPage({ slug }: { slug: string }) {
           </div>
 
           <div className="mt-6 overflow-hidden rounded-xl">
-            <img src={article.thumbnail} alt={article.title} className="w-full object-cover" />
+            <SafeImage src={article.thumbnail} alt={article.title} className="w-full object-cover" />
           </div>
 
           <div className="mt-6 space-y-4">
