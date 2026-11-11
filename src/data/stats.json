@@ -1,0 +1,26 @@
+[
+  {
+    "id": "businesses",
+    "value": 186420,
+    "label": "Doanh nghiệp đã cấp mã số mã vạch",
+    "icon": "building"
+  },
+  {
+    "id": "products",
+    "value": 1248930,
+    "label": "Sản phẩm đã được cấp mã quản lý sản phẩm",
+    "icon": "package"
+  },
+  {
+    "id": "traceability-chains",
+    "value": 35640,
+    "label": "Chuỗi truy xuất nguồn gốc sản phẩm nông sản rau củ quả tươi",
+    "icon": "leaf"
+  },
+  {
+    "id": "daily-scans",
+    "value": 9500000000,
+    "label": "Lượt quét mỗi ngày trên toàn thế giới",
+    "icon": "scan"
+  }
+]

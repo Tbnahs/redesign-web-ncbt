@@ -1,0 +1,58 @@
+[
+  {
+    "id": "course-01",
+    "order": 1,
+    "title": "Đào tạo cơ bản",
+    "level": "co-ban",
+    "description": "Phổ biến các kiến thức cơ bản về mã số mã vạch và hướng dẫn áp dụng công nghệ này để quản lý thương phẩm trong chuỗi cung ứng."
+  },
+  {
+    "id": "course-02",
+    "order": 2,
+    "title": "Đào tạo chuyên sâu 1",
+    "level": "chuyen-sau",
+    "description": "Giới thiệu, phổ biến kiến thức về các loại mã phân định và các mạng toàn cầu liên quan của GS1."
+  },
+  {
+    "id": "course-03",
+    "order": 3,
+    "title": "Đào tạo chuyên sâu 2",
+    "level": "chuyen-sau",
+    "description": "Giới thiệu, phổ biến kiến thức về các tiêu chuẩn quốc gia liên quan."
+  },
+  {
+    "id": "course-04",
+    "order": 4,
+    "title": "Đào tạo nâng cao 1",
+    "level": "nang-cao",
+    "description": "Giới thiệu, hướng dẫn sử dụng giải pháp quản lý và khai báo trực tuyến dữ liệu thương phẩm sử dụng mã số mã vạch."
+  },
+  {
+    "id": "course-05",
+    "order": 5,
+    "title": "Đào tạo nâng cao 2",
+    "level": "nang-cao",
+    "description": "Hướng dẫn áp dụng mã số mã vạch trong công tác xác định nguồn gốc, chống hàng giả."
+  },
+  {
+    "id": "course-06",
+    "order": 6,
+    "title": "Đào tạo nâng cao 3",
+    "level": "nang-cao",
+    "description": "Hướng dẫn áp dụng mã số mã vạch trong công tác quản lý kho."
+  },
+  {
+    "id": "course-07",
+    "order": 7,
+    "title": "Đào tạo nâng cao 4",
+    "level": "nang-cao",
+    "description": "Hướng dẫn áp dụng mã số mã vạch trong công tác quản lý các vật phẩm khác (tài liệu, sách báo; tài sản; mối quan hệ dịch vụ; hàng hóa kí gửi v.v...)."
+  },
+  {
+    "id": "course-08",
+    "order": 8,
+    "title": "Đào tạo theo yêu cầu",
+    "level": "theo-yeu-cau",
+    "description": "Nội dung đào tạo được xây dựng theo nhu cầu của đơn vị."
+  }
+]

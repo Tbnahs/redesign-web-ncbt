@@ -1,0 +1,106 @@
+[
+  {
+    "id": "q-1",
+    "topic": "ma-so-ma-vach",
+    "title": "Hồ sơ đăng ký mã số doanh nghiệp cần những giấy tờ gì?",
+    "content": "Tôi đang chuẩn bị thành lập công ty và muốn biết cần chuẩn bị những giấy tờ nào để đăng ký mã số doanh nghiệp.",
+    "askedAt": "2026-11-09",
+    "status": "answered",
+    "answer": "Doanh nghiệp cần giấy chứng nhận đăng ký doanh nghiệp, thông tin người đại diện pháp luật và danh mục sản phẩm dự kiến. Có thể nộp hồ sơ trực tuyến trên cổng thông tin của Trung tâm."
+  },
+  {
+    "id": "q-2",
+    "topic": "ma-so-ma-vach",
+    "title": "Một sản phẩm có cần mã GTIN riêng cho từng kích cỡ không?",
+    "content": "Cùng một loại nước mắm nhưng có chai 500ml và 1 lít. Hai chai này có cần hai mã GTIN khác nhau không?",
+    "askedAt": "2026-11-06",
+    "status": "answered",
+    "answer": "Có. Mỗi đơn vị đóng gói khác nhau về kích cỡ, khối lượng hoặc quy cách cần một mã GTIN riêng."
+  },
+  {
+    "id": "q-3",
+    "topic": "ma-so-ma-vach",
+    "title": "Gia hạn mã số muộn có bị phạt không?",
+    "content": "Mã của công ty tôi sắp hết hạn vào cuối tháng. Nếu nộp gia hạn muộn vài ngày thì có bị xử phạt không?",
+    "askedAt": "2026-11-03",
+    "status": "pending"
+  },
+  {
+    "id": "q-4",
+    "topic": "truy-xuat-nguon-goc",
+    "title": "Người tiêu dùng cần ứng dụng gì để quét mã truy xuất?",
+    "content": "Tôi muốn biết khách hàng có cần cài đặt ứng dụng riêng để xem thông tin sản phẩm hay không.",
+    "askedAt": "2026-11-02",
+    "status": "answered",
+    "answer": "Không cần cài đặt ứng dụng riêng. Chỉ cần dùng ứng dụng camera hoặc trình quét mã QR có sẵn trên điện thoại để mở trang thông tin truy xuất."
+  },
+  {
+    "id": "q-5",
+    "topic": "truy-xuat-nguon-goc",
+    "title": "Hợp tác xã có thể gắn mã QR lên bao bì tự in không?",
+    "content": "Hợp tác xã chúng tôi đang tự in bao bì, không biết có được gắn mã QR truy xuất tự tạo hay phải dùng mã chuẩn.",
+    "askedAt": "2026-10-28",
+    "status": "answered",
+    "answer": "Mã QR truy xuất cần liên kết với mã GTIN đã được cấp. Hợp tác xã nên đăng ký mã số trước rồi mới tạo mã QR để đảm bảo tính hợp lệ."
+  },
+  {
+    "id": "q-6",
+    "topic": "truy-xuat-nguon-goc",
+    "title": "Dữ liệu truy xuất được lưu trong bao lâu?",
+    "content": "Thông tin lô hàng của tôi được lưu trên hệ thống trong bao lâu và có thể chỉnh sửa không?",
+    "askedAt": "2026-10-20",
+    "status": "pending"
+  },
+  {
+    "id": "q-7",
+    "topic": "ma-lei",
+    "title": "Hộ kinh doanh cá thể có cần mã LEI không?",
+    "content": "Tôi là hộ kinh doanh cá thể, muốn vay vốn ngân hàng. Ngân hàng yêu cầu mã LEI, vậy tôi có phải đăng ký không?",
+    "askedAt": "2026-10-15",
+    "status": "answered",
+    "answer": "Mã LEI dành cho pháp nhân tham gia giao dịch tài chính. Hộ kinh doanh cá thể thường không thuộc diện này, bạn nên hỏi lại ngân hàng về yêu cầu cụ thể."
+  },
+  {
+    "id": "q-8",
+    "topic": "ma-lei",
+    "title": "Mã LEI có phải gia hạn hằng năm không?",
+    "content": "Sau khi được cấp mã LEI, doanh nghiệp có cần làm thủ tục gia hạn định kỳ không?",
+    "askedAt": "2026-10-09",
+    "status": "pending"
+  },
+  {
+    "id": "q-9",
+    "topic": "ma-udi",
+    "title": "Thiết bị nhập khẩu đã có mã quốc tế có cần mã UDI riêng không?",
+    "content": "Bệnh viện chúng tôi nhập máy xét nghiệm đã có mã GS1 từ nhà sản xuất nước ngoài. Có cần đăng ký thêm mã UDI tại Việt Nam không?",
+    "askedAt": "2026-10-04",
+    "status": "answered",
+    "answer": "Thiết bị đã mang mã UDI hợp lệ theo chuẩn GS1 thường được chấp nhận. Cơ sở y tế nên đối chiếu với hướng dẫn mới nhất của Bộ Y tế trước khi triển khai."
+  },
+  {
+    "id": "q-10",
+    "topic": "dao-tao",
+    "title": "Có khóa học trực tuyến về mã số mã vạch không?",
+    "content": "Tôi ở xa trụ sở và muốn học về mã số mã vạch. Trung tâm có tổ chức lớp học trực tuyến không?",
+    "askedAt": "2026-09-30",
+    "status": "answered",
+    "answer": "Trung tâm có tổ chức một số khóa học trực tuyến kết hợp thực hành trên hệ thống. Lịch khai giảng được thông báo trên mục Tin tức."
+  },
+  {
+    "id": "q-11",
+    "topic": "dao-tao",
+    "title": "Doanh nghiệp có thể yêu cầu đào tạo tại công ty không?",
+    "content": "Công ty chúng tôi có khoảng 40 nhân viên cần học về mã vạch. Có thể đăng ký mở lớp riêng tại công ty không?",
+    "askedAt": "2026-09-22",
+    "status": "pending"
+  },
+  {
+    "id": "q-12",
+    "topic": "ma-so-ma-vach",
+    "title": "Hộ kinh doanh được hỗ trợ đăng ký miễn phí ở đâu?",
+    "content": "Tôi nghe nói có chương trình hỗ trợ hộ kinh doanh đăng ký mã miễn phí. Tôi cần liên hệ ở đâu?",
+    "askedAt": "2026-09-15",
+    "status": "answered",
+    "answer": "Bạn có thể liên hệ Sở Khoa học và Công nghệ tại tỉnh, thành nơi bạn kinh doanh, hoặc gọi đường dây hỗ trợ của Trung tâm để được hướng dẫn."
+  }
+]

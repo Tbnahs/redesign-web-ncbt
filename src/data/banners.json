@@ -1,0 +1,29 @@
+[
+  {
+    "id": "barcode",
+    "image": "/__l5e/assets-v1/a4136a03-8696-444a-818b-b15ac9929871/nbc-photo-00.jpg",
+    "eyebrow": "MÃ SỐ MÃ VẠCH",
+    "title": "Mã số mã vạch chuẩn quốc tế cho mọi sản phẩm",
+    "description": "Cấp mã số, mã vạch GS1 giúp doanh nghiệp nhận diện sản phẩm và kết nối hiệu quả với đối tác trong và ngoài nước.",
+    "ctaLabel": "Tìm hiểu thêm",
+    "ctaPath": "/hoat-dong/ma-so-ma-vach"
+  },
+  {
+    "id": "traceability",
+    "image": "/__l5e/assets-v1/c60f4f2d-9ab7-4e03-948f-9ca7a58b544d/nbc-photo-15.jpg",
+    "eyebrow": "TRUY XUẤT NGUỒN GỐC",
+    "title": "Minh bạch từ trang trại đến bàn ăn",
+    "description": "Theo dõi hành trình nông sản rau củ quả tươi qua từng công đoạn, giúp người tiêu dùng yên tâm lựa chọn.",
+    "ctaLabel": "Xem chi tiết",
+    "ctaPath": "/hoat-dong/truy-xuat-nguon-goc"
+  },
+  {
+    "id": "supply-chain",
+    "image": "/__l5e/assets-v1/a6b31dcb-13ff-437b-a101-c11ee4350315/nbc-photo-03.jpg",
+    "eyebrow": "CHUỖI CUNG ỨNG",
+    "title": "Kết nối chuỗi cung ứng hiệu quả và bền vững",
+    "description": "Chuẩn hóa dữ liệu sản phẩm xuyên suốt chuỗi cung ứng, từ nhà sản xuất, kho vận đến nhà bán lẻ.",
+    "ctaLabel": "Xem tin tức",
+    "ctaPath": "/tin-tuc/tin-tuc-su-kien"
+  }
+]

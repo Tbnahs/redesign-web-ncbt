@@ -1,0 +1,37 @@
+[
+  {
+    "id": "ma-so-ma-vach",
+    "title": "Mã số mã vạch",
+    "description": "Cấp mã số, mã vạch GS1 để nhận diện sản phẩm và doanh nghiệp trong chuỗi cung ứng.",
+    "icon": "barcode",
+    "path": "/hoat-dong/ma-so-ma-vach"
+  },
+  {
+    "id": "truy-xuat-nguon-goc",
+    "title": "Truy xuất nguồn gốc",
+    "description": "Ghi nhận và chia sẻ thông tin hành trình sản phẩm từ nơi sản xuất đến người tiêu dùng.",
+    "icon": "leaf",
+    "path": "/hoat-dong/truy-xuat-nguon-goc"
+  },
+  {
+    "id": "ma-lei",
+    "title": "Mã LEI",
+    "description": "Mã định danh pháp nhân toàn cầu, hỗ trợ minh bạch thông tin giao dịch tài chính.",
+    "icon": "fingerprint",
+    "path": "/hoat-dong/ma-lei"
+  },
+  {
+    "id": "ma-udi",
+    "title": "Mã UDI",
+    "description": "Mã định danh thiết bị y tế, giúp theo dõi sản phẩm y tế xuyên suốt vòng đời.",
+    "icon": "stethoscope",
+    "path": "/hoat-dong/ma-udi"
+  },
+  {
+    "id": "dao-tao",
+    "title": "Đào tạo",
+    "description": "Các khóa đào tạo kỹ năng ứng dụng mã số mã vạch cho doanh nghiệp và cán bộ.",
+    "icon": "graduation",
+    "path": "/hoat-dong/dao-tao"
+  }
+]

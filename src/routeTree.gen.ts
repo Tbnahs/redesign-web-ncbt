@@ -10,33 +10,389 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ELearningRouteImport } from './routes/e-learning'
+import { Route as GioiThieuRouteImport } from './routes/gioi-thieu'
+import { Route as HoatDongRouteImport } from './routes/hoat-dong'
+import { Route as HoatDongMsmvDiaPhuongRouteImport } from './routes/hoat-dong-msmv-dia-phuong'
+import { Route as HoiDapRouteImport } from './routes/hoi-dap'
+import { Route as LienHeRouteImport } from './routes/lien-he'
+import { Route as TinTucRouteImport } from './routes/tin-tuc'
+import { Route as TraCuuRouteImport } from './routes/tra-cuu'
+import { Route as TruyXuatNguonGocRouteImport } from './routes/truy-xuat-nguon-goc'
+import { Route as GioiThieuIndexRouteImport } from './routes/gioi-thieu.index'
+import { Route as GioiThieuChucNangNhiemVuRouteImport } from './routes/gioi-thieu.chuc-nang-nhiem-vu'
+import { Route as GioiThieuCoCauToChucRouteImport } from './routes/gioi-thieu.co-cau-to-chuc'
+import { Route as GioiThieuDoiTacQuocTeRouteImport } from './routes/gioi-thieu.doi-tac-quoc-te'
+import { Route as GioiThieuLichSuHinhThanhRouteImport } from './routes/gioi-thieu.lich-su-hinh-thanh'
+import { Route as HoatDongIndexRouteImport } from './routes/hoat-dong.index'
+import { Route as HoatDongDaoTaoRouteImport } from './routes/hoat-dong.dao-tao'
+import { Route as HoatDongMaLeiRouteImport } from './routes/hoat-dong.ma-lei'
+import { Route as HoatDongMaSoMaVachRouteImport } from './routes/hoat-dong.ma-so-ma-vach'
+import { Route as HoatDongMaUdiRouteImport } from './routes/hoat-dong.ma-udi'
+import { Route as HoatDongTruyXuatNguonGocRouteImport } from './routes/hoat-dong.truy-xuat-nguon-goc'
+import { Route as HoiDapIndexRouteImport } from './routes/hoi-dap.index'
+import { Route as HoiDapCauHoiThuongGapRouteImport } from './routes/hoi-dap.cau-hoi-thuong-gap'
+import { Route as HoiDapDanhSachCauHoiRouteImport } from './routes/hoi-dap.danh-sach-cau-hoi'
+import { Route as HoiDapTaoCauHoiRouteImport } from './routes/hoi-dap.tao-cau-hoi'
+import { Route as TinTucIndexRouteImport } from './routes/tin-tuc.index'
+import { Route as TinTucSlugRouteImport } from './routes/tin-tuc.$slug'
+import { Route as TruyXuatNguonGocIndexRouteImport } from './routes/truy-xuat-nguon-goc.index'
+import { Route as TruyXuatNguonGocDangKyChuoiRouteImport } from './routes/truy-xuat-nguon-goc.dang-ky-chuoi'
+import { Route as TruyXuatNguonGocTraCuuSanPhamRouteImport } from './routes/truy-xuat-nguon-goc.tra-cuu-san-pham'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ELearningRoute = ELearningRouteImport.update({
+  id: '/e-learning',
+  path: '/e-learning',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GioiThieuRoute = GioiThieuRouteImport.update({
+  id: '/gioi-thieu',
+  path: '/gioi-thieu',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HoatDongRoute = HoatDongRouteImport.update({
+  id: '/hoat-dong',
+  path: '/hoat-dong',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HoatDongMsmvDiaPhuongRoute = HoatDongMsmvDiaPhuongRouteImport.update({
+  id: '/hoat-dong-msmv-dia-phuong',
+  path: '/hoat-dong-msmv-dia-phuong',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HoiDapRoute = HoiDapRouteImport.update({
+  id: '/hoi-dap',
+  path: '/hoi-dap',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LienHeRoute = LienHeRouteImport.update({
+  id: '/lien-he',
+  path: '/lien-he',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TinTucRoute = TinTucRouteImport.update({
+  id: '/tin-tuc',
+  path: '/tin-tuc',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TraCuuRoute = TraCuuRouteImport.update({
+  id: '/tra-cuu',
+  path: '/tra-cuu',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TruyXuatNguonGocRoute = TruyXuatNguonGocRouteImport.update({
+  id: '/truy-xuat-nguon-goc',
+  path: '/truy-xuat-nguon-goc',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GioiThieuIndexRoute = GioiThieuIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => GioiThieuRoute,
+} as any)
+const GioiThieuChucNangNhiemVuRoute =
+  GioiThieuChucNangNhiemVuRouteImport.update({
+    id: '/chuc-nang-nhiem-vu',
+    path: '/chuc-nang-nhiem-vu',
+    getParentRoute: () => GioiThieuRoute,
+  } as any)
+const GioiThieuCoCauToChucRoute = GioiThieuCoCauToChucRouteImport.update({
+  id: '/co-cau-to-chuc',
+  path: '/co-cau-to-chuc',
+  getParentRoute: () => GioiThieuRoute,
+} as any)
+const GioiThieuDoiTacQuocTeRoute = GioiThieuDoiTacQuocTeRouteImport.update({
+  id: '/doi-tac-quoc-te',
+  path: '/doi-tac-quoc-te',
+  getParentRoute: () => GioiThieuRoute,
+} as any)
+const GioiThieuLichSuHinhThanhRoute =
+  GioiThieuLichSuHinhThanhRouteImport.update({
+    id: '/lich-su-hinh-thanh',
+    path: '/lich-su-hinh-thanh',
+    getParentRoute: () => GioiThieuRoute,
+  } as any)
+const HoatDongIndexRoute = HoatDongIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => HoatDongRoute,
+} as any)
+const HoatDongDaoTaoRoute = HoatDongDaoTaoRouteImport.update({
+  id: '/dao-tao',
+  path: '/dao-tao',
+  getParentRoute: () => HoatDongRoute,
+} as any)
+const HoatDongMaLeiRoute = HoatDongMaLeiRouteImport.update({
+  id: '/ma-lei',
+  path: '/ma-lei',
+  getParentRoute: () => HoatDongRoute,
+} as any)
+const HoatDongMaSoMaVachRoute = HoatDongMaSoMaVachRouteImport.update({
+  id: '/ma-so-ma-vach',
+  path: '/ma-so-ma-vach',
+  getParentRoute: () => HoatDongRoute,
+} as any)
+const HoatDongMaUdiRoute = HoatDongMaUdiRouteImport.update({
+  id: '/ma-udi',
+  path: '/ma-udi',
+  getParentRoute: () => HoatDongRoute,
+} as any)
+const HoatDongTruyXuatNguonGocRoute =
+  HoatDongTruyXuatNguonGocRouteImport.update({
+    id: '/truy-xuat-nguon-goc',
+    path: '/truy-xuat-nguon-goc',
+    getParentRoute: () => HoatDongRoute,
+  } as any)
+const HoiDapIndexRoute = HoiDapIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => HoiDapRoute,
+} as any)
+const HoiDapCauHoiThuongGapRoute = HoiDapCauHoiThuongGapRouteImport.update({
+  id: '/cau-hoi-thuong-gap',
+  path: '/cau-hoi-thuong-gap',
+  getParentRoute: () => HoiDapRoute,
+} as any)
+const HoiDapDanhSachCauHoiRoute = HoiDapDanhSachCauHoiRouteImport.update({
+  id: '/danh-sach-cau-hoi',
+  path: '/danh-sach-cau-hoi',
+  getParentRoute: () => HoiDapRoute,
+} as any)
+const HoiDapTaoCauHoiRoute = HoiDapTaoCauHoiRouteImport.update({
+  id: '/tao-cau-hoi',
+  path: '/tao-cau-hoi',
+  getParentRoute: () => HoiDapRoute,
+} as any)
+const TinTucIndexRoute = TinTucIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => TinTucRoute,
+} as any)
+const TinTucSlugRoute = TinTucSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => TinTucRoute,
+} as any)
+const TruyXuatNguonGocIndexRoute = TruyXuatNguonGocIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => TruyXuatNguonGocRoute,
+} as any)
+const TruyXuatNguonGocDangKyChuoiRoute =
+  TruyXuatNguonGocDangKyChuoiRouteImport.update({
+    id: '/dang-ky-chuoi',
+    path: '/dang-ky-chuoi',
+    getParentRoute: () => TruyXuatNguonGocRoute,
+  } as any)
+const TruyXuatNguonGocTraCuuSanPhamRoute =
+  TruyXuatNguonGocTraCuuSanPhamRouteImport.update({
+    id: '/tra-cuu-san-pham',
+    path: '/tra-cuu-san-pham',
+    getParentRoute: () => TruyXuatNguonGocRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/e-learning': typeof ELearningRoute
+  '/gioi-thieu': typeof GioiThieuRouteWithChildren
+  '/hoat-dong': typeof HoatDongRouteWithChildren
+  '/hoat-dong-msmv-dia-phuong': typeof HoatDongMsmvDiaPhuongRoute
+  '/hoi-dap': typeof HoiDapRouteWithChildren
+  '/lien-he': typeof LienHeRoute
+  '/tin-tuc': typeof TinTucRouteWithChildren
+  '/tra-cuu': typeof TraCuuRoute
+  '/truy-xuat-nguon-goc': typeof TruyXuatNguonGocRouteWithChildren
+  '/gioi-thieu/chuc-nang-nhiem-vu': typeof GioiThieuChucNangNhiemVuRoute
+  '/gioi-thieu/co-cau-to-chuc': typeof GioiThieuCoCauToChucRoute
+  '/gioi-thieu/doi-tac-quoc-te': typeof GioiThieuDoiTacQuocTeRoute
+  '/gioi-thieu/lich-su-hinh-thanh': typeof GioiThieuLichSuHinhThanhRoute
+  '/hoat-dong/dao-tao': typeof HoatDongDaoTaoRoute
+  '/hoat-dong/ma-lei': typeof HoatDongMaLeiRoute
+  '/hoat-dong/ma-so-ma-vach': typeof HoatDongMaSoMaVachRoute
+  '/hoat-dong/ma-udi': typeof HoatDongMaUdiRoute
+  '/hoat-dong/truy-xuat-nguon-goc': typeof HoatDongTruyXuatNguonGocRoute
+  '/hoi-dap/cau-hoi-thuong-gap': typeof HoiDapCauHoiThuongGapRoute
+  '/hoi-dap/danh-sach-cau-hoi': typeof HoiDapDanhSachCauHoiRoute
+  '/hoi-dap/tao-cau-hoi': typeof HoiDapTaoCauHoiRoute
+  '/tin-tuc/$slug': typeof TinTucSlugRoute
+  '/truy-xuat-nguon-goc/dang-ky-chuoi': typeof TruyXuatNguonGocDangKyChuoiRoute
+  '/truy-xuat-nguon-goc/tra-cuu-san-pham': typeof TruyXuatNguonGocTraCuuSanPhamRoute
+  '/gioi-thieu/': typeof GioiThieuIndexRoute
+  '/hoat-dong/': typeof HoatDongIndexRoute
+  '/hoi-dap/': typeof HoiDapIndexRoute
+  '/tin-tuc/': typeof TinTucIndexRoute
+  '/truy-xuat-nguon-goc/': typeof TruyXuatNguonGocIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/e-learning': typeof ELearningRoute
+  '/hoat-dong-msmv-dia-phuong': typeof HoatDongMsmvDiaPhuongRoute
+  '/lien-he': typeof LienHeRoute
+  '/tra-cuu': typeof TraCuuRoute
+  '/gioi-thieu/chuc-nang-nhiem-vu': typeof GioiThieuChucNangNhiemVuRoute
+  '/gioi-thieu/co-cau-to-chuc': typeof GioiThieuCoCauToChucRoute
+  '/gioi-thieu/doi-tac-quoc-te': typeof GioiThieuDoiTacQuocTeRoute
+  '/gioi-thieu/lich-su-hinh-thanh': typeof GioiThieuLichSuHinhThanhRoute
+  '/hoat-dong/dao-tao': typeof HoatDongDaoTaoRoute
+  '/hoat-dong/ma-lei': typeof HoatDongMaLeiRoute
+  '/hoat-dong/ma-so-ma-vach': typeof HoatDongMaSoMaVachRoute
+  '/hoat-dong/ma-udi': typeof HoatDongMaUdiRoute
+  '/hoat-dong/truy-xuat-nguon-goc': typeof HoatDongTruyXuatNguonGocRoute
+  '/hoi-dap/cau-hoi-thuong-gap': typeof HoiDapCauHoiThuongGapRoute
+  '/hoi-dap/danh-sach-cau-hoi': typeof HoiDapDanhSachCauHoiRoute
+  '/hoi-dap/tao-cau-hoi': typeof HoiDapTaoCauHoiRoute
+  '/tin-tuc/$slug': typeof TinTucSlugRoute
+  '/truy-xuat-nguon-goc/dang-ky-chuoi': typeof TruyXuatNguonGocDangKyChuoiRoute
+  '/truy-xuat-nguon-goc/tra-cuu-san-pham': typeof TruyXuatNguonGocTraCuuSanPhamRoute
+  '/gioi-thieu': typeof GioiThieuIndexRoute
+  '/hoat-dong': typeof HoatDongIndexRoute
+  '/hoi-dap': typeof HoiDapIndexRoute
+  '/tin-tuc': typeof TinTucIndexRoute
+  '/truy-xuat-nguon-goc': typeof TruyXuatNguonGocIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/e-learning': typeof ELearningRoute
+  '/gioi-thieu': typeof GioiThieuRouteWithChildren
+  '/hoat-dong': typeof HoatDongRouteWithChildren
+  '/hoat-dong-msmv-dia-phuong': typeof HoatDongMsmvDiaPhuongRoute
+  '/hoi-dap': typeof HoiDapRouteWithChildren
+  '/lien-he': typeof LienHeRoute
+  '/tin-tuc': typeof TinTucRouteWithChildren
+  '/tra-cuu': typeof TraCuuRoute
+  '/truy-xuat-nguon-goc': typeof TruyXuatNguonGocRouteWithChildren
+  '/gioi-thieu/chuc-nang-nhiem-vu': typeof GioiThieuChucNangNhiemVuRoute
+  '/gioi-thieu/co-cau-to-chuc': typeof GioiThieuCoCauToChucRoute
+  '/gioi-thieu/doi-tac-quoc-te': typeof GioiThieuDoiTacQuocTeRoute
+  '/gioi-thieu/lich-su-hinh-thanh': typeof GioiThieuLichSuHinhThanhRoute
+  '/hoat-dong/dao-tao': typeof HoatDongDaoTaoRoute
+  '/hoat-dong/ma-lei': typeof HoatDongMaLeiRoute
+  '/hoat-dong/ma-so-ma-vach': typeof HoatDongMaSoMaVachRoute
+  '/hoat-dong/ma-udi': typeof HoatDongMaUdiRoute
+  '/hoat-dong/truy-xuat-nguon-goc': typeof HoatDongTruyXuatNguonGocRoute
+  '/hoi-dap/cau-hoi-thuong-gap': typeof HoiDapCauHoiThuongGapRoute
+  '/hoi-dap/danh-sach-cau-hoi': typeof HoiDapDanhSachCauHoiRoute
+  '/hoi-dap/tao-cau-hoi': typeof HoiDapTaoCauHoiRoute
+  '/tin-tuc/$slug': typeof TinTucSlugRoute
+  '/truy-xuat-nguon-goc/dang-ky-chuoi': typeof TruyXuatNguonGocDangKyChuoiRoute
+  '/truy-xuat-nguon-goc/tra-cuu-san-pham': typeof TruyXuatNguonGocTraCuuSanPhamRoute
+  '/gioi-thieu/': typeof GioiThieuIndexRoute
+  '/hoat-dong/': typeof HoatDongIndexRoute
+  '/hoi-dap/': typeof HoiDapIndexRoute
+  '/tin-tuc/': typeof TinTucIndexRoute
+  '/truy-xuat-nguon-goc/': typeof TruyXuatNguonGocIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/e-learning'
+    | '/gioi-thieu'
+    | '/hoat-dong'
+    | '/hoat-dong-msmv-dia-phuong'
+    | '/hoi-dap'
+    | '/lien-he'
+    | '/tin-tuc'
+    | '/tra-cuu'
+    | '/truy-xuat-nguon-goc'
+    | '/gioi-thieu/chuc-nang-nhiem-vu'
+    | '/gioi-thieu/co-cau-to-chuc'
+    | '/gioi-thieu/doi-tac-quoc-te'
+    | '/gioi-thieu/lich-su-hinh-thanh'
+    | '/hoat-dong/dao-tao'
+    | '/hoat-dong/ma-lei'
+    | '/hoat-dong/ma-so-ma-vach'
+    | '/hoat-dong/ma-udi'
+    | '/hoat-dong/truy-xuat-nguon-goc'
+    | '/hoi-dap/cau-hoi-thuong-gap'
+    | '/hoi-dap/danh-sach-cau-hoi'
+    | '/hoi-dap/tao-cau-hoi'
+    | '/tin-tuc/$slug'
+    | '/truy-xuat-nguon-goc/dang-ky-chuoi'
+    | '/truy-xuat-nguon-goc/tra-cuu-san-pham'
+    | '/gioi-thieu/'
+    | '/hoat-dong/'
+    | '/hoi-dap/'
+    | '/tin-tuc/'
+    | '/truy-xuat-nguon-goc/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/e-learning'
+    | '/hoat-dong-msmv-dia-phuong'
+    | '/lien-he'
+    | '/tra-cuu'
+    | '/gioi-thieu/chuc-nang-nhiem-vu'
+    | '/gioi-thieu/co-cau-to-chuc'
+    | '/gioi-thieu/doi-tac-quoc-te'
+    | '/gioi-thieu/lich-su-hinh-thanh'
+    | '/hoat-dong/dao-tao'
+    | '/hoat-dong/ma-lei'
+    | '/hoat-dong/ma-so-ma-vach'
+    | '/hoat-dong/ma-udi'
+    | '/hoat-dong/truy-xuat-nguon-goc'
+    | '/hoi-dap/cau-hoi-thuong-gap'
+    | '/hoi-dap/danh-sach-cau-hoi'
+    | '/hoi-dap/tao-cau-hoi'
+    | '/tin-tuc/$slug'
+    | '/truy-xuat-nguon-goc/dang-ky-chuoi'
+    | '/truy-xuat-nguon-goc/tra-cuu-san-pham'
+    | '/gioi-thieu'
+    | '/hoat-dong'
+    | '/hoi-dap'
+    | '/tin-tuc'
+    | '/truy-xuat-nguon-goc'
+  id:
+    | '__root__'
+    | '/'
+    | '/e-learning'
+    | '/gioi-thieu'
+    | '/hoat-dong'
+    | '/hoat-dong-msmv-dia-phuong'
+    | '/hoi-dap'
+    | '/lien-he'
+    | '/tin-tuc'
+    | '/tra-cuu'
+    | '/truy-xuat-nguon-goc'
+    | '/gioi-thieu/chuc-nang-nhiem-vu'
+    | '/gioi-thieu/co-cau-to-chuc'
+    | '/gioi-thieu/doi-tac-quoc-te'
+    | '/gioi-thieu/lich-su-hinh-thanh'
+    | '/hoat-dong/dao-tao'
+    | '/hoat-dong/ma-lei'
+    | '/hoat-dong/ma-so-ma-vach'
+    | '/hoat-dong/ma-udi'
+    | '/hoat-dong/truy-xuat-nguon-goc'
+    | '/hoi-dap/cau-hoi-thuong-gap'
+    | '/hoi-dap/danh-sach-cau-hoi'
+    | '/hoi-dap/tao-cau-hoi'
+    | '/tin-tuc/$slug'
+    | '/truy-xuat-nguon-goc/dang-ky-chuoi'
+    | '/truy-xuat-nguon-goc/tra-cuu-san-pham'
+    | '/gioi-thieu/'
+    | '/hoat-dong/'
+    | '/hoi-dap/'
+    | '/tin-tuc/'
+    | '/truy-xuat-nguon-goc/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ELearningRoute: typeof ELearningRoute
+  GioiThieuRoute: typeof GioiThieuRouteWithChildren
+  HoatDongRoute: typeof HoatDongRouteWithChildren
+  HoatDongMsmvDiaPhuongRoute: typeof HoatDongMsmvDiaPhuongRoute
+  HoiDapRoute: typeof HoiDapRouteWithChildren
+  LienHeRoute: typeof LienHeRoute
+  TinTucRoute: typeof TinTucRouteWithChildren
+  TraCuuRoute: typeof TraCuuRoute
+  TruyXuatNguonGocRoute: typeof TruyXuatNguonGocRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +404,310 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/e-learning': {
+      id: '/e-learning'
+      path: '/e-learning'
+      fullPath: '/e-learning'
+      preLoaderRoute: typeof ELearningRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gioi-thieu': {
+      id: '/gioi-thieu'
+      path: '/gioi-thieu'
+      fullPath: '/gioi-thieu'
+      preLoaderRoute: typeof GioiThieuRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hoat-dong': {
+      id: '/hoat-dong'
+      path: '/hoat-dong'
+      fullPath: '/hoat-dong'
+      preLoaderRoute: typeof HoatDongRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hoat-dong-msmv-dia-phuong': {
+      id: '/hoat-dong-msmv-dia-phuong'
+      path: '/hoat-dong-msmv-dia-phuong'
+      fullPath: '/hoat-dong-msmv-dia-phuong'
+      preLoaderRoute: typeof HoatDongMsmvDiaPhuongRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hoi-dap': {
+      id: '/hoi-dap'
+      path: '/hoi-dap'
+      fullPath: '/hoi-dap'
+      preLoaderRoute: typeof HoiDapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lien-he': {
+      id: '/lien-he'
+      path: '/lien-he'
+      fullPath: '/lien-he'
+      preLoaderRoute: typeof LienHeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tin-tuc': {
+      id: '/tin-tuc'
+      path: '/tin-tuc'
+      fullPath: '/tin-tuc'
+      preLoaderRoute: typeof TinTucRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tra-cuu': {
+      id: '/tra-cuu'
+      path: '/tra-cuu'
+      fullPath: '/tra-cuu'
+      preLoaderRoute: typeof TraCuuRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/truy-xuat-nguon-goc': {
+      id: '/truy-xuat-nguon-goc'
+      path: '/truy-xuat-nguon-goc'
+      fullPath: '/truy-xuat-nguon-goc'
+      preLoaderRoute: typeof TruyXuatNguonGocRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gioi-thieu/': {
+      id: '/gioi-thieu/'
+      path: '/'
+      fullPath: '/gioi-thieu/'
+      preLoaderRoute: typeof GioiThieuIndexRouteImport
+      parentRoute: typeof GioiThieuRoute
+    }
+    '/gioi-thieu/chuc-nang-nhiem-vu': {
+      id: '/gioi-thieu/chuc-nang-nhiem-vu'
+      path: '/chuc-nang-nhiem-vu'
+      fullPath: '/gioi-thieu/chuc-nang-nhiem-vu'
+      preLoaderRoute: typeof GioiThieuChucNangNhiemVuRouteImport
+      parentRoute: typeof GioiThieuRoute
+    }
+    '/gioi-thieu/co-cau-to-chuc': {
+      id: '/gioi-thieu/co-cau-to-chuc'
+      path: '/co-cau-to-chuc'
+      fullPath: '/gioi-thieu/co-cau-to-chuc'
+      preLoaderRoute: typeof GioiThieuCoCauToChucRouteImport
+      parentRoute: typeof GioiThieuRoute
+    }
+    '/gioi-thieu/doi-tac-quoc-te': {
+      id: '/gioi-thieu/doi-tac-quoc-te'
+      path: '/doi-tac-quoc-te'
+      fullPath: '/gioi-thieu/doi-tac-quoc-te'
+      preLoaderRoute: typeof GioiThieuDoiTacQuocTeRouteImport
+      parentRoute: typeof GioiThieuRoute
+    }
+    '/gioi-thieu/lich-su-hinh-thanh': {
+      id: '/gioi-thieu/lich-su-hinh-thanh'
+      path: '/lich-su-hinh-thanh'
+      fullPath: '/gioi-thieu/lich-su-hinh-thanh'
+      preLoaderRoute: typeof GioiThieuLichSuHinhThanhRouteImport
+      parentRoute: typeof GioiThieuRoute
+    }
+    '/hoat-dong/': {
+      id: '/hoat-dong/'
+      path: '/'
+      fullPath: '/hoat-dong/'
+      preLoaderRoute: typeof HoatDongIndexRouteImport
+      parentRoute: typeof HoatDongRoute
+    }
+    '/hoat-dong/dao-tao': {
+      id: '/hoat-dong/dao-tao'
+      path: '/dao-tao'
+      fullPath: '/hoat-dong/dao-tao'
+      preLoaderRoute: typeof HoatDongDaoTaoRouteImport
+      parentRoute: typeof HoatDongRoute
+    }
+    '/hoat-dong/ma-lei': {
+      id: '/hoat-dong/ma-lei'
+      path: '/ma-lei'
+      fullPath: '/hoat-dong/ma-lei'
+      preLoaderRoute: typeof HoatDongMaLeiRouteImport
+      parentRoute: typeof HoatDongRoute
+    }
+    '/hoat-dong/ma-so-ma-vach': {
+      id: '/hoat-dong/ma-so-ma-vach'
+      path: '/ma-so-ma-vach'
+      fullPath: '/hoat-dong/ma-so-ma-vach'
+      preLoaderRoute: typeof HoatDongMaSoMaVachRouteImport
+      parentRoute: typeof HoatDongRoute
+    }
+    '/hoat-dong/ma-udi': {
+      id: '/hoat-dong/ma-udi'
+      path: '/ma-udi'
+      fullPath: '/hoat-dong/ma-udi'
+      preLoaderRoute: typeof HoatDongMaUdiRouteImport
+      parentRoute: typeof HoatDongRoute
+    }
+    '/hoat-dong/truy-xuat-nguon-goc': {
+      id: '/hoat-dong/truy-xuat-nguon-goc'
+      path: '/truy-xuat-nguon-goc'
+      fullPath: '/hoat-dong/truy-xuat-nguon-goc'
+      preLoaderRoute: typeof HoatDongTruyXuatNguonGocRouteImport
+      parentRoute: typeof HoatDongRoute
+    }
+    '/hoi-dap/': {
+      id: '/hoi-dap/'
+      path: '/'
+      fullPath: '/hoi-dap/'
+      preLoaderRoute: typeof HoiDapIndexRouteImport
+      parentRoute: typeof HoiDapRoute
+    }
+    '/hoi-dap/cau-hoi-thuong-gap': {
+      id: '/hoi-dap/cau-hoi-thuong-gap'
+      path: '/cau-hoi-thuong-gap'
+      fullPath: '/hoi-dap/cau-hoi-thuong-gap'
+      preLoaderRoute: typeof HoiDapCauHoiThuongGapRouteImport
+      parentRoute: typeof HoiDapRoute
+    }
+    '/hoi-dap/danh-sach-cau-hoi': {
+      id: '/hoi-dap/danh-sach-cau-hoi'
+      path: '/danh-sach-cau-hoi'
+      fullPath: '/hoi-dap/danh-sach-cau-hoi'
+      preLoaderRoute: typeof HoiDapDanhSachCauHoiRouteImport
+      parentRoute: typeof HoiDapRoute
+    }
+    '/hoi-dap/tao-cau-hoi': {
+      id: '/hoi-dap/tao-cau-hoi'
+      path: '/tao-cau-hoi'
+      fullPath: '/hoi-dap/tao-cau-hoi'
+      preLoaderRoute: typeof HoiDapTaoCauHoiRouteImport
+      parentRoute: typeof HoiDapRoute
+    }
+    '/tin-tuc/': {
+      id: '/tin-tuc/'
+      path: '/'
+      fullPath: '/tin-tuc/'
+      preLoaderRoute: typeof TinTucIndexRouteImport
+      parentRoute: typeof TinTucRoute
+    }
+    '/tin-tuc/$slug': {
+      id: '/tin-tuc/$slug'
+      path: '/$slug'
+      fullPath: '/tin-tuc/$slug'
+      preLoaderRoute: typeof TinTucSlugRouteImport
+      parentRoute: typeof TinTucRoute
+    }
+    '/truy-xuat-nguon-goc/': {
+      id: '/truy-xuat-nguon-goc/'
+      path: '/'
+      fullPath: '/truy-xuat-nguon-goc/'
+      preLoaderRoute: typeof TruyXuatNguonGocIndexRouteImport
+      parentRoute: typeof TruyXuatNguonGocRoute
+    }
+    '/truy-xuat-nguon-goc/dang-ky-chuoi': {
+      id: '/truy-xuat-nguon-goc/dang-ky-chuoi'
+      path: '/dang-ky-chuoi'
+      fullPath: '/truy-xuat-nguon-goc/dang-ky-chuoi'
+      preLoaderRoute: typeof TruyXuatNguonGocDangKyChuoiRouteImport
+      parentRoute: typeof TruyXuatNguonGocRoute
+    }
+    '/truy-xuat-nguon-goc/tra-cuu-san-pham': {
+      id: '/truy-xuat-nguon-goc/tra-cuu-san-pham'
+      path: '/tra-cuu-san-pham'
+      fullPath: '/truy-xuat-nguon-goc/tra-cuu-san-pham'
+      preLoaderRoute: typeof TruyXuatNguonGocTraCuuSanPhamRouteImport
+      parentRoute: typeof TruyXuatNguonGocRoute
+    }
   }
 }
 
+interface GioiThieuRouteChildren {
+  GioiThieuChucNangNhiemVuRoute: typeof GioiThieuChucNangNhiemVuRoute
+  GioiThieuCoCauToChucRoute: typeof GioiThieuCoCauToChucRoute
+  GioiThieuDoiTacQuocTeRoute: typeof GioiThieuDoiTacQuocTeRoute
+  GioiThieuLichSuHinhThanhRoute: typeof GioiThieuLichSuHinhThanhRoute
+  GioiThieuIndexRoute: typeof GioiThieuIndexRoute
+}
+
+const GioiThieuRouteChildren: GioiThieuRouteChildren = {
+  GioiThieuChucNangNhiemVuRoute: GioiThieuChucNangNhiemVuRoute,
+  GioiThieuCoCauToChucRoute: GioiThieuCoCauToChucRoute,
+  GioiThieuDoiTacQuocTeRoute: GioiThieuDoiTacQuocTeRoute,
+  GioiThieuLichSuHinhThanhRoute: GioiThieuLichSuHinhThanhRoute,
+  GioiThieuIndexRoute: GioiThieuIndexRoute,
+}
+
+const GioiThieuRouteWithChildren = GioiThieuRoute._addFileChildren(
+  GioiThieuRouteChildren,
+)
+
+interface HoatDongRouteChildren {
+  HoatDongDaoTaoRoute: typeof HoatDongDaoTaoRoute
+  HoatDongMaLeiRoute: typeof HoatDongMaLeiRoute
+  HoatDongMaSoMaVachRoute: typeof HoatDongMaSoMaVachRoute
+  HoatDongMaUdiRoute: typeof HoatDongMaUdiRoute
+  HoatDongTruyXuatNguonGocRoute: typeof HoatDongTruyXuatNguonGocRoute
+  HoatDongIndexRoute: typeof HoatDongIndexRoute
+}
+
+const HoatDongRouteChildren: HoatDongRouteChildren = {
+  HoatDongDaoTaoRoute: HoatDongDaoTaoRoute,
+  HoatDongMaLeiRoute: HoatDongMaLeiRoute,
+  HoatDongMaSoMaVachRoute: HoatDongMaSoMaVachRoute,
+  HoatDongMaUdiRoute: HoatDongMaUdiRoute,
+  HoatDongTruyXuatNguonGocRoute: HoatDongTruyXuatNguonGocRoute,
+  HoatDongIndexRoute: HoatDongIndexRoute,
+}
+
+const HoatDongRouteWithChildren = HoatDongRoute._addFileChildren(
+  HoatDongRouteChildren,
+)
+
+interface HoiDapRouteChildren {
+  HoiDapCauHoiThuongGapRoute: typeof HoiDapCauHoiThuongGapRoute
+  HoiDapDanhSachCauHoiRoute: typeof HoiDapDanhSachCauHoiRoute
+  HoiDapTaoCauHoiRoute: typeof HoiDapTaoCauHoiRoute
+  HoiDapIndexRoute: typeof HoiDapIndexRoute
+}
+
+const HoiDapRouteChildren: HoiDapRouteChildren = {
+  HoiDapCauHoiThuongGapRoute: HoiDapCauHoiThuongGapRoute,
+  HoiDapDanhSachCauHoiRoute: HoiDapDanhSachCauHoiRoute,
+  HoiDapTaoCauHoiRoute: HoiDapTaoCauHoiRoute,
+  HoiDapIndexRoute: HoiDapIndexRoute,
+}
+
+const HoiDapRouteWithChildren =
+  HoiDapRoute._addFileChildren(HoiDapRouteChildren)
+
+interface TinTucRouteChildren {
+  TinTucSlugRoute: typeof TinTucSlugRoute
+  TinTucIndexRoute: typeof TinTucIndexRoute
+}
+
+const TinTucRouteChildren: TinTucRouteChildren = {
+  TinTucSlugRoute: TinTucSlugRoute,
+  TinTucIndexRoute: TinTucIndexRoute,
+}
+
+const TinTucRouteWithChildren =
+  TinTucRoute._addFileChildren(TinTucRouteChildren)
+
+interface TruyXuatNguonGocRouteChildren {
+  TruyXuatNguonGocDangKyChuoiRoute: typeof TruyXuatNguonGocDangKyChuoiRoute
+  TruyXuatNguonGocTraCuuSanPhamRoute: typeof TruyXuatNguonGocTraCuuSanPhamRoute
+  TruyXuatNguonGocIndexRoute: typeof TruyXuatNguonGocIndexRoute
+}
+
+const TruyXuatNguonGocRouteChildren: TruyXuatNguonGocRouteChildren = {
+  TruyXuatNguonGocDangKyChuoiRoute: TruyXuatNguonGocDangKyChuoiRoute,
+  TruyXuatNguonGocTraCuuSanPhamRoute: TruyXuatNguonGocTraCuuSanPhamRoute,
+  TruyXuatNguonGocIndexRoute: TruyXuatNguonGocIndexRoute,
+}
+
+const TruyXuatNguonGocRouteWithChildren =
+  TruyXuatNguonGocRoute._addFileChildren(TruyXuatNguonGocRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ELearningRoute: ELearningRoute,
+  GioiThieuRoute: GioiThieuRouteWithChildren,
+  HoatDongRoute: HoatDongRouteWithChildren,
+  HoatDongMsmvDiaPhuongRoute: HoatDongMsmvDiaPhuongRoute,
+  HoiDapRoute: HoiDapRouteWithChildren,
+  LienHeRoute: LienHeRoute,
+  TinTucRoute: TinTucRouteWithChildren,
+  TraCuuRoute: TraCuuRoute,
+  TruyXuatNguonGocRoute: TruyXuatNguonGocRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -1,0 +1,16 @@
+{
+  "source": "code-archive",
+  "capabilities": [
+    { "capability": "application code and routes", "source": "React/Vite archive with nine named routes and additional information pages", "outcome": "Rebuild in TanStack Start while preserving all page behavior and bundled content", "status": "in_progress", "next_action": "Finish route migration and verify the preview" },
+    { "capability": "database schema", "source": "No schema or active database client found; the Supabase package is unused", "outcome": "No source database to migrate", "status": "not_applicable", "next_action": "None" },
+    { "capability": "application records", "source": "Bundled JSON files for news, FAQs, sample questions, activities, banners, courses, and information pages", "outcome": "Preserve bundled sample content in the application", "status": "in_progress", "next_action": "Copy and verify bundled content" },
+    { "capability": "authentication and user identities", "source": "No active authentication flow, user export, or user records found", "outcome": "No source sign-in system to migrate", "status": "not_applicable", "next_action": "None" },
+    { "capability": "authorization", "source": "No role or permission logic found", "outcome": "No source access-control rules to migrate", "status": "not_applicable", "next_action": "None" },
+    { "capability": "uploaded file bytes", "source": "No uploaded-file store or local media found in archive", "outcome": "Bundled public image URLs are retained as content assets", "status": "in_progress", "next_action": "Preserve visible imagery in the migrated site" },
+    { "capability": "external providers", "source": "Open-Meteo weather, Google Maps embed, Pexels image URLs, Facebook and Twitter share links", "outcome": "Keep compatible public services and sharing behavior", "status": "in_progress", "next_action": "Verify weather, map, and image loading in preview" },
+    { "capability": "public endpoints, callbacks, webhooks, and schedules", "source": "None detected", "outcome": "No endpoints or scheduled jobs to migrate", "status": "not_applicable", "next_action": "None" },
+    { "capability": "secrets", "source": "No required environment variables or secret files detected", "outcome": "No secrets to transfer", "status": "not_applicable", "next_action": "None" },
+    { "capability": "cutover", "source": "Archive only; no production project connection or cutover instruction", "outcome": "Preview-first recreation", "status": "pending", "next_action": "User decides when to publish or redirect traffic" },
+    { "capability": "verification", "source": "Target preview", "outcome": "Check build, routes, responsiveness, and representative interactions", "status": "pending", "next_action": "Verify after implementation" }
+  ]
+}

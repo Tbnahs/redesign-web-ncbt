@@ -1,0 +1,62 @@
+[
+  {
+    "id": "faq-msmv-1",
+    "topic": "ma-so-ma-vach",
+    "question": "Ai cần đăng ký mã số mã vạch?",
+    "answer": "Mọi tổ chức, doanh nghiệp sản xuất, kinh doanh hàng hóa muốn gắn mã vạch lên sản phẩm để lưu thông trong nước hoặc xuất khẩu đều cần đăng ký mã số mã vạch."
+  },
+  {
+    "id": "faq-msmv-2",
+    "topic": "ma-so-ma-vach",
+    "question": "Mã số mã vạch có thời hạn sử dụng không?",
+    "answer": "Mã số doanh nghiệp được cấp có thời hạn hiệu lực theo quy định. Doanh nghiệp cần gia hạn đúng hạn để tiếp tục sử dụng mã trên sản phẩm."
+  },
+  {
+    "id": "faq-truy-xuat-1",
+    "topic": "truy-xuat-nguon-goc",
+    "question": "Làm thế nào để truy xuất nguồn gốc sản phẩm?",
+    "answer": "Người tiêu dùng chỉ cần quét mã QR hoặc nhập mã sản phẩm trên bao bì để xem thông tin về nơi sản xuất, thời gian và các công đoạn đã qua."
+  },
+  {
+    "id": "faq-truy-xuat-2",
+    "topic": "truy-xuat-nguon-goc",
+    "question": "Doanh nghiệp nhỏ có thể tham gia truy xuất nguồn gốc không?",
+    "answer": "Có. Hợp tác xã và hộ kinh doanh có thể tham gia chuỗi truy xuất. Trung tâm hỗ trợ hướng dẫn ghi nhận thông tin và gắn mã QR cho sản phẩm."
+  },
+  {
+    "id": "faq-lei-1",
+    "topic": "ma-lei",
+    "question": "Mã LEI là gì?",
+    "answer": "Mã LEI là mã định danh gồm 20 ký tự, dùng để nhận diện duy nhất một pháp nhân tham gia giao dịch tài chính trên phạm vi toàn cầu."
+  },
+  {
+    "id": "faq-lei-2",
+    "topic": "ma-lei",
+    "question": "Mã LEI và mã UDI khác nhau như thế nào?",
+    "answer": "Mã LEI định danh pháp nhân tham gia giao dịch tài chính, còn mã UDI định danh thiết bị y tế để phục vụ quản lý, theo dõi và truy xuất trong lĩnh vực y tế."
+  },
+  {
+    "id": "faq-udi-1",
+    "topic": "ma-udi",
+    "question": "Thiết bị y tế nào cần có mã UDI?",
+    "answer": "Các thiết bị y tế lưu hành tại Việt Nam, đặc biệt là thiết bị cấy ghép và thiết bị có nguy cơ cao, cần được gắn mã UDI theo lộ trình của Bộ Y tế."
+  },
+  {
+    "id": "faq-udi-2",
+    "topic": "ma-udi",
+    "question": "Mã UDI được in ở đâu trên thiết bị?",
+    "answer": "Mã UDI thường được in trên nhãn của thiết bị hoặc bao bì ngoài, dưới dạng mã vạch và văn bản đọc được để thuận tiện cho việc tra cứu."
+  },
+  {
+    "id": "faq-dao-tao-1",
+    "topic": "dao-tao",
+    "question": "Khóa đào tạo mã số mã vạch kéo dài bao lâu?",
+    "answer": "Phần lớn khóa đào tạo ngắn hạn kéo dài từ một đến ba ngày, kết hợp lý thuyết và thực hành trên hệ thống trực tuyến."
+  },
+  {
+    "id": "faq-dao-tao-2",
+    "topic": "dao-tao",
+    "question": "Học viên có được cấp chứng nhận sau khóa học không?",
+    "answer": "Học viên hoàn thành đầy đủ các buổi học và bài kiểm tra sẽ nhận chứng nhận đào tạo do Trung tâm cấp."
+  }
+]

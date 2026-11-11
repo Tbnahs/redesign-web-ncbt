@@ -1,0 +1,155 @@
+[
+  {
+    "path": "/gioi-thieu/lich-su-hinh-thanh",
+    "title": "Giới thiệu chung",
+    "summary": "Trung tâm Mã số, Mã vạch Quốc gia là đơn vị đầu mối triển khai hệ thống mã số mã vạch GS1 tại Việt Nam.",
+    "paragraphs": [
+      "Trung tâm Mã số, Mã vạch Quốc gia được thành lập để tổ chức, quản lý và phát triển hệ thống mã số mã vạch trên phạm vi toàn quốc. Từ những ngày đầu, Trung tâm đã đóng vai trò kết nối doanh nghiệp Việt Nam với hệ thống mã số mã vạch quốc tế GS1.",
+      "Qua nhiều giai đoạn phát triển, hệ thống đã mở rộng từ việc cấp mã cho sản phẩm tiêu dùng sang các lĩnh vực truy xuất nguồn gốc, mã định danh pháp nhân và mã định danh thiết bị y tế."
+    ]
+  },
+  {
+    "path": "/gioi-thieu/chuc-nang-nhiem-vu",
+    "title": "Chức năng nhiệm vụ",
+    "summary": "Trung tâm xây dựng, quản lý và hướng dẫn áp dụng hệ thống mã số mã vạch phục vụ phát triển kinh tế và quản lý nhà nước.",
+    "paragraphs": [
+      "Trung tâm thực hiện việc cấp mã số doanh nghiệp, mã số sản phẩm và mã vạch theo chuẩn GS1; tổ chức tra cứu, quản lý dữ liệu mã số đã cấp và hướng dẫn doanh nghiệp sử dụng mã đúng quy định.",
+      "Bên cạnh đó, Trung tâm triển khai các chương trình truy xuất nguồn gốc, đào tạo, tập huấn và hỗ trợ kỹ thuật cho doanh nghiệp, hợp tác xã và hộ kinh doanh trên cả nước."
+    ]
+  },
+  {
+    "path": "/gioi-thieu/co-cau-to-chuc",
+    "title": "Sơ đồ tổ chức",
+    "summary": "Bộ máy Trung tâm gồm ban lãnh đạo và các phòng chuyên môn, phối hợp chặt chẽ với mạng lưới địa phương.",
+    "paragraphs": [
+      "Ban lãnh đạo Trung tâm chịu trách nhiệm điều hành chung các hoạt động cấp mã, tra cứu, đào tạo và hợp tác quốc tế. Mỗi phòng chuyên môn phụ trách một mảng công việc cụ thể, từ tiếp nhận hồ sơ đến phát triển hệ thống dữ liệu.",
+      "Mạng lưới đầu mối tại các Sở Khoa học và Công nghệ hỗ trợ triển khai các hoạt động mã số mã vạch tại địa phương."
+    ]
+  },
+  {
+    "path": "/gioi-thieu/doi-tac-quoc-te",
+    "title": "Đối tác quốc tế",
+    "summary": "Trung tâm hợp tác với tổ chức GS1 quốc tế và các đối tác trong khu vực để đưa mã số mã vạch Việt Nam hội nhập.",
+    "paragraphs": [
+      "Là thành viên của hệ thống GS1 toàn cầu, Trung tâm tham gia các diễn đàn, hội thảo và chương trình đào tạo chuyên môn do GS1 tổ chức.",
+      "Thông qua hợp tác với các đối tác quốc tế, doanh nghiệp Việt Nam được tiếp cận chuẩn dữ liệu sản phẩm, giúp hàng hóa dễ dàng được chấp nhận tại các thị trường xuất khẩu."
+    ]
+  },
+  {
+    "path": "/hoat-dong/ma-so-ma-vach",
+    "title": "Mã số mã vạch",
+    "summary": "Cấp mã số doanh nghiệp và mã GTIN theo chuẩn GS1 để sản phẩm được nhận diện thống nhất trên toàn cầu.",
+    "paragraphs": [
+      "Mã số mã vạch là ngôn ngữ chung giúp doanh nghiệp, nhà bán lẻ và đối tác nhận diện đúng từng sản phẩm, từng đơn vị đóng gói. Mỗi sản phẩm được gắn một mã GTIN duy nhất, thể hiện trên bao bì dưới dạng mã vạch để máy quét đọc nhanh và chính xác.",
+      "Trung tâm cấp mã cho doanh nghiệp thuộc mọi quy mô, từ doanh nghiệp lớn đến hộ kinh doanh, để sản phẩm sẵn sàng lưu thông trong nước và xuất khẩu."
+    ],
+    "benefits": [
+      "Nhận diện sản phẩm thống nhất với hệ thống bán lẻ trong nước và quốc tế",
+      "Đáp ứng yêu cầu của nhà nhập khẩu và chuỗi siêu thị",
+      "Tăng tốc độ kiểm kê, thanh toán tại quầy bằng máy quét",
+      "Nền tảng để gắn thêm mã QR truy xuất nguồn gốc"
+    ],
+    "steps": [
+      "Chuẩn bị giấy đăng ký kinh doanh và thông tin doanh nghiệp",
+      "Điền mẫu đăng ký mã số doanh nghiệp trên cổng thông tin hoặc tại trụ sở Trung tâm",
+      "Khai báo danh mục sản phẩm cần cấp mã GTIN kèm hình ảnh bao bì",
+      "Nộp lệ phí theo quy định và chờ Trung tâm xét duyệt",
+      "Nhận mã số, in mã vạch lên bao bì và theo dõi thời hạn gia hạn"
+    ]
+  },
+  {
+    "path": "/hoat-dong/truy-xuat-nguon-goc",
+    "title": "Truy xuất nguồn gốc",
+    "summary": "Ghi nhận hành trình sản phẩm từ vùng trồng, nhà máy đến tay người tiêu dùng chỉ bằng một lần quét mã.",
+    "paragraphs": [
+      "Hệ thống truy xuất nguồn gốc giúp doanh nghiệp lưu lại thông tin ở từng công đoạn sản xuất, chế biến, vận chuyển và phân phối. Người tiêu dùng có thể xem các thông tin này qua mã QR trên bao bì.",
+      "Đặc biệt phù hợp với nông sản rau củ quả tươi, thủy sản, thực phẩm và dược liệu, nơi người mua quan tâm đến nguồn gốc và an toàn."
+    ],
+    "benefits": [
+      "Tăng niềm tin của người tiêu dùng với thông tin minh bạch",
+      "Thu hồi nhanh, khoanh vùng chính xác khi có sự cố",
+      "Đáp ứng yêu cầu truy xuất của thị trường xuất khẩu",
+      "Nâng giá trị sản phẩm địa phương"
+    ],
+    "steps": [
+      "Đăng ký doanh nghiệp, hợp tác xã hoặc hộ kinh doanh tham gia chuỗi",
+      "Xác định vùng sản xuất và các công đoạn cần ghi nhận",
+      "Gắn mã số mã vạch GS1 và mã QR cho từng lô hàng",
+      "Cập nhật thông tin công đoạn theo thời gian thực trên hệ thống",
+      "Công bố trang tra cứu để người mua quét mã xem hành trình sản phẩm"
+    ]
+  },
+  {
+    "path": "/hoat-dong/ma-lei",
+    "title": "Mã LEI",
+    "summary": "Mã định danh pháp nhân toàn cầu gồm 20 ký tự, giúp nhận diện duy nhất các bên tham gia giao dịch tài chính.",
+    "paragraphs": [
+      "Mã LEI (Legal Entity Identifier) là mã định danh chuẩn quốc tế dành cho pháp nhân tham gia giao dịch tài chính. Mỗi pháp nhân chỉ có một mã LEI duy nhất, được sử dụng xuyên suốt trong các hệ thống ngân hàng và thị trường vốn.",
+      "Doanh nghiệp có mã LEI thuận lợi hơn khi mở tài khoản, vay vốn hoặc hợp tác với đối tác nước ngoài."
+    ],
+    "benefits": [
+      "Được công nhận trên toàn cầu trong giao dịch tài chính",
+      "Thuận lợi khi làm việc với ngân hàng và tổ chức tài chính quốc tế",
+      "Tăng độ tin cậy trong thẩm định đối tác",
+      "Đáp ứng yêu cầu báo cáo của cơ quan quản lý"
+    ],
+    "steps": [
+      "Chuẩn bị giấy đăng ký doanh nghiệp và thông tin người đại diện pháp luật",
+      "Liên hệ đơn vị cấp mã LEI được ủy quyền để được hướng dẫn",
+      "Điền biểu mẫu thông tin pháp nhân và nộp hồ sơ kèm giấy tờ chứng minh",
+      "Thanh toán phí đăng ký hằng năm theo quy định",
+      "Nhận mã LEI và duy trì gia hạn đúng hạn"
+    ]
+  },
+  {
+    "path": "/hoat-dong/ma-udi",
+    "title": "Mã UDI",
+    "summary": "Mã định danh thiết bị y tế giúp theo dõi sản phẩm từ lúc sản xuất, sử dụng đến khi thanh lý.",
+    "paragraphs": [
+      "Mã UDI (Unique Device Identification) gắn lên từng thiết bị y tế, gồm mã nhận diện thiết bị và mã sản xuất. Thông tin này được lưu trong cơ sở dữ liệu để cơ quan quản lý và cơ sở y tế dễ dàng tra cứu.",
+      "Mã UDI đặc biệt quan trọng với thiết bị cấy ghép, nơi việc truy vết nhanh giúp bảo vệ sức khỏe người bệnh khi có sự cố."
+    ],
+    "benefits": [
+      "Theo dõi thiết bị xuyên suốt vòng đời trong bệnh viện",
+      "Thu hồi sản phẩm lỗi nhanh và đúng đối tượng",
+      "Hỗ trợ kiểm soát chất lượng và báo cáo sự cố",
+      "Đáp ứng yêu cầu quản lý thiết bị y tế"
+    ],
+    "steps": [
+      "Xác định danh mục thiết bị y tế cần cấp mã UDI",
+      "Đăng ký thông tin nhà sản xuất và thiết bị trên hệ thống",
+      "Tạo mã thiết bị và mã sản xuất theo chuẩn GS1",
+      "In mã lên nhãn thiết bị và hoàn thiện hồ sơ theo quy định",
+      "Cập nhật thông tin khi có thay đổi về mẫu mã hoặc phiên bản"
+    ]
+  },
+  {
+    "path": "/e-learning",
+    "title": "E-LEARNING",
+    "summary": "Hệ thống đào tạo trực tuyến về mã số mã vạch và truy xuất nguồn gốc.",
+    "paragraphs": [
+      "Nội dung trang E-learning sẽ được cập nhật trong thời gian tới."
+    ]
+  },
+  {
+    "path": "/hoat-dong/dao-tao",
+    "title": "Đào tạo",
+    "summary": "Các khóa đào tạo thực hành giúp doanh nghiệp và cán bộ ứng dụng thành thạo mã số mã vạch trong công việc.",
+    "paragraphs": [
+      "Trung tâm tổ chức các khóa đào tạo ngắn hạn về đăng ký mã số, thiết kế mã vạch, quản lý dữ liệu sản phẩm và truy xuất nguồn gốc. Nội dung kết hợp lý thuyết với thực hành trên hệ thống thực tế.",
+      "Các khóa học được tổ chức tại trụ sở Trung tâm và tại địa phương theo nhu cầu của doanh nghiệp."
+    ],
+    "benefits": [
+      "Giảng viên giàu kinh nghiệm từ đội ngũ chuyên môn của Trung tâm",
+      "Học thực hành trên hệ thống nộp hồ sơ trực tuyến",
+      "Tài liệu hướng dẫn chi tiết sau khóa học",
+      "Hỗ trợ tư vấn sau đào tạo khi áp dụng vào thực tế"
+    ],
+    "steps": [
+      "Xem danh sách khóa học và lịch khai giảng trên trang tin tức",
+      "Đăng ký tham gia theo hướng dẫn trong thông báo",
+      "Hoàn thành đầy đủ các buổi học lý thuyết và thực hành",
+      "Nhận chứng nhận hoàn thành khóa đào tạo"
+    ]
+  }
+]
