@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Menu } from 'lucide-react';
 import { BrandLogo } from '@/components/common/BrandLogo';
 import { SharesCounter } from '@/components/common/SharesCounter';
@@ -6,6 +5,9 @@ import { AuthLinks } from '@/components/header/AuthLinks';
 import { LanguageSwitcher } from '@/components/header/LanguageSwitcher';
 import { SearchField } from '@/components/header/SearchField';
 import { WeatherWidget } from '@/components/header/WeatherWidget';
+import { NewsletterDialog } from '@/components/header/NewsletterDialog';
+import { Button } from '@/components/ui/button';
+import { useState } from 'react';
 import { brand } from '@/config/brand';
 
 interface TopBarProps {
@@ -19,21 +21,26 @@ export function TopBar({ menuOpen, onOpenMenu }: TopBarProps) {
       <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <BrandLogo compact />
 
-        <div className="hidden flex-1 items-center justify-center gap-4 2xl:flex">
+        <div className="hidden flex-1 items-center justify-center gap-3 xl:flex">
           <AuthLinks />
-          <SearchField className="max-w-[200px]" />
+          <SearchField className="max-w-[190px]" />
           <FollowNotice />
           <WeatherWidget />
         </div>
 
-        <div className="ml-auto flex items-center gap-3 sm:gap-4">
+        <div className="ml-auto flex items-center gap-2 sm:gap-4">
           <SharesCounter className="hidden 2xl:flex" />
+          <div className="hidden items-center gap-3 xl:flex 2xl:hidden">
+            <AuthLinks />
+            <SearchField className="max-w-[190px]" />
+            <FollowNotice />
+          </div>
           <div className="hidden sm:block">
             <LanguageSwitcher />
           </div>
 
           <span
-            className="hidden items-center justify-center rounded border-2 border-navy-900 px-2 py-0.5 text-xs font-bold tracking-wide text-navy-900 sm:flex"
+            className="hidden items-center justify-center rounded border-2 border-navy-900 px-2 py-0.5 text-xs font-bold tracking-wide text-navy-900 md:flex"
             aria-label="GS1"
           >
             {brand.gs1Badge}
@@ -56,22 +63,18 @@ export function TopBar({ menuOpen, onOpenMenu }: TopBarProps) {
 }
 
 function FollowNotice() {
-  const [message, setMessage] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <>
-      <button
+      <Button
         type="button"
-        onClick={() => setMessage(true)}
-        className="whitespace-nowrap rounded-md bg-primary-500 px-5 py-2 text-sm font-bold text-white shadow-sm transition-colors duration-200 hover:bg-primary-600"
+        onClick={() => setOpen(true)}
+        className="h-10 whitespace-nowrap bg-primary-500 px-4 text-sm font-bold text-white hover:bg-primary-600"
       >
         THEO DÕI
-      </button>
-      {message && (
-        <span role="status" className="max-w-40 whitespace-normal text-xs text-neutral-600">
-          Theo dõi chưa được kết nối
-        </span>
-      )}
+      </Button>
+      <NewsletterDialog open={open} onOpenChange={setOpen} />
     </>
   );
 }

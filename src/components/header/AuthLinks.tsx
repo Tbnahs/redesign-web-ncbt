@@ -1,29 +1,24 @@
 import { useState } from 'react';
+import { UserRound } from 'lucide-react';
+import { AccountDialog } from '@/components/header/AccountDialog';
+import { Button } from '@/components/ui/button';
 
 export function AuthLinks({ className = '' }: { className?: string }) {
-  const [message, setMessage] = useState<string | null>(null);
+  const [open, setOpen] = useState(false);
+  const [initialTab, setInitialTab] = useState<'login' | 'register'>('login');
+
   return (
-    <div className={`flex items-center gap-2 text-sm font-medium text-neutral-700 whitespace-nowrap ${className}`}>
-      <button
+    <>
+      <Button
         type="button"
-        onClick={() => setMessage('Đăng nhập chưa được kết nối trong bản dựng nguồn.')}
-        className="rounded px-1 py-0.5 transition-colors duration-200 hover:text-primary-500"
+        variant="ghost"
+        onClick={() => { setInitialTab('login'); setOpen(true); }}
+        className={`h-10 gap-2 px-2 text-sm font-bold ${className}`}
       >
-        ĐĂNG NHẬP
-      </button>
-      <span className="h-4 w-px bg-neutral-300" aria-hidden="true" />
-      <button
-        type="button"
-        onClick={() => setMessage('Đăng ký chưa được kết nối trong bản dựng nguồn.')}
-        className="rounded px-1 py-0.5 transition-colors duration-200 hover:text-primary-500"
-      >
-        ĐĂNG KÍ
-      </button>
-      {message && (
-        <span role="status" className="max-w-44 whitespace-normal text-xs text-neutral-600">
-          {message}
-        </span>
-      )}
-    </div>
+        <UserRound className="size-4" aria-hidden="true" />
+        <span>ĐĂNG NHẬP / ĐĂNG KÍ</span>
+      </Button>
+      <AccountDialog open={open} onOpenChange={setOpen} initialTab={initialTab} />
+    </>
   );
 }
