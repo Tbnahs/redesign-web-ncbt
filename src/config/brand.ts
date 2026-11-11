@@ -1,10 +1,4 @@
-import { Barcode, Facebook, Twitter, Youtube, type LucideIcon } from 'lucide-react';
-
-export interface SocialLink {
-  label: string;
-  href: string;
-  icon: LucideIcon;
-}
+import { Barcode } from 'lucide-react';
 
 export const brand = {
   logoIcon: Barcode,
@@ -16,10 +10,5 @@ export const brand = {
   address: 'Số 8 Hoàng Quốc Việt, Nghĩa Đô, Cầu Giấy, Hà Nội',
   hotlines: ['1900 636218', '024 3836 1463'],
   email: 'msmv@nbc.gov.vn',
-  socialLinks: [
-    { label: 'Facebook', href: '#', icon: Facebook },
-    { label: 'Twitter', href: '#', icon: Twitter },
-    { label: 'YouTube', href: '#', icon: Youtube },
-  ] satisfies SocialLink[],
   gs1Badge: 'GS1',
 } as const;

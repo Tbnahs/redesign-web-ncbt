@@ -84,7 +84,7 @@ function CategoryFilter({ active, onChange }: CategoryFilterProps) {
 interface NewsListPageProps {
   title: string;
   fixedCategory?: string;
-  initialQuery?: string;
+  initialQuery?: string | undefined;
 }
 
 export function NewsListPage({ title, fixedCategory, initialQuery = '' }: NewsListPageProps) {

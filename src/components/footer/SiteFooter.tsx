@@ -43,18 +43,7 @@ export function SiteFooter() {
 
         <div className="space-y-4">
           <h3 className="text-sm font-bold uppercase tracking-wide text-white">Kết nối</h3>
-          <div className="flex items-center gap-3">
-            {brand.socialLinks.map(({ label, href, icon: Icon }) => (
-              <a
-                key={label}
-                href={href}
-                aria-label={label}
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-colors duration-200 hover:bg-primary-500"
-              >
-                <Icon className="h-4 w-4" aria-hidden="true" />
-              </a>
-            ))}
-          </div>
+          <p className="text-sm text-navy-200">Chưa có liên kết mạng xã hội trong thông tin được cung cấp.</p>
         </div>
       </div>
 

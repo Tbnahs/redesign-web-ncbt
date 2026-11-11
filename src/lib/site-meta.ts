@@ -28,7 +28,5 @@ export function homeHead() {
     title: "Trung tâm Mã số, Mã vạch Quốc gia | Cổng thông tin",
     description:
       "Tin tức, hoạt động, giải đáp và thông tin đào tạo của Trung tâm Mã số, Mã vạch Quốc gia.",
-    image:
-      "https://images.pexels.com/photos/12935049/pexels-photo-12935049.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
   });
 }

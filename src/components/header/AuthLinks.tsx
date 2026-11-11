@@ -19,7 +19,11 @@ export function AuthLinks({ className = '' }: { className?: string }) {
       >
         ĐĂNG KÍ
       </button>
-      {message && <span role="status" className="sr-only">{message}</span>}
+      {message && (
+        <span role="status" className="max-w-44 whitespace-normal text-xs text-neutral-600">
+          {message}
+        </span>
+      )}
     </div>
   );
 }

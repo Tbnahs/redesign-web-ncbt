@@ -38,8 +38,8 @@ export function LanguageSwitcher() {
         })}
       </div>
       {englishNotice && (
-        <span role="status" className="sr-only">
-          Bản tiếng Anh chưa có trong bản dựng nguồn.
+        <span role="status" className="max-w-44 text-xs text-neutral-600">
+          Chưa có bản tiếng Anh
         </span>
       )}
     </>

@@ -76,7 +76,6 @@
   --color-surface: var(--neutral-0);
   --color-on-brand: var(--neutral-0);
   --color-overlay: oklch(0.12 0.015 250);
-  --on-brand: var(--neutral-0);
 }
 
 :root {

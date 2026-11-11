@@ -4,7 +4,6 @@ import { X } from 'lucide-react';
 import { SharesCounter } from '@/components/common/SharesCounter';
 import { AuthLinks } from '@/components/header/AuthLinks';
 import { SearchField } from '@/components/header/SearchField';
-import { brand } from '@/config/brand';
 import { mainNav } from '@/config/navigation';
 
 interface MegaMenuProps {
@@ -86,18 +85,7 @@ export function MegaMenu({ open, onClose }: MegaMenuProps) {
         </div>
 
         <div className="mt-8 flex flex-col gap-4 border-t border-neutral-200 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-2">
-            {brand.socialLinks.map(({ label, href, icon: Icon }) => (
-              <a
-                key={label}
-                href={href}
-                aria-label={label}
-                className="flex h-9 w-9 items-center justify-center rounded-full text-neutral-600 transition-colors duration-200 hover:bg-primary-50 hover:text-primary-500"
-              >
-                <Icon className="h-4 w-4" aria-hidden="true" />
-              </a>
-            ))}
-          </div>
+          <p className="text-sm text-neutral-600">Chưa có liên kết mạng xã hội trong thông tin được cung cấp.</p>
           <SharesCounter />
         </div>
       </div>
