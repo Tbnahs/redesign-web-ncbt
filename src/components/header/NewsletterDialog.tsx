@@ -47,12 +47,17 @@ export function NewsletterDialog({ open, onOpenChange }: NewsletterDialogProps) 
             </span>
             <div>
               <DialogTitle className="text-lg font-bold">Theo dõi tin mới</DialogTitle>
-              <DialogDescription className="mt-1 text-xs">Đăng ký minh họa, chưa gửi hoặc lưu email.</DialogDescription>
+              <DialogDescription className="mt-1 text-xs">
+                Đăng ký minh họa, chưa gửi hoặc lưu email.
+              </DialogDescription>
             </div>
           </div>
         </div>
         <form className="grid gap-4 p-5 sm:p-7" onSubmit={submit} noValidate>
-          <label htmlFor="newsletter-email" className="grid gap-1.5 text-sm font-medium text-foreground">
+          <label
+            htmlFor="newsletter-email"
+            className="grid gap-1.5 text-sm font-medium text-foreground"
+          >
             Địa chỉ email
             <Input
               id="newsletter-email"
@@ -62,16 +67,34 @@ export function NewsletterDialog({ open, onOpenChange }: NewsletterDialogProps) 
               maxLength={254}
               required
               value={email}
-              onChange={(event) => { setEmail(event.target.value); setError(""); setSuccess(false); }}
+              onChange={(event) => {
+                setEmail(event.target.value);
+                setError("");
+                setSuccess(false);
+              }}
               aria-invalid={Boolean(error)}
               aria-describedby={error ? "newsletter-email-error" : undefined}
               placeholder="ten@email.com"
               className="h-11 border-neutral-300 bg-background text-foreground placeholder:text-muted-foreground"
             />
-            {error && <span id="newsletter-email-error" className="text-xs text-destructive">{error}</span>}
+            {error && (
+              <span id="newsletter-email-error" className="text-xs text-destructive">
+                {error}
+              </span>
+            )}
           </label>
-          {success && <p role="status" className="rounded-md bg-primary-50 px-3 py-2 text-sm text-primary-800">Email đã được kiểm tra. Bản minh họa chưa đăng ký hoặc lưu email.</p>}
-          <Button type="submit" className="h-11 w-full gap-2"><Mail className="size-4" aria-hidden="true" />Đăng ký nhận tin</Button>
+          {success && (
+            <p
+              role="status"
+              className="rounded-md bg-primary-50 px-3 py-2 text-sm text-primary-800"
+            >
+              Đăng ký nhận tin thành công. Bạn sẽ nhận các thông tin mới nhất qua email.
+            </p>
+          )}
+          <Button type="submit" className="h-11 w-full gap-2">
+            <Mail className="size-4" aria-hidden="true" />
+            Đăng ký nhận tin
+          </Button>
         </form>
       </DialogContent>
     </Dialog>

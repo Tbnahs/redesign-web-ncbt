@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { Link } from '@tanstack/react-router';
-import { Plus } from 'lucide-react';
-import { AccordionItem } from '@/components/common/AccordionItem';
-import { SectionHeading } from '@/components/common/SectionHeading';
-import { faqItems } from '@/data/qaRepository';
+import { useState } from "react";
+import { Link } from "@tanstack/react-router";
+import { Plus } from "lucide-react";
+import { AccordionItem } from "@/components/common/AccordionItem";
+import { SectionHeading } from "@/components/common/SectionHeading";
+import { faqItems } from "@/data/qaRepository";
 
 const HOME_FAQ_COUNT = 4;
 
@@ -16,7 +16,11 @@ export function FaqAccordion() {
   return (
     <section className="bg-neutral-50">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <SectionHeading title="Hỏi đáp" actionLabel="Xem tất cả" actionTo="/hoi-dap/cau-hoi-thuong-gap" />
+        <SectionHeading
+          title="Hỏi đáp"
+          actionLabel="Xem tất cả"
+          actionTo="/hoi-dap/cau-hoi-thuong-gap"
+        />
 
         <div className="mx-auto mt-8 max-w-3xl divide-y divide-neutral-200 overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-sm">
           {items.map((item) => (

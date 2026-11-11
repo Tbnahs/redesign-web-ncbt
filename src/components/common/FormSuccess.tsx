@@ -1,4 +1,4 @@
-import { CircleCheck } from 'lucide-react';
+import { CircleCheck } from "lucide-react";
 
 interface FormSuccessProps {
   title: string;
@@ -9,7 +9,10 @@ interface FormSuccessProps {
 
 export function FormSuccess({ title, message, actionLabel, onReset }: FormSuccessProps) {
   return (
-    <div role="status" className="flex flex-col items-center gap-4 rounded-xl bg-success-50 p-8 text-center">
+    <div
+      role="status"
+      className="flex flex-col items-center gap-4 rounded-xl bg-success-50 p-8 text-center"
+    >
       <span className="flex h-14 w-14 items-center justify-center rounded-full bg-success-100 text-success-600">
         <CircleCheck className="h-7 w-7" aria-hidden="true" />
       </span>

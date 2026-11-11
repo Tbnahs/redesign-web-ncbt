@@ -47,7 +47,9 @@ export function searchSite(query: string): SiteSearchGroup[] {
   if (!keyword) return [];
 
   const news: SiteSearchResult[] = allArticles
-    .filter((article) => matches(keyword, article.title, article.summary, article.content.replace(/<[^>]*>/g, " ")))
+    .filter((article) =>
+      matches(keyword, article.title, article.summary, article.content.replace(/<[^>]*>/g, " ")),
+    )
     .map((article) => ({
       id: article.id,
       slug: article.slug,

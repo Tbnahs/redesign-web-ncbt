@@ -1,8 +1,8 @@
-import type { ReactNode } from 'react';
-import { Breadcrumbs } from '@/components/common/Breadcrumbs';
-import { SideMenu } from '@/components/common/SideMenu';
-import { SupportCard } from '@/components/common/SupportCard';
-import { findParentNavItem } from '@/config/navigation';
+import type { ReactNode } from "react";
+import { Breadcrumbs } from "@/components/common/Breadcrumbs";
+import { SideMenu } from "@/components/common/SideMenu";
+import { SupportCard } from "@/components/common/SupportCard";
+import { findParentNavItem } from "@/config/navigation";
 
 interface SectionLayoutProps {
   path: string;
@@ -17,7 +17,7 @@ export function SectionLayout({ path, title, children }: SectionLayoutProps) {
     <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
       <Breadcrumbs
         items={[
-          { label: 'Trang chủ', to: '/' },
+          { label: "Trang chủ", to: "/" },
           ...(parent ? [{ label: parent.label, to: parent.path }] : []),
           { label: title },
         ]}

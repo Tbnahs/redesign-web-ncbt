@@ -15,6 +15,8 @@ import media13 from "@/assets/news-media/13.asset.json";
 import media14 from "@/assets/news-media/14.asset.json";
 import media15 from "@/assets/news-media/15.asset.json";
 
+export const fallbackImage = "/images/news-placeholder.svg";
+
 const imageUrls: Record<string, string> = {
   "/__l5e/assets-v1/a4136a03-8696-444a-818b-b15ac9929871/nbc-photo-00.jpg": media0.url,
   "/__l5e/assets-v1/e3220da2-fb8d-47b7-84ae-9092c1270817/nbc-photo-01.jpg": media1.url,
@@ -34,6 +36,7 @@ const imageUrls: Record<string, string> = {
   "/__l5e/assets-v1/c60f4f2d-9ab7-4e03-948f-9ca7a58b544d/nbc-photo-15.jpg": media15.url,
 };
 
-export function mediaUrl(url: string): string {
-  return imageUrls[url] ?? url;
+export function mediaUrl(url: string | null | undefined): string {
+  if (!url) return fallbackImage;
+  return imageUrls[url] ?? fallbackImage;
 }

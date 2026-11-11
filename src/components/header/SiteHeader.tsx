@@ -1,8 +1,8 @@
-import { useCallback, useEffect, useState } from 'react';
-import { useLocation } from '@tanstack/react-router';
-import { MainNav } from '@/components/header/MainNav';
-import { MegaMenu } from '@/components/header/MegaMenu';
-import { TopBar } from '@/components/header/TopBar';
+import { useCallback, useEffect, useState } from "react";
+import { useLocation } from "@tanstack/react-router";
+import { MainNav } from "@/components/header/MainNav";
+import { MegaMenu } from "@/components/header/MegaMenu";
+import { TopBar } from "@/components/header/TopBar";
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);

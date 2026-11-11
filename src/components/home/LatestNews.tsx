@@ -1,9 +1,10 @@
-import { Link } from '@tanstack/react-router';
-import { Calendar } from 'lucide-react';
-import { SectionHeading } from '@/components/common/SectionHeading';
-import { formatDate } from '@/utils/date';
-import { featuredArticle, allArticles } from '@/data/newsRepository';
-import type { NewsArticle } from '@/types/content';
+import { Link } from "@tanstack/react-router";
+import { Calendar } from "lucide-react";
+import { SafeImage } from "@/components/common/SafeImage";
+import { SectionHeading } from "@/components/common/SectionHeading";
+import { formatDate } from "@/utils/date";
+import { featuredArticle, allArticles } from "@/data/newsRepository";
+import type { NewsArticle } from "@/types/content";
 
 function FeaturedArticle({ article }: { article: NewsArticle }) {
   return (
@@ -12,7 +13,7 @@ function FeaturedArticle({ article }: { article: NewsArticle }) {
       params={{ slug: article.slug }}
       className="group relative block h-full min-h-[320px] overflow-hidden rounded-xl bg-navy-900 shadow-md sm:min-h-[420px]"
     >
-      <img
+      <SafeImage
         src={article.thumbnail}
         alt=""
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -26,7 +27,9 @@ function FeaturedArticle({ article }: { article: NewsArticle }) {
         <h3 className="text-xl font-bold leading-snug text-white transition-colors duration-200 group-hover:text-primary-200 sm:text-3xl">
           {article.title}
         </h3>
-        <p className="line-clamp-2 text-sm leading-relaxed text-white/85 sm:text-base">{article.summary}</p>
+        <p className="line-clamp-2 text-sm leading-relaxed text-white/85 sm:text-base">
+          {article.summary}
+        </p>
       </div>
     </Link>
   );
@@ -39,7 +42,7 @@ function CompactArticle({ article }: { article: NewsArticle }) {
       params={{ slug: article.slug }}
       className="group flex items-center gap-4 rounded-xl border border-neutral-200 bg-white p-3 transition-all duration-200 hover:border-primary-200 hover:shadow-md"
     >
-      <img
+      <SafeImage
         src={article.thumbnail}
         alt=""
         className="h-24 w-28 shrink-0 rounded-lg object-cover sm:w-36"
@@ -66,9 +69,12 @@ export function LatestNews() {
           <FeaturedArticle article={featuredArticle} />
         </div>
         <div className="flex flex-col gap-4 lg:col-span-2">
-          {allArticles.filter((article) => article.id !== featuredArticle.id).slice(0, 5).map((article) => (
-            <CompactArticle key={article.id} article={article} />
-          ))}
+          {allArticles
+            .filter((article) => article.id !== featuredArticle.id)
+            .slice(0, 5)
+            .map((article) => (
+              <CompactArticle key={article.id} article={article} />
+            ))}
         </div>
       </div>
     </section>

@@ -1,19 +1,24 @@
-import { useEffect, useMemo, useState } from 'react';
-import { Link, useLocation } from '@tanstack/react-router';
-import { Calendar, Tag } from 'lucide-react';
-import { Pagination } from '@/components/common/Pagination';
-import { getCategoryLabel, newsCategories } from '@/config/navigation';
-import { allArticles } from '@/data/newsRepository';
-import { formatDate } from '@/utils/date';
-import type { NewsArticle } from '@/types/content';
+import { useEffect, useMemo, useState } from "react";
+import { Link, useLocation } from "@tanstack/react-router";
+import { Calendar, Tag } from "lucide-react";
+import { SafeImage } from "@/components/common/SafeImage";
+import { Pagination } from "@/components/common/Pagination";
+import { getCategoryLabel, newsCategories } from "@/config/navigation";
+import { allArticles } from "@/data/newsRepository";
+import { formatDate } from "@/utils/date";
+import type { NewsArticle } from "@/types/content";
 
 const ITEMS_PER_PAGE = 6;
 
 function NewsCard({ article }: { article: NewsArticle }) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-xl border border-neutral-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-primary-200 hover:shadow-lg">
-      <Link to="/tin-tuc/$slug" params={{ slug: article.slug }} className="relative block aspect-[16/9] overflow-hidden">
-        <img
+      <Link
+        to="/tin-tuc/$slug"
+        params={{ slug: article.slug }}
+        className="relative block aspect-[16/9] overflow-hidden"
+      >
+        <SafeImage
           src={article.thumbnail}
           alt={article.title}
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -28,9 +33,13 @@ function NewsCard({ article }: { article: NewsArticle }) {
           {formatDate(article.date)}
         </p>
         <h3 className="text-lg font-bold leading-snug text-navy-900 transition-colors duration-200 group-hover:text-primary-600">
-          <Link to="/tin-tuc/$slug" params={{ slug: article.slug }}>{article.title}</Link>
+          <Link to="/tin-tuc/$slug" params={{ slug: article.slug }}>
+            {article.title}
+          </Link>
         </h3>
-        <p className="line-clamp-3 flex-1 text-sm leading-relaxed text-neutral-600">{article.summary}</p>
+        <p className="line-clamp-3 flex-1 text-sm leading-relaxed text-neutral-600">
+          {article.summary}
+        </p>
         <Link
           to="/tin-tuc/$slug"
           params={{ slug: article.slug }}
@@ -56,8 +65,8 @@ function CategoryFilter({ active, onChange }: CategoryFilterProps) {
         onClick={() => onChange(null)}
         className={`rounded-full px-4 py-2 text-sm font-bold transition-colors duration-200 ${
           active === null
-            ? 'bg-primary-500 text-white shadow-sm'
-            : 'bg-white text-neutral-700 hover:bg-primary-50 hover:text-primary-600'
+            ? "bg-primary-500 text-white shadow-sm"
+            : "bg-white text-neutral-700 hover:bg-primary-50 hover:text-primary-600"
         }`}
       >
         Tất cả
@@ -69,8 +78,8 @@ function CategoryFilter({ active, onChange }: CategoryFilterProps) {
           onClick={() => onChange(cat.slug)}
           className={`flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-bold transition-colors duration-200 ${
             active === cat.slug
-              ? 'bg-primary-500 text-white shadow-sm'
-              : 'bg-white text-neutral-700 hover:bg-primary-50 hover:text-primary-600'
+              ? "bg-primary-500 text-white shadow-sm"
+              : "bg-white text-neutral-700 hover:bg-primary-50 hover:text-primary-600"
           }`}
         >
           <Tag className="h-3.5 w-3.5" aria-hidden="true" />
@@ -87,7 +96,7 @@ interface NewsListPageProps {
   initialQuery?: string | undefined;
 }
 
-export function NewsListPage({ title, fixedCategory, initialQuery = '' }: NewsListPageProps) {
+export function NewsListPage({ title, fixedCategory, initialQuery = "" }: NewsListPageProps) {
   const location = useLocation();
   const [query, setQuery] = useState(initialQuery);
   const [activeCategory, setActiveCategory] = useState<string | null>(fixedCategory ?? null);
@@ -105,14 +114,21 @@ export function NewsListPage({ title, fixedCategory, initialQuery = '' }: NewsLi
       : activeCategory
         ? allArticles.filter((a) => a.category === activeCategory)
         : allArticles;
-    const keyword = query.trim().toLocaleLowerCase('vi');
+    const keyword = query.trim().toLocaleLowerCase("vi");
     return [...base]
-      .filter((article) => !keyword || `${article.title} ${article.summary}`.toLocaleLowerCase('vi').includes(keyword))
+      .filter(
+        (article) =>
+          !keyword ||
+          `${article.title} ${article.summary}`.toLocaleLowerCase("vi").includes(keyword),
+      )
       .sort((a, b) => b.date.localeCompare(a.date));
   }, [activeCategory, fixedCategory, query]);
 
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
-  const pageItems = filtered.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
+  const pageItems = filtered.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE,
+  );
 
   const handleCategoryChange = (category: string | null) => {
     setActiveCategory(category);
@@ -121,15 +137,19 @@ export function NewsListPage({ title, fixedCategory, initialQuery = '' }: NewsLi
 
   const handlePageChange = (page: number) => {
     setCurrentPage(Math.max(1, Math.min(page, totalPages)));
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
       <div className="mb-6 flex items-center gap-2 text-sm text-neutral-500">
-        <Link to="/" className="hover:text-primary-600">Trang chủ</Link>
+        <Link to="/" className="hover:text-primary-600">
+          Trang chủ
+        </Link>
         <span aria-hidden="true">/</span>
-        <Link to="/tin-tuc" className="hover:text-primary-600">Tin tức</Link>
+        <Link to="/tin-tuc" className="hover:text-primary-600">
+          Tin tức
+        </Link>
         {fixedCategory && (
           <>
             <span aria-hidden="true">/</span>
@@ -138,7 +158,9 @@ export function NewsListPage({ title, fixedCategory, initialQuery = '' }: NewsLi
         )}
       </div>
 
-      <h1 className="border-l-4 border-primary-500 pl-4 text-2xl font-bold text-navy-900 sm:text-3xl">{title}</h1>
+      <h1 className="border-l-4 border-primary-500 pl-4 text-2xl font-bold text-navy-900 sm:text-3xl">
+        {title}
+      </h1>
 
       {!fixedCategory && (
         <div className="mt-6">
@@ -159,7 +181,15 @@ export function NewsListPage({ title, fixedCategory, initialQuery = '' }: NewsLi
           placeholder="Tìm theo tiêu đề hoặc nội dung"
           className="min-w-0 flex-1 bg-transparent text-sm text-neutral-800 placeholder:text-neutral-400 focus:outline-none"
         />
-        {query && <button type="button" onClick={() => setQuery('')} className="text-sm font-bold text-primary-600">Xóa</button>}
+        {query && (
+          <button
+            type="button"
+            onClick={() => setQuery("")}
+            className="text-sm font-bold text-primary-600"
+          >
+            Xóa
+          </button>
+        )}
       </label>
 
       {pageItems.length > 0 ? (
@@ -184,7 +214,11 @@ export function NewsListPage({ title, fixedCategory, initialQuery = '' }: NewsLi
         </div>
       )}
 
-      <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
     </section>
   );
 }

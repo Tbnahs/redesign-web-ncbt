@@ -1,9 +1,9 @@
-import { useState, type FormEvent } from 'react';
-import { SectionLayout } from '@/components/common/SectionLayout';
-import { FormField, inputClass } from '@/components/common/FormField';
-import { FormSuccess } from '@/components/common/FormSuccess';
-import { qaTopics } from '@/data/qaRepository';
-import { isBlank, validatePersonalFields, type PersonalFieldErrors } from '@/utils/validation';
+import { useState, type FormEvent } from "react";
+import { SectionLayout } from "@/components/common/SectionLayout";
+import { FormField, inputClass } from "@/components/common/FormField";
+import { FormSuccess } from "@/components/common/FormSuccess";
+import { qaTopics } from "@/data/qaRepository";
+import { isBlank, validatePersonalFields, type PersonalFieldErrors } from "@/utils/validation";
 
 interface QuestionFormValues {
   fullName: string;
@@ -21,12 +21,12 @@ type FieldErrors = PersonalFieldErrors & {
 };
 
 const initialForm: QuestionFormValues = {
-  fullName: '',
-  email: '',
-  phone: '',
-  topic: '',
-  title: '',
-  content: '',
+  fullName: "",
+  email: "",
+  phone: "",
+  topic: "",
+  title: "",
+  content: "",
 };
 
 export function CreateQuestionPage() {
@@ -34,7 +34,10 @@ export function CreateQuestionPage() {
   const [errors, setErrors] = useState<FieldErrors>({});
   const [submitted, setSubmitted] = useState(false);
 
-  const updateField = <K extends keyof QuestionFormValues>(key: K, value: QuestionFormValues[K]) => {
+  const updateField = <K extends keyof QuestionFormValues>(
+    key: K,
+    value: QuestionFormValues[K],
+  ) => {
     setForm((prev) => ({ ...prev, [key]: value }));
     if (errors[key]) setErrors((prev) => ({ ...prev, [key]: undefined }));
   };
@@ -47,16 +50,16 @@ export function CreateQuestionPage() {
     });
     const next: FieldErrors = { ...personal };
 
-    if (isBlank(form.topic)) next.topic = 'Vui lòng chọn chủ đề';
+    if (isBlank(form.topic)) next.topic = "Vui lòng chọn chủ đề";
     if (isBlank(form.title)) {
-      next.title = 'Vui lòng nhập tiêu đề câu hỏi';
+      next.title = "Vui lòng nhập tiêu đề câu hỏi";
     } else if (form.title.trim().length < 5) {
-      next.title = 'Tiêu đề cần ít nhất 5 ký tự';
+      next.title = "Tiêu đề cần ít nhất 5 ký tự";
     }
     if (isBlank(form.content)) {
-      next.content = 'Vui lòng nhập nội dung câu hỏi';
+      next.content = "Vui lòng nhập nội dung câu hỏi";
     } else if (form.content.trim().length < 10) {
-      next.content = 'Nội dung cần ít nhất 10 ký tự';
+      next.content = "Nội dung cần ít nhất 10 ký tự";
     }
 
     return next;
@@ -107,7 +110,7 @@ export function CreateQuestionPage() {
                 id="fullName"
                 type="text"
                 value={form.fullName}
-                onChange={(e) => updateField('fullName', e.target.value)}
+                onChange={(e) => updateField("fullName", e.target.value)}
                 placeholder="Nguyễn Văn A"
                 className={inputClass}
                 aria-invalid={Boolean(errors.fullName)}
@@ -118,7 +121,7 @@ export function CreateQuestionPage() {
                 id="phone"
                 type="tel"
                 value={form.phone}
-                onChange={(e) => updateField('phone', e.target.value)}
+                onChange={(e) => updateField("phone", e.target.value)}
                 placeholder="0912 345 678"
                 className={inputClass}
                 aria-invalid={Boolean(errors.phone)}
@@ -131,7 +134,7 @@ export function CreateQuestionPage() {
               id="email"
               type="email"
               value={form.email}
-              onChange={(e) => updateField('email', e.target.value)}
+              onChange={(e) => updateField("email", e.target.value)}
               placeholder="ten@gmail.com"
               className={inputClass}
               aria-invalid={Boolean(errors.email)}
@@ -142,7 +145,7 @@ export function CreateQuestionPage() {
             <select
               id="topic"
               value={form.topic}
-              onChange={(e) => updateField('topic', e.target.value)}
+              onChange={(e) => updateField("topic", e.target.value)}
               className={inputClass}
               aria-invalid={Boolean(errors.topic)}
             >
@@ -160,7 +163,7 @@ export function CreateQuestionPage() {
               id="title"
               type="text"
               value={form.title}
-              onChange={(e) => updateField('title', e.target.value)}
+              onChange={(e) => updateField("title", e.target.value)}
               placeholder="Nhập tiêu đề ngắn gọn cho câu hỏi"
               className={inputClass}
               aria-invalid={Boolean(errors.title)}
@@ -172,7 +175,7 @@ export function CreateQuestionPage() {
               id="content"
               rows={5}
               value={form.content}
-              onChange={(e) => updateField('content', e.target.value)}
+              onChange={(e) => updateField("content", e.target.value)}
               placeholder="Mô tả chi tiết câu hỏi của bạn"
               className={`${inputClass} resize-y`}
               aria-invalid={Boolean(errors.content)}

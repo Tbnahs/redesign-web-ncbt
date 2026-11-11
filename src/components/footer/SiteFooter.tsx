@@ -1,6 +1,6 @@
-import { ArrowUp, Mail, MapPin, Phone } from 'lucide-react';
-import { BrandLogo } from '@/components/common/BrandLogo';
-import { brand } from '@/config/brand';
+import { ArrowUp, Mail, MapPin, Phone } from "lucide-react";
+import { BrandLogo } from "@/components/common/BrandLogo";
+import { brand } from "@/config/brand";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -26,7 +26,11 @@ export function SiteFooter() {
               <Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary-300" aria-hidden="true" />
               <span className="flex flex-col">
                 {brand.hotlines.map((hotline) => (
-                  <a key={hotline} href={`tel:${hotline.replace(/\s/g, '')}`} className="text-white hover:text-primary-300">
+                  <a
+                    key={hotline}
+                    href={`tel:${hotline.replace(/\s/g, "")}`}
+                    className="text-white hover:text-primary-300"
+                  >
                     {hotline}
                   </a>
                 ))}
@@ -43,7 +47,9 @@ export function SiteFooter() {
 
         <div className="space-y-4">
           <h3 className="text-sm font-bold uppercase tracking-wide text-white">Kết nối</h3>
-          <p className="text-sm text-navy-200">Chưa có liên kết mạng xã hội trong thông tin được cung cấp.</p>
+          <p className="text-sm text-navy-200">
+            Chưa có liên kết mạng xã hội trong thông tin được cung cấp.
+          </p>
         </div>
       </div>
 
@@ -54,7 +60,7 @@ export function SiteFooter() {
           </p>
           <button
             type="button"
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="inline-flex items-center gap-2 rounded-md border border-white/20 px-4 py-2 font-medium text-white transition-colors duration-200 hover:border-primary-400 hover:bg-primary-500"
           >
             <ArrowUp className="h-4 w-4" aria-hidden="true" />

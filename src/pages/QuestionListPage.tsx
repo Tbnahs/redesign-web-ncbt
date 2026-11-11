@@ -1,17 +1,17 @@
-import { useMemo, useState } from 'react';
-import { Search } from 'lucide-react';
-import { AccordionItem } from '@/components/common/AccordionItem';
-import { Pagination } from '@/components/common/Pagination';
-import { SectionLayout } from '@/components/common/SectionLayout';
-import { getTopicLabel, qaTopics, questionItems } from '@/data/qaRepository';
-import { formatDate } from '@/utils/date';
-import type { QuestionItem, QuestionStatus } from '@/types/content';
+import { useMemo, useState } from "react";
+import { Search } from "lucide-react";
+import { AccordionItem } from "@/components/common/AccordionItem";
+import { Pagination } from "@/components/common/Pagination";
+import { SectionLayout } from "@/components/common/SectionLayout";
+import { getTopicLabel, qaTopics, questionItems } from "@/data/qaRepository";
+import { formatDate } from "@/utils/date";
+import type { QuestionItem, QuestionStatus } from "@/types/content";
 
 const ITEMS_PER_PAGE = 5;
 
 const statusStyles: Record<QuestionStatus, { label: string; className: string }> = {
-  answered: { label: 'Đã trả lời', className: 'bg-success-100 text-success-800' },
-  pending: { label: 'Chờ trả lời', className: 'bg-warning-100 text-warning-800' },
+  answered: { label: "Đã trả lời", className: "bg-success-100 text-success-800" },
+  pending: { label: "Chờ trả lời", className: "bg-warning-100 text-warning-800" },
 };
 
 function QuestionHeader({ question }: { question: QuestionItem }) {
@@ -24,7 +24,9 @@ function QuestionHeader({ question }: { question: QuestionItem }) {
           {getTopicLabel(question.topic)}
         </span>
         <span>{formatDate(question.askedAt)}</span>
-        <span className={`rounded-full px-2.5 py-0.5 font-bold ${status.className}`}>{status.label}</span>
+        <span className={`rounded-full px-2.5 py-0.5 font-bold ${status.className}`}>
+          {status.label}
+        </span>
       </span>
     </span>
   );
@@ -46,8 +48,8 @@ function QuestionDetail({ question }: { question: QuestionItem }) {
 }
 
 export function QuestionListPage() {
-  const [query, setQuery] = useState('');
-  const [topic, setTopic] = useState<string>('all');
+  const [query, setQuery] = useState("");
+  const [topic, setTopic] = useState<string>("all");
   const [currentPage, setCurrentPage] = useState(1);
   const [openId, setOpenId] = useState<string | null>(null);
 
@@ -55,8 +57,10 @@ export function QuestionListPage() {
     const keyword = query.trim().toLowerCase();
     return questionItems.filter(
       (item) =>
-        (topic === 'all' || item.topic === topic) &&
-        (keyword === '' || item.title.toLowerCase().includes(keyword) || item.content.toLowerCase().includes(keyword)),
+        (topic === "all" || item.topic === topic) &&
+        (keyword === "" ||
+          item.title.toLowerCase().includes(keyword) ||
+          item.content.toLowerCase().includes(keyword)),
     );
   }, [query, topic]);
 
@@ -87,7 +91,9 @@ export function QuestionListPage() {
         <h1 className="border-l-4 border-primary-500 pl-4 text-2xl font-bold text-navy-900 sm:text-3xl">
           Danh sách câu hỏi
         </h1>
-        <p className="text-neutral-600">Xem các câu hỏi của người dùng và câu trả lời từ Trung tâm.</p>
+        <p className="text-neutral-600">
+          Xem các câu hỏi của người dùng và câu trả lời từ Trung tâm.
+        </p>
       </header>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-[1fr_220px]">

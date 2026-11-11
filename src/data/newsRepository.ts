@@ -1,10 +1,13 @@
-import news from '@/data/news.json';
-import type { NewsArticle, NewsData } from '@/types/content';
-import { mediaUrl } from '@/data/media';
+import news from "@/data/news.json";
+import type { NewsArticle, NewsData } from "@/types/content";
+import { mediaUrl } from "@/data/media";
 
 const newsData: NewsData = news;
 
-export const featuredArticle: NewsArticle = { ...newsData.featured, thumbnail: mediaUrl(newsData.featured.thumbnail) };
+export const featuredArticle: NewsArticle = {
+  ...newsData.featured,
+  thumbnail: mediaUrl(newsData.featured.thumbnail),
+};
 export const allArticles: NewsArticle[] = [...newsData.items, newsData.featured].map((article) => ({
   ...article,
   thumbnail: mediaUrl(article.thumbnail),
@@ -19,9 +22,7 @@ export function getArticlesByCategory(category: string): NewsArticle[] {
 }
 
 export function getRecentArticles(limit = 5): NewsArticle[] {
-  return [...allArticles]
-    .sort((a, b) => b.date.localeCompare(a.date))
-    .slice(0, limit);
+  return [...allArticles].sort((a, b) => b.date.localeCompare(a.date)).slice(0, limit);
 }
 
 export function getRelatedArticles(currentSlug: string, limit = 4): NewsArticle[] {

@@ -1,10 +1,10 @@
-import { useMemo, useState } from 'react';
-import { Link } from '@tanstack/react-router';
-import { ArrowRight, BookOpen, GraduationCap, Layers } from 'lucide-react';
-import { Breadcrumbs } from '@/components/common/Breadcrumbs';
-import courses from '@/data/elearning.json';
+import { useMemo, useState } from "react";
+import { Link } from "@tanstack/react-router";
+import { ArrowRight, BookOpen, GraduationCap, Layers } from "lucide-react";
+import { Breadcrumbs } from "@/components/common/Breadcrumbs";
+import courses from "@/data/elearning.json";
 
-type Level = 'co-ban' | 'chuyen-sau' | 'nang-cao' | 'theo-yeu-cau';
+type Level = "co-ban" | "chuyen-sau" | "nang-cao" | "theo-yeu-cau";
 
 interface Course {
   id: string;
@@ -17,41 +17,41 @@ interface Course {
 const courseList: Course[] = courses as Course[];
 
 const levelLabels: Record<Level, string> = {
-  'co-ban': 'Cơ bản',
-  'chuyen-sau': 'Chuyên sâu',
-  'nang-cao': 'Nâng cao',
-  'theo-yeu-cau': 'Theo yêu cầu',
+  "co-ban": "Cơ bản",
+  "chuyen-sau": "Chuyên sâu",
+  "nang-cao": "Nâng cao",
+  "theo-yeu-cau": "Theo yêu cầu",
 };
 
 const levelBadgeStyles: Record<Level, string> = {
-  'co-ban': 'bg-primary-50 text-primary-700',
-  'chuyen-sau': 'bg-secondary-100 text-secondary-800',
-  'nang-cao': 'bg-accent-100 text-accent-800',
-  'theo-yeu-cau': 'bg-navy-100 text-navy-800',
+  "co-ban": "bg-primary-50 text-primary-700",
+  "chuyen-sau": "bg-secondary-100 text-secondary-800",
+  "nang-cao": "bg-accent-100 text-accent-800",
+  "theo-yeu-cau": "bg-navy-100 text-navy-800",
 };
 
-const groupOrder: Level[] = ['co-ban', 'chuyen-sau', 'nang-cao', 'theo-yeu-cau'];
+const groupOrder: Level[] = ["co-ban", "chuyen-sau", "nang-cao", "theo-yeu-cau"];
 
 const groupIcons: Record<Level, typeof BookOpen> = {
-  'co-ban': BookOpen,
-  'chuyen-sau': Layers,
-  'nang-cao': GraduationCap,
-  'theo-yeu-cau': GraduationCap,
+  "co-ban": BookOpen,
+  "chuyen-sau": Layers,
+  "nang-cao": GraduationCap,
+  "theo-yeu-cau": GraduationCap,
 };
 
-const tabs: { value: Level | 'all'; label: string }[] = [
-  { value: 'all', label: 'Tất cả' },
-  { value: 'co-ban', label: 'Cơ bản' },
-  { value: 'chuyen-sau', label: 'Chuyên sâu' },
-  { value: 'nang-cao', label: 'Nâng cao' },
-  { value: 'theo-yeu-cau', label: 'Theo yêu cầu' },
+const tabs: { value: Level | "all"; label: string }[] = [
+  { value: "all", label: "Tất cả" },
+  { value: "co-ban", label: "Cơ bản" },
+  { value: "chuyen-sau", label: "Chuyên sâu" },
+  { value: "nang-cao", label: "Nâng cao" },
+  { value: "theo-yeu-cau", label: "Theo yêu cầu" },
 ];
 
 function CourseCard({ course }: { course: Course }) {
   return (
     <article className="group relative flex flex-col gap-3 overflow-hidden rounded-xl border border-neutral-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary-200 hover:shadow-lg">
       <span className="absolute right-4 top-2 text-5xl font-bold leading-none text-primary-100 transition-colors duration-300 group-hover:text-primary-200">
-        {String(course.order).padStart(2, '0')}
+        {String(course.order).padStart(2, "0")}
       </span>
       <div className="relative space-y-2">
         <h3 className="text-lg font-bold leading-snug text-navy-900 transition-colors duration-200 group-hover:text-primary-600">
@@ -78,10 +78,14 @@ function RequestedCourseCard({ course }: { course: Course }) {
         <div className="space-y-2">
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-5xl font-bold leading-none text-primary-200">
-              {String(course.order).padStart(2, '0')}
+              {String(course.order).padStart(2, "0")}
             </span>
-            <h3 className="text-lg font-bold leading-snug text-navy-900 sm:text-xl">{course.title}</h3>
-            <span className={`inline-block rounded-full px-3 py-1 text-xs font-bold ${levelBadgeStyles[course.level]}`}>
+            <h3 className="text-lg font-bold leading-snug text-navy-900 sm:text-xl">
+              {course.title}
+            </h3>
+            <span
+              className={`inline-block rounded-full px-3 py-1 text-xs font-bold ${levelBadgeStyles[course.level]}`}
+            >
               {levelLabels[course.level]}
             </span>
           </div>
@@ -93,18 +97,21 @@ function RequestedCourseCard({ course }: { course: Course }) {
         className="group/btn inline-flex shrink-0 items-center gap-2 rounded-md bg-primary-500 px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-colors duration-200 hover:bg-primary-600"
       >
         Liên hệ tư vấn
-        <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover/btn:translate-x-1" aria-hidden="true" />
+        <ArrowRight
+          className="h-4 w-4 transition-transform duration-200 group-hover/btn:translate-x-1"
+          aria-hidden="true"
+        />
       </Link>
     </article>
   );
 }
 
 export function ElearningPage() {
-  const [activeTab, setActiveTab] = useState<Level | 'all'>('all');
+  const [activeTab, setActiveTab] = useState<Level | "all">("all");
 
   const visibleGroups = useMemo(() => {
     return groupOrder
-      .filter((level) => activeTab === 'all' || activeTab === level)
+      .filter((level) => activeTab === "all" || activeTab === level)
       .map((level) => ({
         level,
         courses: courseList.filter((course) => course.level === level),
@@ -114,7 +121,7 @@ export function ElearningPage() {
 
   return (
     <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-      <Breadcrumbs items={[{ label: 'Trang chủ', to: '/' }, { label: 'E-learning' }]} />
+      <Breadcrumbs items={[{ label: "Trang chủ", to: "/" }, { label: "E-learning" }]} />
 
       <header className="mt-8 space-y-6">
         <div className="space-y-3">
@@ -151,8 +158,8 @@ export function ElearningPage() {
                 onClick={() => setActiveTab(tab.value)}
                 className={`rounded-full px-5 py-2.5 text-sm font-bold transition-all duration-200 ${
                   isActive
-                    ? 'bg-primary-500 text-white shadow-sm'
-                    : 'bg-white text-neutral-700 border border-neutral-300 hover:border-primary-300 hover:text-primary-600'
+                    ? "bg-primary-500 text-white shadow-sm"
+                    : "bg-white text-neutral-700 border border-neutral-300 hover:border-primary-300 hover:text-primary-600"
                 }`}
               >
                 {tab.label}
@@ -165,8 +172,10 @@ export function ElearningPage() {
       <div className="mt-10 space-y-12">
         {visibleGroups.map((group) => {
           const GroupIcon = groupIcons[group.level];
-          const requestedCourses = group.courses.filter((course) => course.level === 'theo-yeu-cau');
-          const regularCourses = group.courses.filter((course) => course.level !== 'theo-yeu-cau');
+          const requestedCourses = group.courses.filter(
+            (course) => course.level === "theo-yeu-cau",
+          );
+          const regularCourses = group.courses.filter((course) => course.level !== "theo-yeu-cau");
 
           return (
             <div key={group.level} className="animate-fade-in space-y-6">

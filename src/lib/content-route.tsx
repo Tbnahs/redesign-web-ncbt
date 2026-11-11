@@ -13,7 +13,9 @@ export function getContentPage(path: string) {
 export function contentHead(path: string) {
   const page = getContentPage(path);
   return siteHead({
-    title: page ? `${page.title} | Trung tâm Mã số, Mã vạch Quốc gia` : "Thông tin | Trung tâm Mã số, Mã vạch Quốc gia",
+    title: page
+      ? `${page.title} | Trung tâm Mã số, Mã vạch Quốc gia`
+      : "Thông tin | Trung tâm Mã số, Mã vạch Quốc gia",
     description: page?.summary ?? "Thông tin về hoạt động của Trung tâm Mã số, Mã vạch Quốc gia.",
   });
 }

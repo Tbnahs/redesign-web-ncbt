@@ -1,5 +1,5 @@
-import type { ReactNode } from 'react';
-import { ChevronDown, Plus } from 'lucide-react';
+import type { ReactNode } from "react";
+import { ChevronDown, Plus } from "lucide-react";
 
 interface AccordionItemProps {
   id: string;
@@ -21,10 +21,12 @@ export function AccordionItem({ id, question, answer, isOpen, onToggle }: Accord
           aria-controls={panelId}
           className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left transition-colors duration-200 hover:bg-primary-50/60"
         >
-          <span className={`font-bold ${isOpen ? 'text-primary-600' : 'text-navy-900'}`}>{question}</span>
+          <span className={`font-bold ${isOpen ? "text-primary-600" : "text-navy-900"}`}>
+            {question}
+          </span>
           <span
             className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${
-              isOpen ? 'rotate-180 bg-primary-500 text-white' : 'bg-neutral-100 text-neutral-600'
+              isOpen ? "rotate-180 bg-primary-500 text-white" : "bg-neutral-100 text-neutral-600"
             }`}
             aria-hidden="true"
           >
@@ -36,7 +38,7 @@ export function AccordionItem({ id, question, answer, isOpen, onToggle }: Accord
         id={panelId}
         role="region"
         className={`grid transition-[grid-template-rows] duration-300 ease-out ${
-          isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+          isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         }`}
       >
         <div className="overflow-hidden">

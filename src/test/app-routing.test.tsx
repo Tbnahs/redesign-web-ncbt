@@ -2,11 +2,18 @@ import { QueryClient } from "@tanstack/react-query";
 import { createRouter, rootRouteId } from "@tanstack/react-router";
 import { describe, expect, it } from "vitest";
 
+import { mediaUrl } from "@/data/media";
 import { routeTree } from "@/routeTree.gen";
 
 // Match routes without running loaders or rendering: loaders may need a server or
 // network the test run lacks, and jsdom never loads the stylesheets React waits on.
 describe("App routing", () => {
+  it("uses a local fallback image when a source media URL is missing", () => {
+    expect(mediaUrl("/__l5e/assets-v1/not-found/placeholder.jpg")).toBe(
+      "/images/news-placeholder.svg",
+    );
+  });
+
   it("matches a page for / instead of falling back to not found", () => {
     const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
 

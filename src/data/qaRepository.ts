@@ -1,7 +1,7 @@
-import activities from '@/data/activities.json';
-import faqs from '@/data/faqs.json';
-import questions from '@/data/questions.json';
-import type { ActivityItem, FaqItem, QuestionItem } from '@/types/content';
+import activities from "@/data/activities.json";
+import faqs from "@/data/faqs.json";
+import questions from "@/data/questions.json";
+import type { ActivityItem, FaqItem, QuestionItem } from "@/types/content";
 
 export interface QaTopic {
   slug: string;

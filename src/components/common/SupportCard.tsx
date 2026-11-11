@@ -1,5 +1,5 @@
-import { Phone } from 'lucide-react';
-import { brand } from '@/config/brand';
+import { Phone } from "lucide-react";
+import { brand } from "@/config/brand";
 
 export function SupportCard() {
   return (
@@ -9,7 +9,7 @@ export function SupportCard() {
         Đội ngũ tư vấn của Trung tâm sẵn sàng giải đáp mọi thắc mắc của bạn.
       </p>
       <a
-        href={`tel:${brand.hotlines[0].replace(/\s/g, '')}`}
+        href={`tel:${brand.hotlines[0].replace(/\s/g, "")}`}
         className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-primary-600 hover:text-primary-700"
       >
         <Phone className="h-4 w-4" aria-hidden="true" />
