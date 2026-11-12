@@ -2,7 +2,7 @@
 
 Chạy `npm ci`, sau đó `npm run dev -- --host 127.0.0.1 --port 5173`. Mở http://127.0.0.1:5173/.
 
-Giao diện dựng theo https://nbc.gov.vn/, dùng logo NCBT do người dùng cung cấp. Màu chủ đạo theo chốt mới nhất là **cam sáng**, không phải đỏ nâu: nền menu `#f18732`, màu chọn `#ffb36b`, màu nhạt `#fff4e7`; footer nền kem sáng. Bảng màu tập trung tại `src/brand.css`. Font Roboto (400/500/700), hỗ trợ tiếng Việt; fallback Arial/sans-serif. Logo gốc giữ tại `public/branding/ncbt-logo-original.jpg`.
+Giao diện dựng theo https://nbc.gov.vn/, dùng logo NCBT do người dùng cung cấp. Màu chủ đạo theo chốt mới nhất là **cam hút trực tiếp từ logo gốc**, không phải đỏ nâu: nền menu `#CC6538`, màu chọn `#E6A384`, màu nhạt `#FFF4ED`; footer nền kem sáng. Bảng màu tập trung tại `src/brand.css`. Font Roboto (400/500/700), hỗ trợ tiếng Việt; fallback Arial/sans-serif. Logo gốc giữ tại `public/branding/ncbt-logo-original.jpg`.
 
 Nội dung: 678 bài viết công khai, lấy từ 71 trang danh mục ngày 12/11/2026. Giữ tiêu đề, ngày, tóm tắt, nội dung và ảnh gốc. 2.153 ảnh tải được, khoảng 717 MiB; đủ ảnh đại diện của 678 bài và banner. Có 38 ảnh nội dung không truy cập được ở nguồn: dùng hình SVG minh họa và chú thích rõ. Không tái tạo ảnh sự kiện như tư liệu thật.
 
