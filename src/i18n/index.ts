@@ -88,32 +88,58 @@ export function getTranslation(key: string, locale: Locale = DEFAULT_LOCALE): st
   );
 
   if (value && typeof value === "object" && "vi" in value && "en" in value) {
-    return value[locale] ?? value.vi ?? "";
+    return value[locale] ?? value["vi"] ?? "";
   }
 
   return typeof value === "string" ? value : "";
 }
 
 export function useLocale() {
-  const [locale, setLocaleState] = useState<Locale>(getStoredLocale);
-
+  const [locale, setState] = useState<Locale>(DEFAULT_LOCALE);
   useEffect(() => {
-    if (typeof document !== "undefined") {
-      document.documentElement.lang = locale;
-    }
-
+    const sync = () => {
+      const next = getStoredLocale();
+      setState(next);
+      document.documentElement.lang = next;
+    };
+    sync();
+    window.addEventListener("ncbt:locale", sync);
+    window.addEventListener("storage", sync);
+    return () => {
+      window.removeEventListener("ncbt:locale", sync);
+      window.removeEventListener("storage", sync);
+    };
+  }, []);
+  const setLocale = (next: Locale) => {
     try {
-      window.localStorage.setItem(STORAGE_KEY, locale);
-    } catch {
-      // ignore storage failures
-    }
-  }, [locale]);
-
-  const setLocale = (nextLocale: Locale) => {
-    setLocaleState(nextLocale);
+      localStorage.setItem(STORAGE_KEY, next);
+    } catch {}
+    setState(next);
+    window.dispatchEvent(new Event("ncbt:locale"));
   };
-
   const t = (key: string) => getTranslation(key, locale);
-
   return useMemo(() => ({ locale, setLocale, t }), [locale]);
+}
+const navEnglish: Record<string, string> = {
+  "Trang chủ": "Home",
+  "Giới thiệu": "About us",
+  "Giới thiệu chung": "Overview",
+  "Sơ đồ tổ chức": "Organization",
+  "Tin tức": "News",
+  "Tin tức/Sự kiện": "News / Events",
+  "Hoạt động MSMV tại địa phương": "Local GS1 activities",
+  "Hoạt động": "Activities",
+  "Mã số mã vạch": "Barcodes",
+  "Truy xuất nguồn gốc": "Traceability",
+  "Mã LEI": "LEI",
+  "Mã UDI": "UDI",
+  "Đào tạo": "Training",
+  "Hỏi đáp": "Q&A",
+  "Câu hỏi thường gặp": "Frequently asked questions",
+  "Danh sách câu hỏi": "Questions",
+  "Tạo câu hỏi": "Ask a question",
+  "Liên hệ": "Contact",
+};
+export function translateNavLabel(label: string, locale: Locale) {
+  return locale === "en" ? (navEnglish[label] ?? label) : label;
 }

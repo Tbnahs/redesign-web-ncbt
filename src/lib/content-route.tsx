@@ -1,4 +1,7 @@
 import { ContentPage } from "@/pages/ContentPage";
+import { NewsListPage } from '@/pages/NewsListPage';
+import { SourceStaticPage } from '@/pages/SourceStaticPage';
+import { getCategoryLabel } from '@/config/navigation';
 import { NotFoundPage } from "@/pages/NotFoundPage";
 import infoPageSource from "@/data/infoPages.json";
 import type { InfoPage } from "@/types/content";
@@ -21,6 +24,8 @@ export function contentHead(path: string) {
 }
 
 export function ContentRoute({ path }: { path: string }) {
+  if(path.startsWith('/gioi-thieu/'))return <SourceStaticPage path={path}/>;
+  if(path.startsWith('/hoat-dong/')){const category=path.split('/').pop()!;return <NewsListPage title={getCategoryLabel(category)} fixedCategory={category}/>;}
   const page = getContentPage(path);
   return page ? <ContentPage page={page} /> : <NotFoundPage />;
 }

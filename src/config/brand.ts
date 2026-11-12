@@ -2,8 +2,8 @@ import { Barcode } from "lucide-react";
 
 export const brand = {
   logoIcon: Barcode,
-  logoText: "Trung tâm MSMV",
-  siteName: "Trung tâm Mã số, Mã vạch Quốc gia",
+  logoText: "NCBT",
+  siteName: "Trung tâm Mã số Mã vạch Truy xuất nguồn gốc Quốc gia",
   siteSubtitle: "Cổng thông tin điện tử",
   sharesCount: "128M",
   sharesLabel: "Shares",

@@ -1,17 +1,104 @@
-import { HeroSlider } from "@/components/home/HeroSlider";
-import { LatestNews } from "@/components/home/LatestNews";
-import { StatsCounter } from "@/components/home/StatsCounter";
-import { ActivityCards } from "@/components/home/ActivityCards";
-import { FaqAccordion } from "@/components/home/FaqAccordion";
-
+import { SourceLatest, SourceCounters } from "@/components/reference/SourceMotion";
+import { Link } from "@tanstack/react-router";
+import home from "@/data/source-home.json";
+import { allArticles, getArticleBySlug, getArticlesByCategory } from "@/data/newsRepository";
+import {
+  ArticleLink,
+  SourcePhoto,
+  SourceHeading,
+  sourceCategories,
+  sourceDate,
+} from "@/components/reference/SourceNews";
+import { useLocale } from "@/i18n";
+const resolve = (slugs: string[]) =>
+  slugs.map(getArticleBySlug).filter((a): a is (typeof allArticles)[number] => !!a);
 export function HomePage() {
+  const { locale } = useLocale();
+  const vi = locale === "vi";
+  const featured = resolve(home.featuredSlugs);
+  const lead = featured[0];
   return (
     <>
-      <HeroSlider />
-      <LatestNews />
-      <StatsCounter />
-      <ActivityCards />
-      <FaqAccordion />
+      <section className="source-hero" aria-label="Giới thiệu Trung tâm">
+        <img
+          src={home.heroImages[0]}
+          alt="Trung tâm Mã số Mã vạch Quốc gia – Mã số mã vạch, truy xuất nguồn gốc và chuyển đổi số"
+          fetchPriority="high"
+        />
+      </section>
+      <div className="source-container">
+        <section className="source-featured">
+          {lead && (
+            <ArticleLink article={lead} className="source-cover">
+              <SourcePhoto article={lead} />
+              <div className="source-cover-copy">
+                <span>{vi ? "Tin tức / Sự kiện" : "News / Events"}</span>
+                <h1>{lead.title}</h1>
+              </div>
+            </ArticleLink>
+          )}
+          <div className="source-featured-list">
+            {featured.slice(1, 5).map((a) => (
+              <article key={a.slug} className="source-featured-row">
+                <ArticleLink article={a}>
+                  <SourcePhoto article={a} />
+                </ArticleLink>
+                <ArticleLink article={a} />
+              </article>
+            ))}
+          </div>
+        </section>
+        <SourceLatest />
+      </div>
+      <SourceCounters />
+      <div className="source-container source-home-sections">
+        {sourceCategories.map((c) => {
+          const section = home.sections.find((s) => s.category === c.slug);
+          const items = section
+            ? resolve(section.slugs)
+            : getArticlesByCategory(c.slug).slice(0, 5);
+          const first = items[0];
+          return (
+            <section key={c.slug}>
+              <SourceHeading title={vi ? c.title : c.en}>
+                <Link to="/tin-tuc/$slug" params={{ slug: c.slug }}>
+                  {vi ? "Xem tất cả" : "View all"} ›
+                </Link>
+              </SourceHeading>
+              {first && (
+                <div className="source-category-grid">
+                  <article className="source-category-lead">
+                    <ArticleLink article={first}>
+                      <SourcePhoto article={first} />
+                    </ArticleLink>
+                    <h3>
+                      <ArticleLink article={first} />
+                    </h3>
+                    <time>{sourceDate(first.date)}</time>
+                    <p>{first.summary}</p>
+                  </article>
+                  <div>
+                    {items.slice(1, 6).map((a) => (
+                      <article key={a.slug} className="source-category-row">
+                        <ArticleLink article={a}>
+                          <SourcePhoto article={a} />
+                        </ArticleLink>
+                        <div>
+                          <h3>
+                            <ArticleLink article={a} />
+                          </h3>
+                          <time>{sourceDate(a.date)}</time>
+                          <p>{a.summary}</p>
+                        </div>
+                      </article>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </section>
+          );
+        })}
+      </div>
     </>
   );
 }

@@ -47,12 +47,12 @@ export function AccountDialog({ open, onOpenChange, initialTab = "login" }: Acco
     event.preventDefault();
     const result =
       tab === "login"
-        ? signInSchema.safeParse({ email: values.email ?? "", password: values.password ?? "" })
+        ? signInSchema.safeParse({ email: values["email"] ?? "", password: values["password"] ?? "" })
         : signUpSchema.safeParse({
-            fullName: values.fullName ?? "",
-            email: values.email ?? "",
-            password: values.password ?? "",
-            confirmPassword: values.confirmPassword ?? "",
+            fullName: values["fullName"] ?? "",
+            email: values["email"] ?? "",
+            password: values["password"] ?? "",
+            confirmPassword: values["confirmPassword"] ?? "",
           });
 
     if (!result.success) {

@@ -1,73 +1,90 @@
-import { ArrowUp, Mail, MapPin, Phone } from "lucide-react";
+import { Link } from "@tanstack/react-router";
+import { ArrowUp, MapPin, Phone, Mail } from "lucide-react";
 import { BrandLogo } from "@/components/common/BrandLogo";
-import { brand } from "@/config/brand";
-
+import { useLocale } from "@/i18n";
 export function SiteFooter() {
-  const year = new Date().getFullYear();
-
+  const { locale } = useLocale();
+  const vi = locale === "vi";
   return (
-    <footer className="bg-navy-900 text-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3 lg:px-8">
-        <div className="space-y-4">
-          <BrandLogo tone="dark" />
-          <p className="max-w-sm text-sm leading-relaxed text-navy-200">
-            Cổng thông tin chính thức của {brand.siteName}.
-          </p>
-        </div>
-
-        <div className="space-y-4">
-          <h3 className="text-sm font-bold uppercase tracking-wide text-white">Liên hệ</h3>
-          <ul className="space-y-3 text-sm text-navy-200">
-            <li className="flex items-start gap-3">
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary-300" aria-hidden="true" />
-              <span>{brand.address}</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary-300" aria-hidden="true" />
-              <span className="flex flex-col">
-                {brand.hotlines.map((hotline) => (
-                  <a
-                    key={hotline}
-                    href={`tel:${hotline.replace(/\s/g, "")}`}
-                    className="text-white hover:text-primary-300"
-                  >
-                    {hotline}
-                  </a>
-                ))}
-              </span>
-            </li>
-            <li className="flex items-center gap-3">
-              <Mail className="h-4 w-4 shrink-0 text-primary-300" aria-hidden="true" />
-              <a href={`mailto:${brand.email}`} className="text-white hover:text-primary-300">
-                {brand.email}
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div className="space-y-4">
-          <h3 className="text-sm font-bold uppercase tracking-wide text-white">Kết nối</h3>
-          <p className="text-sm text-navy-200">
-            Chưa có liên kết mạng xã hội trong thông tin được cung cấp.
-          </p>
-        </div>
+    <>
+      <div className="source-prefooter source-container">
+        <span>NCBT · GS1 Vietnam</span>
+        <button
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+              behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+                ? "instant"
+                : "smooth",
+            })
+          }
+        >
+          <ArrowUp size={17} />
+          {vi ? "Về đầu trang" : "Back to top"}
+        </button>
       </div>
-
-      <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 text-sm text-navy-200 sm:px-6 md:flex-row lg:px-8">
-          <p>
-            © {year} {brand.siteName}. Bản quyền thuộc về {brand.siteName}.
-          </p>
-          <button
-            type="button"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="inline-flex items-center gap-2 rounded-md border border-white/20 px-4 py-2 font-medium text-white transition-colors duration-200 hover:border-primary-400 hover:bg-primary-500"
-          >
-            <ArrowUp className="h-4 w-4" aria-hidden="true" />
-            Lên đầu trang
-          </button>
+      <footer className="source-footer">
+        <div className="source-container source-footer-grid">
+          <div>
+            <BrandLogo />
+            <p>{vi ? "Cổng thông tin điện tử" : "Information portal"}</p>
+            <p>
+              {vi
+                ? "Mã số mã vạch · Truy xuất nguồn gốc · Chuyển đổi số"
+                : "Barcodes · Traceability · Digital transformation"}
+            </p>
+          </div>
+          <div>
+            <h2>
+              {vi
+                ? "TRUNG TÂM MÃ SỐ MÃ VẠCH TRUY XUẤT NGUỒN GỐC QUỐC GIA"
+                : "NATIONAL CENTER FOR CODES, BARCODES AND TRACEABILITY"}
+            </h2>
+            <p>
+              <MapPin size={16} />{" "}
+              {vi ? "Số 8 Hoàng Quốc Việt, Nghĩa Đô, Hà Nội" : "8 Hoang Quoc Viet, Nghia Do, Hanoi"}
+            </p>
+            <p>
+              <Phone size={16} /> <a href="tel:1900636218">1900 636218</a> ·{" "}
+              <a href="tel:02438361463">024 3836 1463</a>
+            </p>
+            <p>
+              <Mail size={16} /> <a href="mailto:msmv@nbc.gov.vn">msmv@nbc.gov.vn</a>
+            </p>
+            <div className="source-footer-links">
+              <Link to="/gioi-thieu/lich-su-hinh-thanh">{vi ? "Giới thiệu" : "About us"}</Link>
+              <Link to="/lien-he">{vi ? "Liên hệ" : "Contact"}</Link>
+              <Link to="/hoi-dap/cau-hoi-thuong-gap">{vi ? "Hỏi đáp" : "FAQ"}</Link>
+            </div>
+          </div>
+          <div>
+            <h2>SCAN & CHECK</h2>
+            <p>{vi ? "Ứng dụng quét mã số mã vạch" : "Barcode scanning application"}</p>
+            <a
+              className="source-store"
+              href="https://play.google.com/store/search?q=scan%20and%20check%20gs1&c=apps"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ▶ Google Play
+            </a>
+            <a
+              className="source-store"
+              href="https://apps.apple.com/vn/search?term=scan%20and%20check"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ● App Store
+            </a>
+          </div>
         </div>
-      </div>
-    </footer>
+        <div className="source-copyright">
+          © NCBT ·{" "}
+          {vi
+            ? "Trung tâm Mã số Mã vạch Truy xuất nguồn gốc Quốc gia"
+            : "National Center for Codes, Barcodes and Traceability"}
+        </div>
+      </footer>
+    </>
   );
 }

@@ -38,5 +38,6 @@ const imageUrls: Record<string, string> = {
 
 export function mediaUrl(url: string | null | undefined): string {
   if (!url) return fallbackImage;
+  if (/^(\/nbc\/|\/images\/|https?:\/\/)/.test(url)) return url;
   return imageUrls[url] ?? fallbackImage;
 }

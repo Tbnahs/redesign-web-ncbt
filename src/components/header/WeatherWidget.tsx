@@ -3,7 +3,7 @@ import { ChevronDown, Droplets, Thermometer } from "lucide-react";
 import { defaultProvince, provinces, type Province } from "@/config/weather";
 import { useCurrentWeather } from "@/hooks/useCurrentWeather";
 
-export function WeatherWidget() {
+export function WeatherWidget(_props:{compact?:boolean}) {
   const [province, setProvince] = useState<Province>(defaultProvince);
   const weather = useCurrentWeather(province);
 

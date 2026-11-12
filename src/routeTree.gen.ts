@@ -20,6 +20,7 @@ import { Route as TimKiemRouteImport } from './routes/tim-kiem'
 import { Route as TinTucRouteImport } from './routes/tin-tuc'
 import { Route as TraCuuRouteImport } from './routes/tra-cuu'
 import { Route as TruyXuatNguonGocRouteImport } from './routes/truy-xuat-nguon-goc'
+import { Route as CategoryCategoryRouteImport } from './routes/category.$category'
 import { Route as GioiThieuIndexRouteImport } from './routes/gioi-thieu.index'
 import { Route as GioiThieuChucNangNhiemVuRouteImport } from './routes/gioi-thieu.chuc-nang-nhiem-vu'
 import { Route as GioiThieuCoCauToChucRouteImport } from './routes/gioi-thieu.co-cau-to-chuc'
@@ -37,6 +38,7 @@ import { Route as HoiDapDanhSachCauHoiRouteImport } from './routes/hoi-dap.danh-
 import { Route as HoiDapTaoCauHoiRouteImport } from './routes/hoi-dap.tao-cau-hoi'
 import { Route as TinTucIndexRouteImport } from './routes/tin-tuc.index'
 import { Route as TinTucSlugRouteImport } from './routes/tin-tuc.$slug'
+import { Route as TintucSlugRouteImport } from './routes/tintuc.$slug'
 import { Route as TruyXuatNguonGocIndexRouteImport } from './routes/truy-xuat-nguon-goc.index'
 import { Route as TruyXuatNguonGocDangKyChuoiRouteImport } from './routes/truy-xuat-nguon-goc.dang-ky-chuoi'
 import { Route as TruyXuatNguonGocTraCuuSanPhamRouteImport } from './routes/truy-xuat-nguon-goc.tra-cuu-san-pham'
@@ -94,6 +96,11 @@ const TraCuuRoute = TraCuuRouteImport.update({
 const TruyXuatNguonGocRoute = TruyXuatNguonGocRouteImport.update({
   id: '/truy-xuat-nguon-goc',
   path: '/truy-xuat-nguon-goc',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CategoryCategoryRoute = CategoryCategoryRouteImport.update({
+  id: '/category/$category',
+  path: '/category/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GioiThieuIndexRoute = GioiThieuIndexRouteImport.update({
@@ -184,6 +191,11 @@ const TinTucSlugRoute = TinTucSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => TinTucRoute,
 } as any)
+const TintucSlugRoute = TintucSlugRouteImport.update({
+  id: '/tintuc/$slug',
+  path: '/tintuc/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TruyXuatNguonGocIndexRoute = TruyXuatNguonGocIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -214,6 +226,7 @@ export interface FileRoutesByFullPath {
   '/tin-tuc': typeof TinTucRouteWithChildren
   '/tra-cuu': typeof TraCuuRoute
   '/truy-xuat-nguon-goc': typeof TruyXuatNguonGocRouteWithChildren
+  '/category/$category': typeof CategoryCategoryRoute
   '/gioi-thieu/chuc-nang-nhiem-vu': typeof GioiThieuChucNangNhiemVuRoute
   '/gioi-thieu/co-cau-to-chuc': typeof GioiThieuCoCauToChucRoute
   '/gioi-thieu/doi-tac-quoc-te': typeof GioiThieuDoiTacQuocTeRoute
@@ -227,6 +240,7 @@ export interface FileRoutesByFullPath {
   '/hoi-dap/danh-sach-cau-hoi': typeof HoiDapDanhSachCauHoiRoute
   '/hoi-dap/tao-cau-hoi': typeof HoiDapTaoCauHoiRoute
   '/tin-tuc/$slug': typeof TinTucSlugRoute
+  '/tintuc/$slug': typeof TintucSlugRoute
   '/truy-xuat-nguon-goc/dang-ky-chuoi': typeof TruyXuatNguonGocDangKyChuoiRoute
   '/truy-xuat-nguon-goc/tra-cuu-san-pham': typeof TruyXuatNguonGocTraCuuSanPhamRoute
   '/gioi-thieu/': typeof GioiThieuIndexRoute
@@ -242,6 +256,7 @@ export interface FileRoutesByTo {
   '/lien-he': typeof LienHeRoute
   '/tim-kiem': typeof TimKiemRoute
   '/tra-cuu': typeof TraCuuRoute
+  '/category/$category': typeof CategoryCategoryRoute
   '/gioi-thieu/chuc-nang-nhiem-vu': typeof GioiThieuChucNangNhiemVuRoute
   '/gioi-thieu/co-cau-to-chuc': typeof GioiThieuCoCauToChucRoute
   '/gioi-thieu/doi-tac-quoc-te': typeof GioiThieuDoiTacQuocTeRoute
@@ -255,6 +270,7 @@ export interface FileRoutesByTo {
   '/hoi-dap/danh-sach-cau-hoi': typeof HoiDapDanhSachCauHoiRoute
   '/hoi-dap/tao-cau-hoi': typeof HoiDapTaoCauHoiRoute
   '/tin-tuc/$slug': typeof TinTucSlugRoute
+  '/tintuc/$slug': typeof TintucSlugRoute
   '/truy-xuat-nguon-goc/dang-ky-chuoi': typeof TruyXuatNguonGocDangKyChuoiRoute
   '/truy-xuat-nguon-goc/tra-cuu-san-pham': typeof TruyXuatNguonGocTraCuuSanPhamRoute
   '/gioi-thieu': typeof GioiThieuIndexRoute
@@ -276,6 +292,7 @@ export interface FileRoutesById {
   '/tin-tuc': typeof TinTucRouteWithChildren
   '/tra-cuu': typeof TraCuuRoute
   '/truy-xuat-nguon-goc': typeof TruyXuatNguonGocRouteWithChildren
+  '/category/$category': typeof CategoryCategoryRoute
   '/gioi-thieu/chuc-nang-nhiem-vu': typeof GioiThieuChucNangNhiemVuRoute
   '/gioi-thieu/co-cau-to-chuc': typeof GioiThieuCoCauToChucRoute
   '/gioi-thieu/doi-tac-quoc-te': typeof GioiThieuDoiTacQuocTeRoute
@@ -289,6 +306,7 @@ export interface FileRoutesById {
   '/hoi-dap/danh-sach-cau-hoi': typeof HoiDapDanhSachCauHoiRoute
   '/hoi-dap/tao-cau-hoi': typeof HoiDapTaoCauHoiRoute
   '/tin-tuc/$slug': typeof TinTucSlugRoute
+  '/tintuc/$slug': typeof TintucSlugRoute
   '/truy-xuat-nguon-goc/dang-ky-chuoi': typeof TruyXuatNguonGocDangKyChuoiRoute
   '/truy-xuat-nguon-goc/tra-cuu-san-pham': typeof TruyXuatNguonGocTraCuuSanPhamRoute
   '/gioi-thieu/': typeof GioiThieuIndexRoute
@@ -311,6 +329,7 @@ export interface FileRouteTypes {
     | '/tin-tuc'
     | '/tra-cuu'
     | '/truy-xuat-nguon-goc'
+    | '/category/$category'
     | '/gioi-thieu/chuc-nang-nhiem-vu'
     | '/gioi-thieu/co-cau-to-chuc'
     | '/gioi-thieu/doi-tac-quoc-te'
@@ -324,6 +343,7 @@ export interface FileRouteTypes {
     | '/hoi-dap/danh-sach-cau-hoi'
     | '/hoi-dap/tao-cau-hoi'
     | '/tin-tuc/$slug'
+    | '/tintuc/$slug'
     | '/truy-xuat-nguon-goc/dang-ky-chuoi'
     | '/truy-xuat-nguon-goc/tra-cuu-san-pham'
     | '/gioi-thieu/'
@@ -339,6 +359,7 @@ export interface FileRouteTypes {
     | '/lien-he'
     | '/tim-kiem'
     | '/tra-cuu'
+    | '/category/$category'
     | '/gioi-thieu/chuc-nang-nhiem-vu'
     | '/gioi-thieu/co-cau-to-chuc'
     | '/gioi-thieu/doi-tac-quoc-te'
@@ -352,6 +373,7 @@ export interface FileRouteTypes {
     | '/hoi-dap/danh-sach-cau-hoi'
     | '/hoi-dap/tao-cau-hoi'
     | '/tin-tuc/$slug'
+    | '/tintuc/$slug'
     | '/truy-xuat-nguon-goc/dang-ky-chuoi'
     | '/truy-xuat-nguon-goc/tra-cuu-san-pham'
     | '/gioi-thieu'
@@ -372,6 +394,7 @@ export interface FileRouteTypes {
     | '/tin-tuc'
     | '/tra-cuu'
     | '/truy-xuat-nguon-goc'
+    | '/category/$category'
     | '/gioi-thieu/chuc-nang-nhiem-vu'
     | '/gioi-thieu/co-cau-to-chuc'
     | '/gioi-thieu/doi-tac-quoc-te'
@@ -385,6 +408,7 @@ export interface FileRouteTypes {
     | '/hoi-dap/danh-sach-cau-hoi'
     | '/hoi-dap/tao-cau-hoi'
     | '/tin-tuc/$slug'
+    | '/tintuc/$slug'
     | '/truy-xuat-nguon-goc/dang-ky-chuoi'
     | '/truy-xuat-nguon-goc/tra-cuu-san-pham'
     | '/gioi-thieu/'
@@ -406,6 +430,8 @@ export interface RootRouteChildren {
   TinTucRoute: typeof TinTucRouteWithChildren
   TraCuuRoute: typeof TraCuuRoute
   TruyXuatNguonGocRoute: typeof TruyXuatNguonGocRouteWithChildren
+  CategoryCategoryRoute: typeof CategoryCategoryRoute
+  TintucSlugRoute: typeof TintucSlugRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -485,6 +511,13 @@ declare module '@tanstack/react-router' {
       path: '/truy-xuat-nguon-goc'
       fullPath: '/truy-xuat-nguon-goc'
       preLoaderRoute: typeof TruyXuatNguonGocRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/category/$category': {
+      id: '/category/$category'
+      path: '/category/$category'
+      fullPath: '/category/$category'
+      preLoaderRoute: typeof CategoryCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/gioi-thieu/': {
@@ -605,6 +638,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/tin-tuc/$slug'
       preLoaderRoute: typeof TinTucSlugRouteImport
       parentRoute: typeof TinTucRoute
+    }
+    '/tintuc/$slug': {
+      id: '/tintuc/$slug'
+      path: '/tintuc/$slug'
+      fullPath: '/tintuc/$slug'
+      preLoaderRoute: typeof TintucSlugRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/truy-xuat-nguon-goc/': {
       id: '/truy-xuat-nguon-goc/'
@@ -729,6 +769,8 @@ const rootRouteChildren: RootRouteChildren = {
   TinTucRoute: TinTucRouteWithChildren,
   TraCuuRoute: TraCuuRoute,
   TruyXuatNguonGocRoute: TruyXuatNguonGocRouteWithChildren,
+  CategoryCategoryRoute: CategoryCategoryRoute,
+  TintucSlugRoute: TintucSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

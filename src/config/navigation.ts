@@ -56,6 +56,12 @@ export function flattenNavItems(items: NavItem[]): NavItem[] {
 }
 
 export const newsCategories: { slug: string; label: string }[] = [
+  {slug:'ma-so-ma-vach',label:'Mã số mã vạch'},
+  {slug:'truy-xuat-nguon-goc',label:'Truy xuất nguồn gốc'},
+  {slug:'hoat-dong-tai-dia-phuong',label:'Hoạt động MSMV tại địa phương'},
+  {slug:'ma-lei',label:'Mã LEI'},
+  {slug:'ma-udi',label:'Mã UDI'},
+  {slug:'dao-tao',label:'Đào tạo'},
   { slug: "tin-tuc-su-kien", label: "Tin tức sự kiện" },
   { slug: "hoat-dong-msmv-dia-phuong", label: "Hoạt động MSMV địa phương" },
   { slug: "thong-bao", label: "Thông báo" },

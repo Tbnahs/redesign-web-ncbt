@@ -13,14 +13,14 @@ export function SafeImage({
 }: SafeImageProps) {
   const handleError = (event: SyntheticEvent<HTMLImageElement>) => {
     const target = event.currentTarget;
-    const nextSrc = target.dataset.fallbackApplied === "true" ? undefined : fallbackSrc;
+    const nextSrc = target.dataset['fallbackApplied'] === "true" ? undefined : fallbackSrc;
 
     if (!nextSrc) {
       onError?.(event);
       return;
     }
 
-    target.dataset.fallbackApplied = "true";
+    target.dataset['fallbackApplied'] = "true";
     target.src = nextSrc;
     target.onerror = null;
     onError?.(event);

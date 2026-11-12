@@ -9,6 +9,8 @@ export interface Banner {
 }
 
 export interface NewsArticle {
+  sourceUrl?: string;
+  categories?: string[];
   id: string;
   title: string;
   slug: string;

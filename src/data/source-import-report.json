@@ -1,0 +1,899 @@
+{
+  "articlesDiscovered": 678,
+  "articlesImported": 678,
+  "listingPages": 71,
+  "imageUrls": 2178,
+  "imagesDownloaded": 2140,
+  "imageErrors": [
+    {
+      "Url": "https://baodongnai.com.vn/file/e7837c02876411cd0187645a2551379f/062026/taphuan-01_20260624101550_20260624103755.jpg?width=1800",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\ec43dcc67411d0eda592.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (404) Not Found."
+    },
+    {
+      "Url": "https://baodongnai.com.vn/file/e7837c02876411cd0187645a2551379f/062026/taphuan-02_20260624101629_20260624103946.jpg?width=1800",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\ee7de68435a057dc676f.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (404) Not Found."
+    },
+    {
+      "Url": "https://cdnmedia.baotintuc.vn/Upload/xXHVb3SiFkVmqewcNCaBEw/files/2026/THANG%207/9%20Truy%20xu%E1%BA%A5t%20ngu%E1%BB%93n%20g%E1%BB%91c/truyxuatng.png",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\9001c79954cfbb6aa3fa.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The operation has timed out"
+    },
+    {
+      "Url": "https://nbc.gov.vn/upload/files/A%CC%89nh%20chu%CC%A3p%20Ma%CC%80n%20hi%CC%80nh%202021-10-11%20lu%CC%81c%2011_24_03.png",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\bffaf27f54e7988f48f0.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (404) Not Found."
+    },
+    {
+      "Url": "https://nbc.gov.vn/upload/files/A%CC%89nh%20chu%CC%A3p%20Ma%CC%80n%20hi%CC%80nh%202021-10-11%20lu%CC%81c%2011_28_28.png",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\71924fedbe54ec23e7b9.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (404) Not Found."
+    },
+    {
+      "Url": "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.99422-6/767560590_3957061511270014_2358017452844568825_n.png?stp=dst-jpg_tt6&cstp=mx329x466&ctp=s329x466&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dnKAMKKjhHwQ7kNvwEEWFPa&_nc_oc=AdpPWAJ4IleGHRgh81LfkK8hNNA5k2nPGHvRv2tT1mAPIJPH5X86GWkTS-jE9DVxSks&_nc_zt=14&_nc_ht=scontent.fhan14-1.fna&_nc_gid=_OA1LmAYOv3Dd4C_DKeHuQ&_nc_ss=7b2a8&oh=00_AQEDTfyhxrH0sixH6xtNxEW0WxVAhSO2tjaM-4eDE2LyTw&oe=6A8AFA95",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\4b1f2614d8176ab3db43.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.99422-6/769363610_1575894077332101_5165181507679049337_n.png?stp=dst-jpg_tt6&cstp=mx665x432&ctp=s665x432&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=yewzDHF_R70Q7kNvwE7aY9T&_nc_oc=AdrbamfOzv008I1shqVRkzgRks3ftFxEwrk58xU3h5EtuEUOGl0wkEcHR5Ovx2ZmEVc&_nc_zt=14&_nc_ht=scontent.fhan14-1.fna&_nc_gid=tXZ7BrRgh3kUlPf_YlX2WQ&_nc_ss=7b2a8&oh=00_AQFk3KsRXqjyT4ZVMKXgBM4nGIwQxGfwkemmkLSqtJqf_A&oe=6A8ADB2F",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\959e691367a7df125a07.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.99422-6/772773162_1720260252360664_8613973009424403443_n.png?stp=dst-jpg_tt6&cstp=mx665x443&ctp=s665x443&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=hyw4T7u1PtYQ7kNvwF-35wI&_nc_oc=Adqe1A--kDw-6IUzC6HcVkPY8ZAoJutHpfLQ4yMKtrcuDBDjGFrbit4JpS3oTDuReuk&_nc_zt=14&_nc_ht=scontent.fhan14-1.fna&_nc_gid=gNXKt_rhK3wxx9pA02mKaw&_nc_ss=7b2a8&oh=00_AQENwt4ntTf8TGp_CB89QnScYH0k-_A-2B6jDi2FUJBOKg&oe=6A8AEE2F",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\21b14fcca7de9a331947.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-2.fna.fbcdn.net/v/t39.99422-6/773315767_1219028921300149_414670642737129773_n.png?stp=dst-jpg_tt6&cstp=mx665x484&ctp=s665x484&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=NcJgZJW_CasQ7kNvwGUZo_W&_nc_oc=AdqOaG0Ff1ljK1ZkEe11SXvWAD119bV2W8yhp5cN7dNvJpBZvQTbFel18Z-F1vbtqLQ&_nc_zt=14&_nc_ht=scontent.fhan14-2.fna&_nc_gid=QDQZTKxPYmy7vJJkTpmXXg&_nc_ss=7b2a8&oh=00_AQEaB3JpfY9IZT__vTuO91Q75NfkfmmxGC4BPbxR5kjpYg&oe=6A8AD3C4",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\2c1f59b458f5c926ed19.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.99422-6/765769877_855659437481459_7449471431407815344_n.png?stp=dst-jpg_tt6&cstp=mx665x471&ctp=s665x471&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gm44YsloTPsQ7kNvwG6wmv8&_nc_oc=Adq7_a3g66wwClSikNbZw0ior3fjf6pnqRhEIDEWVOVIMH-98LZ9b5O0rHUHcxzDGzM&_nc_zt=14&_nc_ht=scontent.fhan14-3.fna&_nc_gid=d0fuWH59z-DP-Ri5ozn27w&_nc_ss=7b2a8&oh=00_AQEYetIwK8Ld_M1TvEgwkroykreNqs--vmKMd2Lun626CA&oe=6A8AE8D9",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\1bceed300c269b9f7afd.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.99422-6/770422689_2303421433811484_6491807708325771129_n.png?stp=dst-jpg_tt6&cstp=mx665x466&ctp=s665x466&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vlPlBGnHDFYQ7kNvwH-IA_c&_nc_oc=AdoRp0z174D6_5Q9uoiXIjk6ArVnXA82l67wAOxL7qp1To6BCh4Q4zLRUVzNpBxydvY&_nc_zt=14&_nc_ht=scontent.fhan14-3.fna&_nc_gid=lFQb27wPaAsfk6KmImlprw&_nc_ss=7b2a8&oh=00_AQHD2-1HPSVqFvLutFZRdnx0xbu6q3PAHbQDSjVz3fzzMQ&oe=6A8AE3ED",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\96b358adaab30136fa17.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.99422-6/771309460_1851059689662656_7968467631655171058_n.png?stp=dst-jpg_tt6&cstp=mx665x473&ctp=s665x473&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rq3VNpNT7NMQ7kNvwFQKaur&_nc_oc=AdpddVx_yExMYlmACT0H1KmoHtIeAUufCh71M_UULS7oTUk_4n0MVYzxY7xIYC1110k&_nc_zt=14&_nc_ht=scontent.fhan14-3.fna&_nc_gid=Re9NNpdYK1yC3GrhIGbQ3w&_nc_ss=7b2a8&oh=00_AQFnAJHuYr8t-_AmuXN5Jyme31HsazMbKhHHkN-r_590ug&oe=6A8AF6C3",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\7e91167a6c300f63617c.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.99422-6/771678022_1578062077285055_4455914939033936650_n.png?stp=dst-jpg_tt6&cstp=mx665x443&ctp=s665x443&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=MjQMALi0KSIQ7kNvwGErkfK&_nc_oc=AdqjktaPSIYubp9EBmR3fHn0pT5fI6FZg9VJM2w8HvSpTmnNq89tacHRPs699K_CyeQ&_nc_zt=14&_nc_ht=scontent.fhan14-3.fna&_nc_gid=lRu__tKZ8acfdb3pR6xX9w&_nc_ss=7b2a8&oh=00_AQE4yfLpnqdKIqgboTlKF5O6k_VOHe_s9AXD67XElm_Veg&oe=6A8AF9E2",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\d7fba9f7d123d64844cc.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.99422-6/771617055_1564388488711252_7679221850890582051_n.png?stp=dst-jpg_tt6&cstp=mx665x473&ctp=s665x473&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Bmi-utIwUQIQ7kNvwF-uMEL&_nc_oc=Adov89LPjFEpTvRkYSt653KKvScGJRdw44a_7j3PsJUgmM6f50gjZiqqrqGLMmqr6f0&_nc_zt=14&_nc_ht=scontent.fhan14-4.fna&_nc_gid=Xxa9sPbsbqE9GMkx_hd2WA&_nc_ss=7b2a8&oh=00_AQGOdGuNkrX-76_giaIJTzpGDAX9g-GTEMT6jleONFbktg&oe=6A8AE717",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\b84c0a5cc2cd8fde0081.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-5.fna.fbcdn.net/v/t39.99422-6/766724088_2305876590159040_6516901543332974826_n.png?stp=dst-jpg_tt6&cstp=mx665x552&ctp=s665x552&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KEsXLo1SPEcQ7kNvwEhKRZ6&_nc_oc=Adpg4hnmwpZJY17Yn4QiHS3UFTGY3P7b9OnL5uSr487GOXL3tKrKkaVUtJeDaj9DCaY&_nc_zt=14&_nc_ht=scontent.fhan14-5.fna&_nc_gid=0KUnYUVB6iwvsSdA4HT-Yw&_nc_ss=7b2a8&oh=00_AQEjDfHecZLZ_95BoOCdWE2VpDuAXQ32ExPX8hp81wqv-Q&oe=6A8AFB93",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\4749e5fc0e9df3d3e7bb.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-5.fna.fbcdn.net/v/t39.99422-6/769318908_2197988577600408_8549630628191263052_n.png?stp=dst-jpg_tt6&cstp=mx665x522&ctp=s665x522&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=hh5_iSCMyxIQ7kNvwEHbAV2&_nc_oc=AdpXqunqcb7esE_yK0LG7VFmKY3EdEb_Wi_CGhGcg6CC-b60MsHZx-Ymsdf-oRP9daY&_nc_zt=14&_nc_ht=scontent.fhan14-5.fna&_nc_gid=9asDvMe36b96Tk7s_e-PwA&_nc_ss=7b2a8&oh=00_AQEBPRUCrDnee0LBx86jUblg47w3P_9v4LzwZnmQ2tDxRA&oe=6A8AF66E",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\b15bcad38788c825dd55.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/729080974_1316388990684084_2200825334906426914_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEscV02IYzwrsHw37USrmTlrpDuFzyIKyaukO4XPIgrJpG2mc3YiclMoLq6cK6L85U6IfauiAtSwkUQUCRosSHn&_nc_ohc=uqcMwxTpzNgQ7kNvwGwZ8kQ&_nc_oc=AdobIBMHpsZ8Xi9n4zkcOD9r1kRe7gQN_wgH8XnueFCRaMC2u1ESp1M4UkOtL0ysNAg&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=4E2X1aKokwubouihz9YBkQ&_nc_ss=7b2a8&oh=00_Af_r3rBmgqzhySrR0gYKsb2ZXPuolHRH9TwLd9THGgYPKg&oe=6A47B78C",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\0cc6dfd46eee47a53192.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/729115805_1316389000684083_2129078834734996759_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeG91_7_BpCK-0TC9NC9xogU8ywA-8EWRnDzLAD7wRZGcO9IkwKcaIoVHYccKxe8xoJw07bqiwU6icX4U1OlT5cc&_nc_ohc=5s34p8z13_4Q7kNvwEg5Mum&_nc_oc=AdrSZsYftq4iHZe6rfkwb8Ky2N_55r5W-P3iNdgER9KPIb9qpCd-svugPe528PuaVw8&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=bb6r4RLDsJgr2i-FLPqaSw&_nc_ss=7b2a8&oh=00_Af_3SdOMCNA2W9pQ8KsYpVpoNYYc4tA-S-sGxFpiE6k95A&oe=6A47B746",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\c075b2a2a808b2383b40.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/729186622_1316388957350754_7158924510423156276_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFEXqFWggA5cJzVg_AaCXqfVcVNiUID62tVxU2JQgPra4gyIUUMtnuGmDtM2O-HzFJSYbVS9B5byhfvg5c2hSy7&_nc_ohc=06UQ9gNeVMcQ7kNvwGWADK2&_nc_oc=AdqoLEiEw8Zclt3nWhPVD5emV9TH_wJPqcYbanKDtshHOuHfYvBcuW85vQA6r1erjEU&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=wC8qQJgi-eoyVlpJUasd7Q&_nc_ss=7b2a8&oh=00_Af8MXqDOk-o1HbpNzPb8PfGEefpLvqfbbXND6_QMyochXQ&oe=6A479A6D",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\8497318243b6604a1160.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/729261353_1316388964017420_4757943120177184501_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGrQj9LSKSP2rM6gpjqJzZ_Ofa0kHsUEeQ59rSQexQR5DBTqCFJ0kmkcFfpAnIvHov6nI8NHGOJmxSZr0EZn41l&_nc_ohc=GfxxSNf_DOkQ7kNvwGiKCYA&_nc_oc=AdocAgCgp8G1Sy_2bZULkJtdAFSQ-eUxdHmqJXTsk8HXgEET2TmJpnTZVX6oij1GGOk&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=t3nlZbu907YSWM210w9Rbg&_nc_ss=7b2a8&oh=00_Af9lXGUEObLTcwXjwCpMjFGcSS97xs3UHQ9GV6GrzPRHCA&oe=6A47B8ED",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\eb015899bf7d541bd0ad.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/730481136_1316390327350617_7263697409391685524_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGeJGTiA1b3wJwixzzzor4W2HvytPrWc3vYe_K0-tZze45PwEBX2lCuA6Szh0ewY8shlGKUngsUGKjPbJAAfRmi&_nc_ohc=7PZcCTwWhmUQ7kNvwGqo_9r&_nc_oc=Adp-khXyExHLJxIsLZ1bxqoCcKokwAst5RyPNS91BsqHY_G68i1AwRhL1fhNvcYBTMQ&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=ya0u-1Iv3DWQJC3kLmdwVw&_nc_ss=7b2a8&oh=00_Af9GHI8Hdprrx5nUn92CczaJKQTfMH_nbSlv8dJ9K8ksbg&oe=6A47AB8C",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\d992741558f34d30bef3.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/748930890_1333889112267405_8521785053975923431_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGuYoBi4FuZmdj6QICq8yom_LQiD6lix-D8tCIPqWLH4G8obE3tFjk2cm9c0m-HHsygixTROuMG2JM2ZGMEjUrZ&_nc_ohc=SJDV4REoJawQ7kNvwH4AmAY&_nc_oc=AdpKC3i6IRGLt5BLoRitQOdNzCCrIgz8NnVQX4B8Zu_5vwQDc4l5QHettQc8ZmRNwz8&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=PsbcfdUJGgIYj4qwSTDXmg&_nc_ss=7b2a8&oh=00_AQB6LFrr0PQ8q8wcUhlflYWfR369x2mwuqRimDiTmj82jg&oe=6A5FEE0F",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\b3d2ee0b448cff475e5c.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/749197887_1333889215600728_3592175094264102066_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x853&ctp=s1280x853&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGb8JXanJq3sgRswc5aqFmkF7cdgEwzHg0Xtx2ATDMeDc18G4jr93Unwky16w5eooQSXlwIeudAfDfs9KW6nzwz&_nc_ohc=Nhk2aEscmqIQ7kNvwEyMdHQ&_nc_oc=Adq3wqBXTwCtdxsdemW0jph77yPrZwoJfQs28-9PzvuxjhrG9PoKi4UqPyfYWoDEtBM&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=ijrDuIzsNK8rxfm1Lz45cA&_nc_ss=7b2a8&oh=00_AQA_JHkW46mzJyMbWRLBNvJBik_Xe3PoMbAq7pzr-3QJIQ&oe=6A5FD19B",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\fbe6c4f6e76353889b9a.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/750582928_1333890308933952_306302668704914221_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEB9BACayzI5Zp2lesnDKP53Eeb_0wchNLcR5v_TByE0qdFVRwquuyNV93mVeFwr-mQsVBfbWWeejkJAwvG1jUP&_nc_ohc=ONpA66bu530Q7kNvwEOUaof&_nc_oc=Adpxaven-jSYyNKUPwL_yzpXkDr9zZnItZiDfmpJsjLBzORUwTjp6TrewK8GykWcf7U&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=k6g4BTzkVz_vNhPvMJB8gw&_nc_ss=7b2a8&oh=00_AQCvF_pcK0Xa0QpnKejiaP_iaKNqwdhtAiqnRZhAy6vK0w&oe=6A5FD880",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\bda11d3bff30ec22693b.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/751335827_1333890782267238_790734066711688815_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeECA8bFb0WxpeM4EsT2I2mmlovRAQGBFOaWi9EBAYEU5qtLh0DDOoPDS3HUctE8KF2mspxpP1LPfqao_PJH7CcH&_nc_ohc=NbyLHO_0zTUQ7kNvwHcLwlr&_nc_oc=AdrcFUK3pABrmlrCuqbOJWHjB7V6xLteppc2XXnGi35p-2azOowq-lZrQlCFWlBrJxY&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=XO9t8yAhzlNrnNZGZjgg5A&_nc_ss=7b2a8&oh=00_AQBGDpRBnulqwacFzxIT30zc23LjdQNgAeBRtra3XuYcfg&oe=6A5FCDA8",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\a20e50fe899785fb7790.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/829973319_1398545102468472_7411977918096611366_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHBDdWB61MRx1hWvL-lbzpB0ByUltrlJeDQHJSW2uUl4AAzVEgJ9DS51kAqP9FMLGx12MT7y7XJQknelIaQxzEq&_nc_ohc=KcikCZhFb1cQ7kNvwEVvTjh&_nc_oc=AdojS2FFrp3qVZtzjkueNn9B0J-S6QiU2VJJK5P05mxRbsikILHN1edy9l7fxZOcQ2s&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=L6pyyX4GtftlfRVzfYrNtw&_nc_ss=7b2a8&oh=00_AQNs98vfshdc4aJQAtZvDtuHvjlcasxQdi3FTo3IwclfEw&oe=6AC3DFAE",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\638c816ae74861650602.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/831769645_1398545115801804_1497928148010867820_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGNfxXA2zmtwdVU1PxGwV5XjyLmkrriUEuPIuaSuuJQS7JDZQ5xGU_glqrFexJd1Hv3cPQArf9g_kPoZIMWRZAD&_nc_ohc=mB-J3WIZF8IQ7kNvwGx274m&_nc_oc=AdqYnHi3L_rXof4-xadL_yTxlPXCoDlMP-Ftx1PUsDdCx4ZqKp7f4z36Gwel7ySxYv8&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=vNQnFesqTpR5u1xqZH80bA&_nc_ss=7b2a8&oh=00_AQMl8swQFtQH2Ts2jKg6V7SQ82mJyeg6rbSR76XdmDVaPA&oe=6AC3F2E7",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\2cc686a30d6e83c40989.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/796357909_1378326271157022_7303069365272391713_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFPXbzBRSYxKtgW80oQweBZK9PduQM3lYEr0925AzeVgUd4BQj2X8eiLBvrD5E4nJu6RUCXmA4CYuJ-_kGM-0En&_nc_ohc=JWFKoRMkMDwQ7kNvwHg2MI4&_nc_oc=AdpS4zlFhF-XSi8ibS5CRXJoHshv4rx9J2tspwacJyYz1N0FcmV3VzZA5HmlQ4fmshg&_nc_zt=23&_nc_ht=scontent.fhan2-3.fna&_nc_gid=AGwOmn6aIjx8QewPFx0JDQ&_nc_ss=7b2a8&oh=00_AQLd2-AbDPRJhmaPrvWAL30V0sT1x3voLFvTB1swIpMJdQ&oe=6AA699F7",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\ef4047d40b745631213b.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/799210754_1378326541156995_3282591289737343932_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGfjPghfA5lHqpHMNWaY0wdO9_8fjj0-fE73_x-OPT58begv99YUYVjdmkcL0RXn1oJfbkpfyDNgf3A7RBRvCN6&_nc_ohc=wBCQiUNUlZ4Q7kNvwFdCdxy&_nc_oc=Adpnv-mktK4AjwZQIDrStPNJc-sJGOuwjIRWq61rsE9Rdhxyf-PUHrEyjLCEJaS4ujE&_nc_zt=23&_nc_ht=scontent.fhan2-3.fna&_nc_gid=LAcT8QFsxINme-iPLMb37w&_nc_ss=7b2a8&oh=00_AQIcH5KKdktwRxEOtxXGXkTedTqeeWGhjQwpLjZYTgxm7Q&oe=6AA6B2C2",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\931b939f8106cfcf4aa2.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/798894701_1378327977823518_2759847851119051109_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEQHf2BXMiFbynZ-iRqdop8et0bmL8O85d63RuYvw7zlzpx6RxlUL-zLJuCEz-hhzbXjuQ4ZiZDdk3msjFBKVcR&_nc_ohc=7MSQS-Gs_icQ7kNvwH5gM2u&_nc_oc=AdqlXi7rJ7d8dV8M_NllDKxJj2c9PR-ZhaYY_NvpUC5GWf7UJPPuJsIvAZrz7K7Baa4&_nc_zt=23&_nc_ht=scontent.fhan2-4.fna&_nc_gid=SpmGMlr0DNr7ILo34OtSTw&_nc_ss=7b2a8&oh=00_AQKeqHbsEn8xjrksgBeNTN1io8XPpk6x4UgQZ65JJ-JNZw&oe=6AA6AD16",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\460ef840347eee182ff7.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-6/799088149_1378328014490181_1982720500398262252_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFZeIuPjOQqpA1yjdijJlm-0eSy9SiSEhXR5LL1KJISFa5-iFdw0IwbeYF69kl4C8blljTSTpbXizk0yeVCqroO&_nc_ohc=n1SBVQ-kE4kQ7kNvwEy7hUp&_nc_oc=Adouexhqi-KnuHcpKKm3_Ob2dXtGvKlFAFpc2SQyEXR6aoZWv333SwzqjcBuvB7gzE0&_nc_zt=23&_nc_ht=scontent.fhan2-5.fna&_nc_gid=b-sCLaywj8AJSPg83Z4X1w&_nc_ss=7b2a8&oh=00_AQIBQYyD_1Hgaz0XOePRero65K1PZEmGbP5MZGRnTuKebA&oe=6AA6A9F8",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\b7c57f7c12e5a3f2d15d.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/2022/7/13/A%CC%89nh%20chu%CC%A3p%20ma%CC%80n%20hi%CC%80nh%202022-07-13%20093839.png",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\4a82a02a74835154b104.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote name could not be resolved: 'skhcn.thuathienhue.gov.vn'"
+    },
+    {
+      "Url": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/2022/7/13/A%CC%89nh%20chu%CC%A3p%20ma%CC%80n%20hi%CC%80nh%202022-07-13%20100945.png",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\e7be669016226d16dd66.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote name could not be resolved: 'skhcn.thuathienhue.gov.vn'"
+    },
+    {
+      "Url": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/IMG_3126.JPG",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\9c37e3d88d5d8b34a920.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote name could not be resolved: 'skhcn.thuathienhue.gov.vn'"
+    },
+    {
+      "Url": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/IMG_3134.JPG",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\936594198b3ed54e6c46.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote name could not be resolved: 'skhcn.thuathienhue.gov.vn'"
+    },
+    {
+      "Url": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/d21f252d576b9535cc7a.jpg",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\e3c6dda4311a896e34ff.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote name could not be resolved: 'skhcn.thuathienhue.gov.vn'"
+    },
+    {
+      "Url": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/picture1(3).png",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\f190bd74adda62b49460.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote name could not be resolved: 'skhcn.thuathienhue.gov.vn'"
+    },
+    {
+      "Url": "https://www.sgs.com/-/media/sgscorp/images/connectivity-and-products/digital-product-passport-2.cdn.en.1.jpg",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\51defeb646f84eca541a.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    }
+  ],
+  "errors": [],
+  "seconds": 303.2,
+  "assetVerification": {
+    "referencedAssets": 2178,
+    "missingAssets": [
+      {
+        "sourceUrl": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/729080974_1316388990684084_2200825334906426914_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEscV02IYzwrsHw37USrmTlrpDuFzyIKyaukO4XPIgrJpG2mc3YiclMoLq6cK6L85U6IfauiAtSwkUQUCRosSHn&_nc_ohc=uqcMwxTpzNgQ7kNvwGwZ8kQ&_nc_oc=AdobIBMHpsZ8Xi9n4zkcOD9r1kRe7gQN_wgH8XnueFCRaMC2u1ESp1M4UkOtL0ysNAg&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=4E2X1aKokwubouihz9YBkQ&_nc_ss=7b2a8&oh=00_Af_r3rBmgqzhySrR0gYKsb2ZXPuolHRH9TwLd9THGgYPKg&oe=6A47B78C",
+        "localUrl": "/nbc/images/0cc6dfd46eee47a53192.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.99422-6/765769877_855659437481459_7449471431407815344_n.png?stp=dst-jpg_tt6&cstp=mx665x471&ctp=s665x471&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gm44YsloTPsQ7kNvwG6wmv8&_nc_oc=Adq7_a3g66wwClSikNbZw0ior3fjf6pnqRhEIDEWVOVIMH-98LZ9b5O0rHUHcxzDGzM&_nc_zt=14&_nc_ht=scontent.fhan14-3.fna&_nc_gid=d0fuWH59z-DP-Ri5ozn27w&_nc_ss=7b2a8&oh=00_AQEYetIwK8Ld_M1TvEgwkroykreNqs--vmKMd2Lun626CA&oe=6A8AE8D9",
+        "localUrl": "/nbc/images/1bceed300c269b9f7afd.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.99422-6/772773162_1720260252360664_8613973009424403443_n.png?stp=dst-jpg_tt6&cstp=mx665x443&ctp=s665x443&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=hyw4T7u1PtYQ7kNvwF-35wI&_nc_oc=Adqe1A--kDw-6IUzC6HcVkPY8ZAoJutHpfLQ4yMKtrcuDBDjGFrbit4JpS3oTDuReuk&_nc_zt=14&_nc_ht=scontent.fhan14-1.fna&_nc_gid=gNXKt_rhK3wxx9pA02mKaw&_nc_ss=7b2a8&oh=00_AQENwt4ntTf8TGp_CB89QnScYH0k-_A-2B6jDi2FUJBOKg&oe=6A8AEE2F",
+        "localUrl": "/nbc/images/21b14fcca7de9a331947.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan14-2.fna.fbcdn.net/v/t39.99422-6/773315767_1219028921300149_414670642737129773_n.png?stp=dst-jpg_tt6&cstp=mx665x484&ctp=s665x484&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=NcJgZJW_CasQ7kNvwGUZo_W&_nc_oc=AdqOaG0Ff1ljK1ZkEe11SXvWAD119bV2W8yhp5cN7dNvJpBZvQTbFel18Z-F1vbtqLQ&_nc_zt=14&_nc_ht=scontent.fhan14-2.fna&_nc_gid=QDQZTKxPYmy7vJJkTpmXXg&_nc_ss=7b2a8&oh=00_AQEaB3JpfY9IZT__vTuO91Q75NfkfmmxGC4BPbxR5kjpYg&oe=6A8AD3C4",
+        "localUrl": "/nbc/images/2c1f59b458f5c926ed19.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/831769645_1398545115801804_1497928148010867820_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGNfxXA2zmtwdVU1PxGwV5XjyLmkrriUEuPIuaSuuJQS7JDZQ5xGU_glqrFexJd1Hv3cPQArf9g_kPoZIMWRZAD&_nc_ohc=mB-J3WIZF8IQ7kNvwGx274m&_nc_oc=AdqYnHi3L_rXof4-xadL_yTxlPXCoDlMP-Ftx1PUsDdCx4ZqKp7f4z36Gwel7ySxYv8&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=vNQnFesqTpR5u1xqZH80bA&_nc_ss=7b2a8&oh=00_AQMl8swQFtQH2Ts2jKg6V7SQ82mJyeg6rbSR76XdmDVaPA&oe=6AC3F2E7",
+        "localUrl": "/nbc/images/2cc686a30d6e83c40989.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/798894701_1378327977823518_2759847851119051109_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEQHf2BXMiFbynZ-iRqdop8et0bmL8O85d63RuYvw7zlzpx6RxlUL-zLJuCEz-hhzbXjuQ4ZiZDdk3msjFBKVcR&_nc_ohc=7MSQS-Gs_icQ7kNvwH5gM2u&_nc_oc=AdqlXi7rJ7d8dV8M_NllDKxJj2c9PR-ZhaYY_NvpUC5GWf7UJPPuJsIvAZrz7K7Baa4&_nc_zt=23&_nc_ht=scontent.fhan2-4.fna&_nc_gid=SpmGMlr0DNr7ILo34OtSTw&_nc_ss=7b2a8&oh=00_AQKeqHbsEn8xjrksgBeNTN1io8XPpk6x4UgQZ65JJ-JNZw&oe=6AA6AD16",
+        "localUrl": "/nbc/images/460ef840347eee182ff7.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan14-5.fna.fbcdn.net/v/t39.99422-6/766724088_2305876590159040_6516901543332974826_n.png?stp=dst-jpg_tt6&cstp=mx665x552&ctp=s665x552&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KEsXLo1SPEcQ7kNvwEhKRZ6&_nc_oc=Adpg4hnmwpZJY17Yn4QiHS3UFTGY3P7b9OnL5uSr487GOXL3tKrKkaVUtJeDaj9DCaY&_nc_zt=14&_nc_ht=scontent.fhan14-5.fna&_nc_gid=0KUnYUVB6iwvsSdA4HT-Yw&_nc_ss=7b2a8&oh=00_AQEjDfHecZLZ_95BoOCdWE2VpDuAXQ32ExPX8hp81wqv-Q&oe=6A8AFB93",
+        "localUrl": "/nbc/images/4749e5fc0e9df3d3e7bb.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/2022/7/13/A%CC%89nh%20chu%CC%A3p%20ma%CC%80n%20hi%CC%80nh%202022-07-13%20093839.png",
+        "localUrl": "/nbc/images/4a82a02a74835154b104.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.99422-6/767560590_3957061511270014_2358017452844568825_n.png?stp=dst-jpg_tt6&cstp=mx329x466&ctp=s329x466&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dnKAMKKjhHwQ7kNvwEEWFPa&_nc_oc=AdpPWAJ4IleGHRgh81LfkK8hNNA5k2nPGHvRv2tT1mAPIJPH5X86GWkTS-jE9DVxSks&_nc_zt=14&_nc_ht=scontent.fhan14-1.fna&_nc_gid=_OA1LmAYOv3Dd4C_DKeHuQ&_nc_ss=7b2a8&oh=00_AQEDTfyhxrH0sixH6xtNxEW0WxVAhSO2tjaM-4eDE2LyTw&oe=6A8AFA95",
+        "localUrl": "/nbc/images/4b1f2614d8176ab3db43.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://www.sgs.com/-/media/sgscorp/images/connectivity-and-products/digital-product-passport-2.cdn.en.1.jpg",
+        "localUrl": "/nbc/images/51defeb646f84eca541a.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/829973319_1398545102468472_7411977918096611366_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHBDdWB61MRx1hWvL-lbzpB0ByUltrlJeDQHJSW2uUl4AAzVEgJ9DS51kAqP9FMLGx12MT7y7XJQknelIaQxzEq&_nc_ohc=KcikCZhFb1cQ7kNvwEVvTjh&_nc_oc=AdojS2FFrp3qVZtzjkueNn9B0J-S6QiU2VJJK5P05mxRbsikILHN1edy9l7fxZOcQ2s&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=L6pyyX4GtftlfRVzfYrNtw&_nc_ss=7b2a8&oh=00_AQNs98vfshdc4aJQAtZvDtuHvjlcasxQdi3FTo3IwclfEw&oe=6AC3DFAE",
+        "localUrl": "/nbc/images/638c816ae74861650602.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://nbc.gov.vn/upload/files/A%CC%89nh%20chu%CC%A3p%20Ma%CC%80n%20hi%CC%80nh%202021-10-11%20lu%CC%81c%2011_28_28.png",
+        "localUrl": "/nbc/images/71924fedbe54ec23e7b9.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.99422-6/771309460_1851059689662656_7968467631655171058_n.png?stp=dst-jpg_tt6&cstp=mx665x473&ctp=s665x473&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rq3VNpNT7NMQ7kNvwFQKaur&_nc_oc=AdpddVx_yExMYlmACT0H1KmoHtIeAUufCh71M_UULS7oTUk_4n0MVYzxY7xIYC1110k&_nc_zt=14&_nc_ht=scontent.fhan14-3.fna&_nc_gid=Re9NNpdYK1yC3GrhIGbQ3w&_nc_ss=7b2a8&oh=00_AQFnAJHuYr8t-_AmuXN5Jyme31HsazMbKhHHkN-r_590ug&oe=6A8AF6C3",
+        "localUrl": "/nbc/images/7e91167a6c300f63617c.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/729186622_1316388957350754_7158924510423156276_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFEXqFWggA5cJzVg_AaCXqfVcVNiUID62tVxU2JQgPra4gyIUUMtnuGmDtM2O-HzFJSYbVS9B5byhfvg5c2hSy7&_nc_ohc=06UQ9gNeVMcQ7kNvwGWADK2&_nc_oc=AdqoLEiEw8Zclt3nWhPVD5emV9TH_wJPqcYbanKDtshHOuHfYvBcuW85vQA6r1erjEU&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=wC8qQJgi-eoyVlpJUasd7Q&_nc_ss=7b2a8&oh=00_Af8MXqDOk-o1HbpNzPb8PfGEefpLvqfbbXND6_QMyochXQ&oe=6A479A6D",
+        "localUrl": "/nbc/images/8497318243b6604a1160.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://cdnmedia.baotintuc.vn/Upload/xXHVb3SiFkVmqewcNCaBEw/files/2026/THANG%207/9%20Truy%20xu%E1%BA%A5t%20ngu%E1%BB%93n%20g%E1%BB%91c/truyxuatng.png",
+        "localUrl": "/nbc/images/9001c79954cfbb6aa3fa.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/799210754_1378326541156995_3282591289737343932_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGfjPghfA5lHqpHMNWaY0wdO9_8fjj0-fE73_x-OPT58begv99YUYVjdmkcL0RXn1oJfbkpfyDNgf3A7RBRvCN6&_nc_ohc=wBCQiUNUlZ4Q7kNvwFdCdxy&_nc_oc=Adpnv-mktK4AjwZQIDrStPNJc-sJGOuwjIRWq61rsE9Rdhxyf-PUHrEyjLCEJaS4ujE&_nc_zt=23&_nc_ht=scontent.fhan2-3.fna&_nc_gid=LAcT8QFsxINme-iPLMb37w&_nc_ss=7b2a8&oh=00_AQIcH5KKdktwRxEOtxXGXkTedTqeeWGhjQwpLjZYTgxm7Q&oe=6AA6B2C2",
+        "localUrl": "/nbc/images/931b939f8106cfcf4aa2.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/IMG_3134.JPG",
+        "localUrl": "/nbc/images/936594198b3ed54e6c46.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.99422-6/769363610_1575894077332101_5165181507679049337_n.png?stp=dst-jpg_tt6&cstp=mx665x432&ctp=s665x432&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=yewzDHF_R70Q7kNvwE7aY9T&_nc_oc=AdrbamfOzv008I1shqVRkzgRks3ftFxEwrk58xU3h5EtuEUOGl0wkEcHR5Ovx2ZmEVc&_nc_zt=14&_nc_ht=scontent.fhan14-1.fna&_nc_gid=tXZ7BrRgh3kUlPf_YlX2WQ&_nc_ss=7b2a8&oh=00_AQFk3KsRXqjyT4ZVMKXgBM4nGIwQxGfwkemmkLSqtJqf_A&oe=6A8ADB2F",
+        "localUrl": "/nbc/images/959e691367a7df125a07.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.99422-6/770422689_2303421433811484_6491807708325771129_n.png?stp=dst-jpg_tt6&cstp=mx665x466&ctp=s665x466&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vlPlBGnHDFYQ7kNvwH-IA_c&_nc_oc=AdoRp0z174D6_5Q9uoiXIjk6ArVnXA82l67wAOxL7qp1To6BCh4Q4zLRUVzNpBxydvY&_nc_zt=14&_nc_ht=scontent.fhan14-3.fna&_nc_gid=lFQb27wPaAsfk6KmImlprw&_nc_ss=7b2a8&oh=00_AQHD2-1HPSVqFvLutFZRdnx0xbu6q3PAHbQDSjVz3fzzMQ&oe=6A8AE3ED",
+        "localUrl": "/nbc/images/96b358adaab30136fa17.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/IMG_3126.JPG",
+        "localUrl": "/nbc/images/9c37e3d88d5d8b34a920.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/751335827_1333890782267238_790734066711688815_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeECA8bFb0WxpeM4EsT2I2mmlovRAQGBFOaWi9EBAYEU5qtLh0DDOoPDS3HUctE8KF2mspxpP1LPfqao_PJH7CcH&_nc_ohc=NbyLHO_0zTUQ7kNvwHcLwlr&_nc_oc=AdrcFUK3pABrmlrCuqbOJWHjB7V6xLteppc2XXnGi35p-2azOowq-lZrQlCFWlBrJxY&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=XO9t8yAhzlNrnNZGZjgg5A&_nc_ss=7b2a8&oh=00_AQBGDpRBnulqwacFzxIT30zc23LjdQNgAeBRtra3XuYcfg&oe=6A5FCDA8",
+        "localUrl": "/nbc/images/a20e50fe899785fb7790.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan14-5.fna.fbcdn.net/v/t39.99422-6/769318908_2197988577600408_8549630628191263052_n.png?stp=dst-jpg_tt6&cstp=mx665x522&ctp=s665x522&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=hh5_iSCMyxIQ7kNvwEHbAV2&_nc_oc=AdpXqunqcb7esE_yK0LG7VFmKY3EdEb_Wi_CGhGcg6CC-b60MsHZx-Ymsdf-oRP9daY&_nc_zt=14&_nc_ht=scontent.fhan14-5.fna&_nc_gid=9asDvMe36b96Tk7s_e-PwA&_nc_ss=7b2a8&oh=00_AQEBPRUCrDnee0LBx86jUblg47w3P_9v4LzwZnmQ2tDxRA&oe=6A8AF66E",
+        "localUrl": "/nbc/images/b15bcad38788c825dd55.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/748930890_1333889112267405_8521785053975923431_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGuYoBi4FuZmdj6QICq8yom_LQiD6lix-D8tCIPqWLH4G8obE3tFjk2cm9c0m-HHsygixTROuMG2JM2ZGMEjUrZ&_nc_ohc=SJDV4REoJawQ7kNvwH4AmAY&_nc_oc=AdpKC3i6IRGLt5BLoRitQOdNzCCrIgz8NnVQX4B8Zu_5vwQDc4l5QHettQc8ZmRNwz8&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=PsbcfdUJGgIYj4qwSTDXmg&_nc_ss=7b2a8&oh=00_AQB6LFrr0PQ8q8wcUhlflYWfR369x2mwuqRimDiTmj82jg&oe=6A5FEE0F",
+        "localUrl": "/nbc/images/b3d2ee0b448cff475e5c.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-6/799088149_1378328014490181_1982720500398262252_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFZeIuPjOQqpA1yjdijJlm-0eSy9SiSEhXR5LL1KJISFa5-iFdw0IwbeYF69kl4C8blljTSTpbXizk0yeVCqroO&_nc_ohc=n1SBVQ-kE4kQ7kNvwEy7hUp&_nc_oc=Adouexhqi-KnuHcpKKm3_Ob2dXtGvKlFAFpc2SQyEXR6aoZWv333SwzqjcBuvB7gzE0&_nc_zt=23&_nc_ht=scontent.fhan2-5.fna&_nc_gid=b-sCLaywj8AJSPg83Z4X1w&_nc_ss=7b2a8&oh=00_AQIBQYyD_1Hgaz0XOePRero65K1PZEmGbP5MZGRnTuKebA&oe=6AA6A9F8",
+        "localUrl": "/nbc/images/b7c57f7c12e5a3f2d15d.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.99422-6/771617055_1564388488711252_7679221850890582051_n.png?stp=dst-jpg_tt6&cstp=mx665x473&ctp=s665x473&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Bmi-utIwUQIQ7kNvwF-uMEL&_nc_oc=Adov89LPjFEpTvRkYSt653KKvScGJRdw44a_7j3PsJUgmM6f50gjZiqqrqGLMmqr6f0&_nc_zt=14&_nc_ht=scontent.fhan14-4.fna&_nc_gid=Xxa9sPbsbqE9GMkx_hd2WA&_nc_ss=7b2a8&oh=00_AQGOdGuNkrX-76_giaIJTzpGDAX9g-GTEMT6jleONFbktg&oe=6A8AE717",
+        "localUrl": "/nbc/images/b84c0a5cc2cd8fde0081.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/750582928_1333890308933952_306302668704914221_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEB9BACayzI5Zp2lesnDKP53Eeb_0wchNLcR5v_TByE0qdFVRwquuyNV93mVeFwr-mQsVBfbWWeejkJAwvG1jUP&_nc_ohc=ONpA66bu530Q7kNvwEOUaof&_nc_oc=Adpxaven-jSYyNKUPwL_yzpXkDr9zZnItZiDfmpJsjLBzORUwTjp6TrewK8GykWcf7U&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=k6g4BTzkVz_vNhPvMJB8gw&_nc_ss=7b2a8&oh=00_AQCvF_pcK0Xa0QpnKejiaP_iaKNqwdhtAiqnRZhAy6vK0w&oe=6A5FD880",
+        "localUrl": "/nbc/images/bda11d3bff30ec22693b.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://nbc.gov.vn/upload/files/A%CC%89nh%20chu%CC%A3p%20Ma%CC%80n%20hi%CC%80nh%202021-10-11%20lu%CC%81c%2011_24_03.png",
+        "localUrl": "/nbc/images/bffaf27f54e7988f48f0.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/729115805_1316389000684083_2129078834734996759_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeG91_7_BpCK-0TC9NC9xogU8ywA-8EWRnDzLAD7wRZGcO9IkwKcaIoVHYccKxe8xoJw07bqiwU6icX4U1OlT5cc&_nc_ohc=5s34p8z13_4Q7kNvwEg5Mum&_nc_oc=AdrSZsYftq4iHZe6rfkwb8Ky2N_55r5W-P3iNdgER9KPIb9qpCd-svugPe528PuaVw8&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=bb6r4RLDsJgr2i-FLPqaSw&_nc_ss=7b2a8&oh=00_Af_3SdOMCNA2W9pQ8KsYpVpoNYYc4tA-S-sGxFpiE6k95A&oe=6A47B746",
+        "localUrl": "/nbc/images/c075b2a2a808b2383b40.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.99422-6/771678022_1578062077285055_4455914939033936650_n.png?stp=dst-jpg_tt6&cstp=mx665x443&ctp=s665x443&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=MjQMALi0KSIQ7kNvwGErkfK&_nc_oc=AdqjktaPSIYubp9EBmR3fHn0pT5fI6FZg9VJM2w8HvSpTmnNq89tacHRPs699K_CyeQ&_nc_zt=14&_nc_ht=scontent.fhan14-3.fna&_nc_gid=lRu__tKZ8acfdb3pR6xX9w&_nc_ss=7b2a8&oh=00_AQE4yfLpnqdKIqgboTlKF5O6k_VOHe_s9AXD67XElm_Veg&oe=6A8AF9E2",
+        "localUrl": "/nbc/images/d7fba9f7d123d64844cc.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/730481136_1316390327350617_7263697409391685524_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGeJGTiA1b3wJwixzzzor4W2HvytPrWc3vYe_K0-tZze45PwEBX2lCuA6Szh0ewY8shlGKUngsUGKjPbJAAfRmi&_nc_ohc=7PZcCTwWhmUQ7kNvwGqo_9r&_nc_oc=Adp-khXyExHLJxIsLZ1bxqoCcKokwAst5RyPNS91BsqHY_G68i1AwRhL1fhNvcYBTMQ&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=ya0u-1Iv3DWQJC3kLmdwVw&_nc_ss=7b2a8&oh=00_Af9GHI8Hdprrx5nUn92CczaJKQTfMH_nbSlv8dJ9K8ksbg&oe=6A47AB8C",
+        "localUrl": "/nbc/images/d992741558f34d30bef3.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/d21f252d576b9535cc7a.jpg",
+        "localUrl": "/nbc/images/e3c6dda4311a896e34ff.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/2022/7/13/A%CC%89nh%20chu%CC%A3p%20ma%CC%80n%20hi%CC%80nh%202022-07-13%20100945.png",
+        "localUrl": "/nbc/images/e7be669016226d16dd66.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/729261353_1316388964017420_4757943120177184501_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGrQj9LSKSP2rM6gpjqJzZ_Ofa0kHsUEeQ59rSQexQR5DBTqCFJ0kmkcFfpAnIvHov6nI8NHGOJmxSZr0EZn41l&_nc_ohc=GfxxSNf_DOkQ7kNvwGiKCYA&_nc_oc=AdocAgCgp8G1Sy_2bZULkJtdAFSQ-eUxdHmqJXTsk8HXgEET2TmJpnTZVX6oij1GGOk&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=t3nlZbu907YSWM210w9Rbg&_nc_ss=7b2a8&oh=00_Af9lXGUEObLTcwXjwCpMjFGcSS97xs3UHQ9GV6GrzPRHCA&oe=6A47B8ED",
+        "localUrl": "/nbc/images/eb015899bf7d541bd0ad.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://baodongnai.com.vn/file/e7837c02876411cd0187645a2551379f/062026/taphuan-01_20260624101550_20260624103755.jpg?width=1800",
+        "localUrl": "/nbc/images/ec43dcc67411d0eda592.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://baodongnai.com.vn/file/e7837c02876411cd0187645a2551379f/062026/taphuan-02_20260624101629_20260624103946.jpg?width=1800",
+        "localUrl": "/nbc/images/ee7de68435a057dc676f.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/796357909_1378326271157022_7303069365272391713_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFPXbzBRSYxKtgW80oQweBZK9PduQM3lYEr0925AzeVgUd4BQj2X8eiLBvrD5E4nJu6RUCXmA4CYuJ-_kGM-0En&_nc_ohc=JWFKoRMkMDwQ7kNvwHg2MI4&_nc_oc=AdpS4zlFhF-XSi8ibS5CRXJoHshv4rx9J2tspwacJyYz1N0FcmV3VzZA5HmlQ4fmshg&_nc_zt=23&_nc_ht=scontent.fhan2-3.fna&_nc_gid=AGwOmn6aIjx8QewPFx0JDQ&_nc_ss=7b2a8&oh=00_AQLd2-AbDPRJhmaPrvWAL30V0sT1x3voLFvTB1swIpMJdQ&oe=6AA699F7",
+        "localUrl": "/nbc/images/ef4047d40b745631213b.jpg",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/picture1(3).png",
+        "localUrl": "/nbc/images/f190bd74adda62b49460.png",
+        "success": false,
+        "bytes": 0
+      },
+      {
+        "sourceUrl": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/749197887_1333889215600728_3592175094264102066_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x853&ctp=s1280x853&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGb8JXanJq3sgRswc5aqFmkF7cdgEwzHg0Xtx2ATDMeDc18G4jr93Unwky16w5eooQSXlwIeudAfDfs9KW6nzwz&_nc_ohc=Nhk2aEscmqIQ7kNvwEyMdHQ&_nc_oc=Adq3wqBXTwCtdxsdemW0jph77yPrZwoJfQs28-9PzvuxjhrG9PoKi4UqPyfYWoDEtBM&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=ijrDuIzsNK8rxfm1Lz45cA&_nc_ss=7b2a8&oh=00_AQA_JHkW46mzJyMbWRLBNvJBik_Xe3PoMbAq7pzr-3QJIQ&oe=6A5FD19B",
+        "localUrl": "/nbc/images/fbe6c4f6e76353889b9a.jpg",
+        "success": false,
+        "bytes": 0
+      }
+    ],
+    "missingArticleThumbnails": 0,
+    "missingHomeHero": false,
+    "totalLocalImageFiles": 2153,
+    "localImageBytes": 751676367,
+    "categoryCounts": {
+      "e-learning": 1,
+      "tin-tuc-su-kien": 369,
+      "truy-xuat-nguon-goc": 154,
+      "ma-so-ma-vach": 76,
+      "ma-lei": 7,
+      "hoat-dong-tai-dia-phuong": 70,
+      "dao-tao": 1
+    },
+    "duplicateSlugs": 0,
+    "emptyFields": {
+      "title": 0,
+      "date": 0,
+      "content": 0,
+      "thumbnail": 0
+    }
+  },
+  "initialImageErrors": [
+    {
+      "Url": "https://baodongnai.com.vn/file/e7837c02876411cd0187645a2551379f/062026/taphuan-01_20260624101550_20260624103755.jpg?width=1800",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\ec43dcc67411d0eda592.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (404) Not Found."
+    },
+    {
+      "Url": "https://baodongnai.com.vn/file/e7837c02876411cd0187645a2551379f/062026/taphuan-02_20260624101629_20260624103946.jpg?width=1800",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\ee7de68435a057dc676f.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (404) Not Found."
+    },
+    {
+      "Url": "https://cdnmedia.baotintuc.vn/Upload/xXHVb3SiFkVmqewcNCaBEw/files/2026/THANG%207/9%20Truy%20xu%E1%BA%A5t%20ngu%E1%BB%93n%20g%E1%BB%91c/truyxuatng.png",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\9001c79954cfbb6aa3fa.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The operation has timed out"
+    },
+    {
+      "Url": "https://nbc.gov.vn/upload/files/A%CC%89nh%20chu%CC%A3p%20Ma%CC%80n%20hi%CC%80nh%202021-10-11%20lu%CC%81c%2011_24_03.png",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\bffaf27f54e7988f48f0.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (404) Not Found."
+    },
+    {
+      "Url": "https://nbc.gov.vn/upload/files/A%CC%89nh%20chu%CC%A3p%20Ma%CC%80n%20hi%CC%80nh%202021-10-11%20lu%CC%81c%2011_28_28.png",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\71924fedbe54ec23e7b9.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (404) Not Found."
+    },
+    {
+      "Url": "https://nbc.gov.vn/upload/files/Hoi%20thao%20TXNG%20y%20te/A%CC%89nh%20chu%CC%A3p%20Ma%CC%80n%20hi%CC%80nh%202021-06-04%20lu%CC%81c%2015_13_49.png",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\2df58334f8f7db61a932.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (404) Not Found."
+    },
+    {
+      "Url": "https://nbc.gov.vn/upload/files/Se%CC%82%CC%81p%20vinh-1.jpg",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\ceabf474b92b5f4a534a.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (404) Not Found."
+    },
+    {
+      "Url": "https://nbc.gov.vn/upload/images/A%CC%89nh%20chu%CC%A3p%20Ma%CC%80n%20hi%CC%80nh%202021-08-19%20lu%CC%81c%2015_52_53.png",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\fd11ff98e83e712944ef.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (404) Not Found."
+    },
+    {
+      "Url": "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.99422-6/767560590_3957061511270014_2358017452844568825_n.png?stp=dst-jpg_tt6&cstp=mx329x466&ctp=s329x466&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dnKAMKKjhHwQ7kNvwEEWFPa&_nc_oc=AdpPWAJ4IleGHRgh81LfkK8hNNA5k2nPGHvRv2tT1mAPIJPH5X86GWkTS-jE9DVxSks&_nc_zt=14&_nc_ht=scontent.fhan14-1.fna&_nc_gid=_OA1LmAYOv3Dd4C_DKeHuQ&_nc_ss=7b2a8&oh=00_AQEDTfyhxrH0sixH6xtNxEW0WxVAhSO2tjaM-4eDE2LyTw&oe=6A8AFA95",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\4b1f2614d8176ab3db43.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.99422-6/769363610_1575894077332101_5165181507679049337_n.png?stp=dst-jpg_tt6&cstp=mx665x432&ctp=s665x432&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=yewzDHF_R70Q7kNvwE7aY9T&_nc_oc=AdrbamfOzv008I1shqVRkzgRks3ftFxEwrk58xU3h5EtuEUOGl0wkEcHR5Ovx2ZmEVc&_nc_zt=14&_nc_ht=scontent.fhan14-1.fna&_nc_gid=tXZ7BrRgh3kUlPf_YlX2WQ&_nc_ss=7b2a8&oh=00_AQFk3KsRXqjyT4ZVMKXgBM4nGIwQxGfwkemmkLSqtJqf_A&oe=6A8ADB2F",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\959e691367a7df125a07.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.99422-6/772773162_1720260252360664_8613973009424403443_n.png?stp=dst-jpg_tt6&cstp=mx665x443&ctp=s665x443&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=hyw4T7u1PtYQ7kNvwF-35wI&_nc_oc=Adqe1A--kDw-6IUzC6HcVkPY8ZAoJutHpfLQ4yMKtrcuDBDjGFrbit4JpS3oTDuReuk&_nc_zt=14&_nc_ht=scontent.fhan14-1.fna&_nc_gid=gNXKt_rhK3wxx9pA02mKaw&_nc_ss=7b2a8&oh=00_AQENwt4ntTf8TGp_CB89QnScYH0k-_A-2B6jDi2FUJBOKg&oe=6A8AEE2F",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\21b14fcca7de9a331947.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-2.fna.fbcdn.net/v/t39.99422-6/773315767_1219028921300149_414670642737129773_n.png?stp=dst-jpg_tt6&cstp=mx665x484&ctp=s665x484&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=NcJgZJW_CasQ7kNvwGUZo_W&_nc_oc=AdqOaG0Ff1ljK1ZkEe11SXvWAD119bV2W8yhp5cN7dNvJpBZvQTbFel18Z-F1vbtqLQ&_nc_zt=14&_nc_ht=scontent.fhan14-2.fna&_nc_gid=QDQZTKxPYmy7vJJkTpmXXg&_nc_ss=7b2a8&oh=00_AQEaB3JpfY9IZT__vTuO91Q75NfkfmmxGC4BPbxR5kjpYg&oe=6A8AD3C4",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\2c1f59b458f5c926ed19.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.99422-6/765769877_855659437481459_7449471431407815344_n.png?stp=dst-jpg_tt6&cstp=mx665x471&ctp=s665x471&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gm44YsloTPsQ7kNvwG6wmv8&_nc_oc=Adq7_a3g66wwClSikNbZw0ior3fjf6pnqRhEIDEWVOVIMH-98LZ9b5O0rHUHcxzDGzM&_nc_zt=14&_nc_ht=scontent.fhan14-3.fna&_nc_gid=d0fuWH59z-DP-Ri5ozn27w&_nc_ss=7b2a8&oh=00_AQEYetIwK8Ld_M1TvEgwkroykreNqs--vmKMd2Lun626CA&oe=6A8AE8D9",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\1bceed300c269b9f7afd.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.99422-6/770422689_2303421433811484_6491807708325771129_n.png?stp=dst-jpg_tt6&cstp=mx665x466&ctp=s665x466&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vlPlBGnHDFYQ7kNvwH-IA_c&_nc_oc=AdoRp0z174D6_5Q9uoiXIjk6ArVnXA82l67wAOxL7qp1To6BCh4Q4zLRUVzNpBxydvY&_nc_zt=14&_nc_ht=scontent.fhan14-3.fna&_nc_gid=lFQb27wPaAsfk6KmImlprw&_nc_ss=7b2a8&oh=00_AQHD2-1HPSVqFvLutFZRdnx0xbu6q3PAHbQDSjVz3fzzMQ&oe=6A8AE3ED",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\96b358adaab30136fa17.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.99422-6/771309460_1851059689662656_7968467631655171058_n.png?stp=dst-jpg_tt6&cstp=mx665x473&ctp=s665x473&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rq3VNpNT7NMQ7kNvwFQKaur&_nc_oc=AdpddVx_yExMYlmACT0H1KmoHtIeAUufCh71M_UULS7oTUk_4n0MVYzxY7xIYC1110k&_nc_zt=14&_nc_ht=scontent.fhan14-3.fna&_nc_gid=Re9NNpdYK1yC3GrhIGbQ3w&_nc_ss=7b2a8&oh=00_AQFnAJHuYr8t-_AmuXN5Jyme31HsazMbKhHHkN-r_590ug&oe=6A8AF6C3",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\7e91167a6c300f63617c.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.99422-6/771678022_1578062077285055_4455914939033936650_n.png?stp=dst-jpg_tt6&cstp=mx665x443&ctp=s665x443&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=MjQMALi0KSIQ7kNvwGErkfK&_nc_oc=AdqjktaPSIYubp9EBmR3fHn0pT5fI6FZg9VJM2w8HvSpTmnNq89tacHRPs699K_CyeQ&_nc_zt=14&_nc_ht=scontent.fhan14-3.fna&_nc_gid=lRu__tKZ8acfdb3pR6xX9w&_nc_ss=7b2a8&oh=00_AQE4yfLpnqdKIqgboTlKF5O6k_VOHe_s9AXD67XElm_Veg&oe=6A8AF9E2",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\d7fba9f7d123d64844cc.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.99422-6/771617055_1564388488711252_7679221850890582051_n.png?stp=dst-jpg_tt6&cstp=mx665x473&ctp=s665x473&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Bmi-utIwUQIQ7kNvwF-uMEL&_nc_oc=Adov89LPjFEpTvRkYSt653KKvScGJRdw44a_7j3PsJUgmM6f50gjZiqqrqGLMmqr6f0&_nc_zt=14&_nc_ht=scontent.fhan14-4.fna&_nc_gid=Xxa9sPbsbqE9GMkx_hd2WA&_nc_ss=7b2a8&oh=00_AQGOdGuNkrX-76_giaIJTzpGDAX9g-GTEMT6jleONFbktg&oe=6A8AE717",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\b84c0a5cc2cd8fde0081.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-5.fna.fbcdn.net/v/t39.99422-6/766724088_2305876590159040_6516901543332974826_n.png?stp=dst-jpg_tt6&cstp=mx665x552&ctp=s665x552&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KEsXLo1SPEcQ7kNvwEhKRZ6&_nc_oc=Adpg4hnmwpZJY17Yn4QiHS3UFTGY3P7b9OnL5uSr487GOXL3tKrKkaVUtJeDaj9DCaY&_nc_zt=14&_nc_ht=scontent.fhan14-5.fna&_nc_gid=0KUnYUVB6iwvsSdA4HT-Yw&_nc_ss=7b2a8&oh=00_AQEjDfHecZLZ_95BoOCdWE2VpDuAXQ32ExPX8hp81wqv-Q&oe=6A8AFB93",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\4749e5fc0e9df3d3e7bb.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan14-5.fna.fbcdn.net/v/t39.99422-6/769318908_2197988577600408_8549630628191263052_n.png?stp=dst-jpg_tt6&cstp=mx665x522&ctp=s665x522&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=hh5_iSCMyxIQ7kNvwEHbAV2&_nc_oc=AdpXqunqcb7esE_yK0LG7VFmKY3EdEb_Wi_CGhGcg6CC-b60MsHZx-Ymsdf-oRP9daY&_nc_zt=14&_nc_ht=scontent.fhan14-5.fna&_nc_gid=9asDvMe36b96Tk7s_e-PwA&_nc_ss=7b2a8&oh=00_AQEBPRUCrDnee0LBx86jUblg47w3P_9v4LzwZnmQ2tDxRA&oe=6A8AF66E",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\b15bcad38788c825dd55.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/729080974_1316388990684084_2200825334906426914_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEscV02IYzwrsHw37USrmTlrpDuFzyIKyaukO4XPIgrJpG2mc3YiclMoLq6cK6L85U6IfauiAtSwkUQUCRosSHn&_nc_ohc=uqcMwxTpzNgQ7kNvwGwZ8kQ&_nc_oc=AdobIBMHpsZ8Xi9n4zkcOD9r1kRe7gQN_wgH8XnueFCRaMC2u1ESp1M4UkOtL0ysNAg&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=4E2X1aKokwubouihz9YBkQ&_nc_ss=7b2a8&oh=00_Af_r3rBmgqzhySrR0gYKsb2ZXPuolHRH9TwLd9THGgYPKg&oe=6A47B78C",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\0cc6dfd46eee47a53192.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/729115805_1316389000684083_2129078834734996759_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeG91_7_BpCK-0TC9NC9xogU8ywA-8EWRnDzLAD7wRZGcO9IkwKcaIoVHYccKxe8xoJw07bqiwU6icX4U1OlT5cc&_nc_ohc=5s34p8z13_4Q7kNvwEg5Mum&_nc_oc=AdrSZsYftq4iHZe6rfkwb8Ky2N_55r5W-P3iNdgER9KPIb9qpCd-svugPe528PuaVw8&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=bb6r4RLDsJgr2i-FLPqaSw&_nc_ss=7b2a8&oh=00_Af_3SdOMCNA2W9pQ8KsYpVpoNYYc4tA-S-sGxFpiE6k95A&oe=6A47B746",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\c075b2a2a808b2383b40.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/729186622_1316388957350754_7158924510423156276_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFEXqFWggA5cJzVg_AaCXqfVcVNiUID62tVxU2JQgPra4gyIUUMtnuGmDtM2O-HzFJSYbVS9B5byhfvg5c2hSy7&_nc_ohc=06UQ9gNeVMcQ7kNvwGWADK2&_nc_oc=AdqoLEiEw8Zclt3nWhPVD5emV9TH_wJPqcYbanKDtshHOuHfYvBcuW85vQA6r1erjEU&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=wC8qQJgi-eoyVlpJUasd7Q&_nc_ss=7b2a8&oh=00_Af8MXqDOk-o1HbpNzPb8PfGEefpLvqfbbXND6_QMyochXQ&oe=6A479A6D",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\8497318243b6604a1160.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/729261353_1316388964017420_4757943120177184501_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGrQj9LSKSP2rM6gpjqJzZ_Ofa0kHsUEeQ59rSQexQR5DBTqCFJ0kmkcFfpAnIvHov6nI8NHGOJmxSZr0EZn41l&_nc_ohc=GfxxSNf_DOkQ7kNvwGiKCYA&_nc_oc=AdocAgCgp8G1Sy_2bZULkJtdAFSQ-eUxdHmqJXTsk8HXgEET2TmJpnTZVX6oij1GGOk&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=t3nlZbu907YSWM210w9Rbg&_nc_ss=7b2a8&oh=00_Af9lXGUEObLTcwXjwCpMjFGcSS97xs3UHQ9GV6GrzPRHCA&oe=6A47B8ED",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\eb015899bf7d541bd0ad.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/730481136_1316390327350617_7263697409391685524_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGeJGTiA1b3wJwixzzzor4W2HvytPrWc3vYe_K0-tZze45PwEBX2lCuA6Szh0ewY8shlGKUngsUGKjPbJAAfRmi&_nc_ohc=7PZcCTwWhmUQ7kNvwGqo_9r&_nc_oc=Adp-khXyExHLJxIsLZ1bxqoCcKokwAst5RyPNS91BsqHY_G68i1AwRhL1fhNvcYBTMQ&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=ya0u-1Iv3DWQJC3kLmdwVw&_nc_ss=7b2a8&oh=00_Af9GHI8Hdprrx5nUn92CczaJKQTfMH_nbSlv8dJ9K8ksbg&oe=6A47AB8C",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\d992741558f34d30bef3.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/748930890_1333889112267405_8521785053975923431_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGuYoBi4FuZmdj6QICq8yom_LQiD6lix-D8tCIPqWLH4G8obE3tFjk2cm9c0m-HHsygixTROuMG2JM2ZGMEjUrZ&_nc_ohc=SJDV4REoJawQ7kNvwH4AmAY&_nc_oc=AdpKC3i6IRGLt5BLoRitQOdNzCCrIgz8NnVQX4B8Zu_5vwQDc4l5QHettQc8ZmRNwz8&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=PsbcfdUJGgIYj4qwSTDXmg&_nc_ss=7b2a8&oh=00_AQB6LFrr0PQ8q8wcUhlflYWfR369x2mwuqRimDiTmj82jg&oe=6A5FEE0F",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\b3d2ee0b448cff475e5c.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/749197887_1333889215600728_3592175094264102066_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x853&ctp=s1280x853&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGb8JXanJq3sgRswc5aqFmkF7cdgEwzHg0Xtx2ATDMeDc18G4jr93Unwky16w5eooQSXlwIeudAfDfs9KW6nzwz&_nc_ohc=Nhk2aEscmqIQ7kNvwEyMdHQ&_nc_oc=Adq3wqBXTwCtdxsdemW0jph77yPrZwoJfQs28-9PzvuxjhrG9PoKi4UqPyfYWoDEtBM&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=ijrDuIzsNK8rxfm1Lz45cA&_nc_ss=7b2a8&oh=00_AQA_JHkW46mzJyMbWRLBNvJBik_Xe3PoMbAq7pzr-3QJIQ&oe=6A5FD19B",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\fbe6c4f6e76353889b9a.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/750582928_1333890308933952_306302668704914221_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEB9BACayzI5Zp2lesnDKP53Eeb_0wchNLcR5v_TByE0qdFVRwquuyNV93mVeFwr-mQsVBfbWWeejkJAwvG1jUP&_nc_ohc=ONpA66bu530Q7kNvwEOUaof&_nc_oc=Adpxaven-jSYyNKUPwL_yzpXkDr9zZnItZiDfmpJsjLBzORUwTjp6TrewK8GykWcf7U&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=k6g4BTzkVz_vNhPvMJB8gw&_nc_ss=7b2a8&oh=00_AQCvF_pcK0Xa0QpnKejiaP_iaKNqwdhtAiqnRZhAy6vK0w&oe=6A5FD880",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\bda11d3bff30ec22693b.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/751335827_1333890782267238_790734066711688815_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeECA8bFb0WxpeM4EsT2I2mmlovRAQGBFOaWi9EBAYEU5qtLh0DDOoPDS3HUctE8KF2mspxpP1LPfqao_PJH7CcH&_nc_ohc=NbyLHO_0zTUQ7kNvwHcLwlr&_nc_oc=AdrcFUK3pABrmlrCuqbOJWHjB7V6xLteppc2XXnGi35p-2azOowq-lZrQlCFWlBrJxY&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=XO9t8yAhzlNrnNZGZjgg5A&_nc_ss=7b2a8&oh=00_AQBGDpRBnulqwacFzxIT30zc23LjdQNgAeBRtra3XuYcfg&oe=6A5FCDA8",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\a20e50fe899785fb7790.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/829973319_1398545102468472_7411977918096611366_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHBDdWB61MRx1hWvL-lbzpB0ByUltrlJeDQHJSW2uUl4AAzVEgJ9DS51kAqP9FMLGx12MT7y7XJQknelIaQxzEq&_nc_ohc=KcikCZhFb1cQ7kNvwEVvTjh&_nc_oc=AdojS2FFrp3qVZtzjkueNn9B0J-S6QiU2VJJK5P05mxRbsikILHN1edy9l7fxZOcQ2s&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=L6pyyX4GtftlfRVzfYrNtw&_nc_ss=7b2a8&oh=00_AQNs98vfshdc4aJQAtZvDtuHvjlcasxQdi3FTo3IwclfEw&oe=6AC3DFAE",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\638c816ae74861650602.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/831769645_1398545115801804_1497928148010867820_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGNfxXA2zmtwdVU1PxGwV5XjyLmkrriUEuPIuaSuuJQS7JDZQ5xGU_glqrFexJd1Hv3cPQArf9g_kPoZIMWRZAD&_nc_ohc=mB-J3WIZF8IQ7kNvwGx274m&_nc_oc=AdqYnHi3L_rXof4-xadL_yTxlPXCoDlMP-Ftx1PUsDdCx4ZqKp7f4z36Gwel7ySxYv8&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=vNQnFesqTpR5u1xqZH80bA&_nc_ss=7b2a8&oh=00_AQMl8swQFtQH2Ts2jKg6V7SQ82mJyeg6rbSR76XdmDVaPA&oe=6AC3F2E7",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\2cc686a30d6e83c40989.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/796357909_1378326271157022_7303069365272391713_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFPXbzBRSYxKtgW80oQweBZK9PduQM3lYEr0925AzeVgUd4BQj2X8eiLBvrD5E4nJu6RUCXmA4CYuJ-_kGM-0En&_nc_ohc=JWFKoRMkMDwQ7kNvwHg2MI4&_nc_oc=AdpS4zlFhF-XSi8ibS5CRXJoHshv4rx9J2tspwacJyYz1N0FcmV3VzZA5HmlQ4fmshg&_nc_zt=23&_nc_ht=scontent.fhan2-3.fna&_nc_gid=AGwOmn6aIjx8QewPFx0JDQ&_nc_ss=7b2a8&oh=00_AQLd2-AbDPRJhmaPrvWAL30V0sT1x3voLFvTB1swIpMJdQ&oe=6AA699F7",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\ef4047d40b745631213b.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/799210754_1378326541156995_3282591289737343932_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGfjPghfA5lHqpHMNWaY0wdO9_8fjj0-fE73_x-OPT58begv99YUYVjdmkcL0RXn1oJfbkpfyDNgf3A7RBRvCN6&_nc_ohc=wBCQiUNUlZ4Q7kNvwFdCdxy&_nc_oc=Adpnv-mktK4AjwZQIDrStPNJc-sJGOuwjIRWq61rsE9Rdhxyf-PUHrEyjLCEJaS4ujE&_nc_zt=23&_nc_ht=scontent.fhan2-3.fna&_nc_gid=LAcT8QFsxINme-iPLMb37w&_nc_ss=7b2a8&oh=00_AQIcH5KKdktwRxEOtxXGXkTedTqeeWGhjQwpLjZYTgxm7Q&oe=6AA6B2C2",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\931b939f8106cfcf4aa2.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/798894701_1378327977823518_2759847851119051109_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEQHf2BXMiFbynZ-iRqdop8et0bmL8O85d63RuYvw7zlzpx6RxlUL-zLJuCEz-hhzbXjuQ4ZiZDdk3msjFBKVcR&_nc_ohc=7MSQS-Gs_icQ7kNvwH5gM2u&_nc_oc=AdqlXi7rJ7d8dV8M_NllDKxJj2c9PR-ZhaYY_NvpUC5GWf7UJPPuJsIvAZrz7K7Baa4&_nc_zt=23&_nc_ht=scontent.fhan2-4.fna&_nc_gid=SpmGMlr0DNr7ILo34OtSTw&_nc_ss=7b2a8&oh=00_AQKeqHbsEn8xjrksgBeNTN1io8XPpk6x4UgQZ65JJ-JNZw&oe=6AA6AD16",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\460ef840347eee182ff7.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-6/799088149_1378328014490181_1982720500398262252_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFZeIuPjOQqpA1yjdijJlm-0eSy9SiSEhXR5LL1KJISFa5-iFdw0IwbeYF69kl4C8blljTSTpbXizk0yeVCqroO&_nc_ohc=n1SBVQ-kE4kQ7kNvwEy7hUp&_nc_oc=Adouexhqi-KnuHcpKKm3_Ob2dXtGvKlFAFpc2SQyEXR6aoZWv333SwzqjcBuvB7gzE0&_nc_zt=23&_nc_ht=scontent.fhan2-5.fna&_nc_gid=b-sCLaywj8AJSPg83Z4X1w&_nc_ss=7b2a8&oh=00_AQIBQYyD_1Hgaz0XOePRero65K1PZEmGbP5MZGRnTuKebA&oe=6AA6A9F8",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\b7c57f7c12e5a3f2d15d.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    },
+    {
+      "Url": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/2022/7/13/A%CC%89nh%20chu%CC%A3p%20ma%CC%80n%20hi%CC%80nh%202022-07-13%20093839.png",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\4a82a02a74835154b104.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote name could not be resolved: 'skhcn.thuathienhue.gov.vn'"
+    },
+    {
+      "Url": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/2022/7/13/A%CC%89nh%20chu%CC%A3p%20ma%CC%80n%20hi%CC%80nh%202022-07-13%20100945.png",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\e7be669016226d16dd66.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote name could not be resolved: 'skhcn.thuathienhue.gov.vn'"
+    },
+    {
+      "Url": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/IMG_3126.JPG",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\9c37e3d88d5d8b34a920.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote name could not be resolved: 'skhcn.thuathienhue.gov.vn'"
+    },
+    {
+      "Url": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/IMG_3134.JPG",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\936594198b3ed54e6c46.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote name could not be resolved: 'skhcn.thuathienhue.gov.vn'"
+    },
+    {
+      "Url": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/d21f252d576b9535cc7a.jpg",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\e3c6dda4311a896e34ff.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote name could not be resolved: 'skhcn.thuathienhue.gov.vn'"
+    },
+    {
+      "Url": "https://skhcn.thuathienhue.gov.vn/UploadFiles/TinTuc/picture1(3).png",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\f190bd74adda62b49460.png",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote name could not be resolved: 'skhcn.thuathienhue.gov.vn'"
+    },
+    {
+      "Url": "https://www.sgs.com/-/media/sgscorp/images/connectivity-and-products/digital-product-passport-2.cdn.en.1.jpg",
+      "File": "C:\\Users\\Phong\\Desktop\\NCBT-BA\\redesign-web-nbc-02\\public\\nbc\\images\\51defeb646f84eca541a.jpg",
+      "Success": false,
+      "Cached": false,
+      "Bytes": 0,
+      "Error": "The remote server returned an error: (403) Forbidden."
+    }
+  ],
+  "finalMissingImageCount": 38
+}

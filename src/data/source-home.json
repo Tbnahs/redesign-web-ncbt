@@ -1,0 +1,117 @@
+{
+  "heroImages": [
+    "/nbc/images/8db4528f3ba3600338ca.png"
+  ],
+  "featuredSlugs": [
+    "gs1-viet-nam-tham-du-dien-dan-gs1-khu-vuc-chau-a-thai-binh-duong-2026-tai-trung-quoc",
+    "nhan-dien-tu-la-gi-nhan-dien-tu-giup-quan-ly-thong-tin-va-truy-xuat-nguon-goc-the-nao",
+    "nghi-dinh-3722026nd-cp-nhung-diem-moi-ve-truy-xuat-nguon-goc-san-pham-hang-hoa",
+    "trung-tam-ma-so-ma-vach-quoc-gia-huong-ung-ky-niem-96-nam-ngay-thanh-lap-hoi-lien-hiep-phu-nu-viet-nam",
+    "ma-uid-va-ma-did-vai-tro-trong-dinh-danh-xac-thuc-va-truy-xuat-nguon-goc-san-pham-hang-hoa"
+  ],
+  "latestSlugs": [
+    "thuc-trang-chung-lam-dung-ai",
+    "moi-cung-cap-bao-gia-dich-vu-cong-nghe-thong-tin-dich-vu-tu-van-nhiem-vu-nang-cap-bo-sung-tinh-nang-he-thong-quan-ly-co-so-du-lieu-ma-so-ma-vach-quoc-gia",
+    "chi-so-qi4sd-2026-thuoc-do-ha-tang-chat-luong-quoc-gia-huong-toi-phat-trien-ben-vung",
+    "tieu-chuan-chat-luong-la-chan-bao-ve-nguoi-tieu-dung",
+    "khi-ai-tro-thanh-tro-ly-mua-sam-du-lieu-san-pham-quan-trong-toi-dau",
+    "gs1-viet-nam-tham-du-dien-dan-gs1-khu-vuc-chau-a-thai-binh-duong-2026-tai-trung-quoc",
+    "nhan-dien-tu-la-gi-nhan-dien-tu-giup-quan-ly-thong-tin-va-truy-xuat-nguon-goc-the-nao",
+    "nghi-dinh-3722026nd-cp-nhung-diem-moi-ve-truy-xuat-nguon-goc-san-pham-hang-hoa",
+    "trung-tam-ma-so-ma-vach-quoc-gia-huong-ung-ky-niem-96-nam-ngay-thanh-lap-hoi-lien-hiep-phu-nu-viet-nam",
+    "ma-uid-va-ma-did-vai-tro-trong-dinh-danh-xac-thuc-va-truy-xuat-nguon-goc-san-pham-hang-hoa",
+    "du-an-luat-sua-doi-bo-sung-mot-so-dieu-luat-do-luong-cat-giam-thu-tuc-thuc-day-chuyen-doi-so",
+    "bao-ve-den-cung-quyen-loi-cua-nguoi-dan-khi-co-sai-lech-gian-lan-do-luong",
+    "trung-tam-ma-so-ma-vach-quoc-gia-va-cong-ty-tnhh-smart-farming-sfc-ky-ket-hop-tac-thuc-day-chuyen-doi-so-chuan-hoa-du-lieu-san-pham",
+    "tu-nguoi-ap-dung-den-nguoi-kien-tao-dinh-huong-moi-cho-tieu-chuan-viet-nam",
+    "so-hoa-tieu-chuan-kien-tao-niem-tin-va-nang-cao-nang-luc-canh-tranh",
+    "hoan-thien-ha-tang-chat-luong-quoc-gia-nen-tang-nang-cao-nang-luc-canh-tranh",
+    "chinh-phu-ban-hanh-nghi-dinh-3722026nd-cp-ve-dinh-danh-xac-thuc-truy-xuat-nguon-goc-san-pham-hang-hoa",
+    "iso-am-2026-tieu-chuan-quoc-te-trong-ky-nguyen-ai-va-chuyen-doi-so",
+    "phe-duyet-de-an-phat-trien-he-thong-ky-thuat-tieu-chuan-do-luong-chat-luong-quoc-gia",
+    "nhan-hang-hoa-nguon-goc-tieu-chuan-nhung-tam-ve-giup-nhan-dien-san-pham"
+  ],
+  "sections": [
+    {
+      "title": "Tin tức / Sự kiện",
+      "category": "tin-tuc-su-kien",
+      "slugs": [
+        "moi-cung-cap-bao-gia-dich-vu-cong-nghe-thong-tin-dich-vu-tu-van-nhiem-vu-nang-cap-bo-sung-tinh-nang-he-thong-quan-ly-co-so-du-lieu-ma-so-ma-vach-quoc-gia",
+        "chi-so-qi4sd-2026-thuoc-do-ha-tang-chat-luong-quoc-gia-huong-toi-phat-trien-ben-vung",
+        "tieu-chuan-chat-luong-la-chan-bao-ve-nguoi-tieu-dung",
+        "khi-ai-tro-thanh-tro-ly-mua-sam-du-lieu-san-pham-quan-trong-toi-dau",
+        "gs1-viet-nam-tham-du-dien-dan-gs1-khu-vuc-chau-a-thai-binh-duong-2026-tai-trung-quoc",
+        "nhan-dien-tu-la-gi-nhan-dien-tu-giup-quan-ly-thong-tin-va-truy-xuat-nguon-goc-the-nao",
+        "nghi-dinh-3722026nd-cp-nhung-diem-moi-ve-truy-xuat-nguon-goc-san-pham-hang-hoa",
+        "trung-tam-ma-so-ma-vach-quoc-gia-huong-ung-ky-niem-96-nam-ngay-thanh-lap-hoi-lien-hiep-phu-nu-viet-nam",
+        "ma-uid-va-ma-did-vai-tro-trong-dinh-danh-xac-thuc-va-truy-xuat-nguon-goc-san-pham-hang-hoa"
+      ]
+    },
+    {
+      "title": "Mã số mã vạch",
+      "category": "ma-so-ma-vach",
+      "slugs": [
+        "nhung-ly-do-can-trien-khai-nhan-dien-tu",
+        "3-buoc-don-gian-cap-nhat-dia-chi-moi-voi-verify-xac-thuc-san-pham",
+        "ma-so-ma-vach-bi-lam-gia-canh-bao-tinh-trang-muon-danh-thuong-hieu-hop-phap",
+        "doanh-nghiep-xuat-khau-can-biet-gi-ve-ma-upc-huong-dan-tu-a-z",
+        "can-mot-nen-tang-dinh-danh-xac-thuc-va-truy-xuat-nguon-goc-quoc-gia",
+        "chuan-hoa-ma-dinh-danh-linh-kien-nganh-duong-sat-theo-chuan-gs1"
+      ]
+    },
+    {
+      "title": "Hoạt động MSMV tại địa phương",
+      "category": "hoat-dong-tai-dia-phuong",
+      "slugs": [
+        "gia-mao-thuong-hieu-nong-san-tao-he-luy-mat-long-tin",
+        "lang-son-ho-tro-doanh-nghiep-htx-ap-dung-he-thong-truy-xuat-nguon-goc-san-pham-hang-hoa",
+        "son-la-ho-tro-truy-xuat-nguon-goc-doi-voi-72-doanh-nghiep-hop-tac-xa",
+        "hai-phong-tang-cuong-truy-xuat-nguon-goc-san-pham-hang-hoa",
+        "truy-xuat-nguon-goc-gop-phan-phat-trien-nganh-duoc-lieu-quoc-gia",
+        "day-manh-trien-khai-truy-xuat-nguon-goc-nong-san"
+      ]
+    },
+    {
+      "title": "Truy xuất nguồn gốc",
+      "category": "truy-xuat-nguon-goc",
+      "slugs": [
+        "khuyen-nghi-tich-hop-truy-xuat-nguon-goc-truc-tuyen-tren-nen-tang-thuong-mai-dien-tu",
+        "doi-moi-quan-ly-chat-luong-hang-hoa-tu-luat-hoa-truy-xuat-nguon-goc-den-giam-sat-xa-hoi",
+        "truy-xuat-nguon-goc-ho-chieu-so-cho-san-pham-hang-hoa",
+        "minh-bach-truy-xuat-nguon-goc-giu-thi-truong-xuat-khau",
+        "chuyen-doi-so-giup-doanh-nghiep-tu-tin-trong-truy-xuat-nguon-goc",
+        "lao-cai-trien-khai-ap-dung-va-quan-ly-he-thong-truy-xuat-nguon-goc-san-pham-hang-hoa-den-nam-2030"
+      ]
+    },
+    {
+      "title": "Mã LEI",
+      "category": "ma-lei",
+      "slugs": [
+        "iso-17442-cau-truc-ma-lei-va-nguyen-tac-dinh-danh-phap-nhan-toan-cau",
+        "ma-lei-manh-ghep-dinh-danh-giup-doanh-nghiep-tang-toc-toan-cau-hoa",
+        "ma-so-dinh-danh-lei-the-can-cuoc-cua-doanh-nghiep-tren-thi-truong-quoc-te",
+        "ma-lei-tuong-lai-moi-cho-nhan-dang-phap-nhan-toan-cau",
+        "ma-dinh-danh-phap-nhan-lei-chung-minh-thu-toan-cau-cho-doanh-nghiep",
+        "viet-nam-co-200-doanh-nghiep-da-dang-ky-va-su-dung-ma-dinh-danh-phap-nhan-toan-cau-lei"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": 50000,
+      "label": "Doanh nghiệp đã cấp mã số mã vạch"
+    },
+    {
+      "value": 20000,
+      "label": "Sản phẩm đã được cấp mã quản lý sản phẩm"
+    },
+    {
+      "value": 5000,
+      "label": "Chuỗi truy xuất nguồn gốc sản phẩm nông sản rau củ quả tươi"
+    },
+    {
+      "value": 5000000000,
+      "label": "Lượt quét mỗi ngày trên toàn thế giới"
+    }
+  ]
+}
