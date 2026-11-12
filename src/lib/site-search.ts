@@ -1,4 +1,4 @@
-import { allArticles } from "@/data/newsRepository";
+import {getPublicArticles} from '@/data/demo-admin-store';
 interface SearchEntry {
   id: string;
   title: string;
@@ -28,7 +28,7 @@ export function searchSite(query: string): SiteSearchGroup[] {
       key: "news",
       title: "Tin tức",
       href: "/tin-tuc",
-      results: allArticles
+      results: getPublicArticles()
         .filter((a) => normalizeSearchText(a.title).includes(needle))
         .map((a) => ({
           id: a.id,

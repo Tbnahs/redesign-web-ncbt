@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import type { NewsArticle } from "@/types/content";
-import { getRecentArticles } from "@/data/newsRepository";
+import { usePublicArticles } from "@/data/demo-admin-store";
+import { useDemoMediaUrl } from "@/lib/demo-media";
 import { useLocale } from "@/i18n";
 export const sourceCategories = [
   { slug: "tin-tuc-su-kien", title: "Tin tức / Sự kiện", en: "News / Events" },
@@ -33,10 +34,11 @@ export function ArticleLink({
   );
 }
 export function SourcePhoto({ article }: { article: NewsArticle }) {
+  const imageUrl = useDemoMediaUrl(article.thumbnail);
   return (
     <span className="source-photo">
       <img
-        src={article.thumbnail}
+        src={imageUrl}
         alt={article.title}
         loading="lazy"
         onError={(e) => {
@@ -70,6 +72,7 @@ export function SourceHeading({ title, children }: { title: string; children?: R
   );
 }
 export function SourceSidebar() {
+  const articles = usePublicArticles();
   const { locale } = useLocale();
   return (
     <aside className="source-sidebar">
@@ -84,17 +87,21 @@ export function SourceSidebar() {
         <a href="mailto:msmv@nbc.gov.vn">✉</a>
       </div>
       <h3>{locale === "vi" ? "Tin mới nhất" : "Latest news"}</h3>
-      {getRecentArticles(5).map((a) => (
-        <article className="source-side-story" key={a.slug}>
-          <ArticleLink article={a}>
-            <SourcePhoto article={a} />
-          </ArticleLink>
-          <div>
-            <ArticleLink article={a} />
-            <time>{sourceDate(a.date)}</time>
-          </div>
-        </article>
-      ))}
+      {articles
+        .slice()
+        .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+        .slice(0, 5)
+        .map((a) => (
+          <article className="source-side-story" key={a.slug}>
+            <ArticleLink article={a}>
+              <SourcePhoto article={a} />
+            </ArticleLink>
+            <div>
+              <ArticleLink article={a} />
+              <time>{sourceDate(a.date)}</time>
+            </div>
+          </article>
+        ))}
       <h3>{locale === "vi" ? "Chuyên mục" : "Categories"}</h3>
       {sourceCategories.map((c) => (
         <Link

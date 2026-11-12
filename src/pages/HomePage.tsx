@@ -1,7 +1,7 @@
 import { SourceLatest, SourceCounters } from "@/components/reference/SourceMotion";
 import { Link } from "@tanstack/react-router";
 import home from "@/data/source-home.json";
-import { allArticles, getArticleBySlug, getArticlesByCategory } from "@/data/newsRepository";
+import { usePublicArticles } from "@/data/demo-admin-store";
 import {
   ArticleLink,
   SourcePhoto,
@@ -10,12 +10,14 @@ import {
   sourceDate,
 } from "@/components/reference/SourceNews";
 import { useLocale } from "@/i18n";
-const resolve = (slugs: string[]) =>
-  slugs.map(getArticleBySlug).filter((a): a is (typeof allArticles)[number] => !!a);
 export function HomePage() {
   const { locale } = useLocale();
   const vi = locale === "vi";
-  const featured = resolve(home.featuredSlugs);
+  const articles = usePublicArticles();
+  const featured = articles
+    .filter((a) => a.featured)
+    .sort((a, b) => b.createdAt.localeCompare(a.createdAt) || b.id.localeCompare(a.id))
+    .slice(0, 5);
   const lead = featured[0];
   return (
     <>
@@ -54,9 +56,10 @@ export function HomePage() {
       <div className="source-container source-home-sections">
         {sourceCategories.map((c) => {
           const section = home.sections.find((s) => s.category === c.slug);
-          const items = section
-            ? resolve(section.slugs)
-            : getArticlesByCategory(c.slug).slice(0, 5);
+          const items = articles
+            .filter((a) => a.category === c.slug || a.categories?.includes(c.slug))
+            .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+            .slice(0, 6);
           const first = items[0];
           return (
             <section key={c.slug}>

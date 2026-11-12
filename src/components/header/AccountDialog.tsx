@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from "react";
+import { verifyDemoAdmin, signInDemoAdmin } from "@/lib/demo-auth";
 import { Eye, EyeOff, LockKeyhole, UserRound } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -43,11 +44,14 @@ export function AccountDialog({ open, onOpenChange, initialTab = "login" }: Acco
     setSuccess("");
   };
 
-  const submit = (event: FormEvent<HTMLFormElement>) => {
+  const submit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const result =
       tab === "login"
-        ? signInSchema.safeParse({ email: values["email"] ?? "", password: values["password"] ?? "" })
+        ? signInSchema.safeParse({
+            email: values["email"] ?? "",
+            password: values["password"] ?? "",
+          })
         : signUpSchema.safeParse({
             fullName: values["fullName"] ?? "",
             email: values["email"] ?? "",
@@ -61,12 +65,22 @@ export function AccountDialog({ open, onOpenChange, initialTab = "login" }: Acco
       return;
     }
 
+    if (tab === "login") {
+      if (await verifyDemoAdmin(values["email"] ?? "", values["password"] ?? "")) {
+        signInDemoAdmin();
+        handleOpenChange(false);
+        window.location.assign("/admin");
+        return;
+      }
+      setErrors({
+        password:
+          "Tài khoản hoặc mật khẩu chưa đúng. Tài khoản Admin demo: admin@ncbt.demo / demo123 (hoặc mật khẩu demo bạn đã đổi).",
+      });
+      setSuccess("");
+      return;
+    }
     setErrors({});
-    setSuccess(
-      tab === "login"
-        ? "Kiểm tra thành công. Đây là bản giao diện minh họa, chưa có đăng nhập thật."
-        : "Đăng ký minh họa thành công. Thông tin chưa được lưu.",
-    );
+    setSuccess("Đăng ký minh họa thành công. Thông tin chưa được lưu.");
   };
 
   const renderField = (
@@ -163,7 +177,7 @@ export function AccountDialog({ open, onOpenChange, initialTab = "login" }: Acco
             <div>
               <DialogTitle className="text-lg font-bold">Tài khoản</DialogTitle>
               <DialogDescription className="mt-1 text-xs">
-                Giao diện minh họa, không lưu thông tin.
+                Admin demo: admin@ncbt.demo · mật khẩu demo123.
               </DialogDescription>
             </div>
           </div>

@@ -39,3 +39,13 @@ scripts/static-reference/
 scripts/__pycache__/
 preview-*.png
 scripts/browser-verification.json
+scripts/finish-ui.py
+scripts/refine-source.py
+scripts/final-polish.py
+scripts/fix-types.py
+scripts/debug-pagination.mjs
+scripts/wire-admin-demo.py
+scripts/fix-portal-menu.py
+scripts/admin-verification.json
+scripts/admin-extra-verification.json
+.env*

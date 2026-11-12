@@ -1,21 +1,35 @@
 import { useState, type FormEvent } from "react";
 import { SourceBreadcrumbs, SourceSidebar } from "@/components/reference/SourceNews";
 import { useLocale } from "@/i18n";
+import { addEvent, notifyDemo } from "@/data/demo-admin-store";
 export function ContactPage() {
   const { locale } = useLocale();
   const vi = locale === "vi";
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState("");
   function submit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     const data = Object.fromEntries(new FormData(form));
-    const records = JSON.parse(localStorage.getItem("ncbt-contacts") || "[]");
-    localStorage.setItem(
-      "ncbt-contacts",
-      JSON.stringify([...records, { ...data, createdAt: new Date().toISOString() }]),
-    );
-    setSent(true);
-    form.reset();
+    setError("");
+    setSent(false);
+    try {
+      const records = JSON.parse(localStorage.getItem("ncbt-contacts") || "[]");
+      localStorage.setItem(
+        "ncbt-contacts",
+        JSON.stringify([...records, { ...data, createdAt: new Date().toISOString() }]),
+      );
+      addEvent("Liên hệ", String(data["name"] || "Khách"));
+      notifyDemo();
+      setSent(true);
+      form.reset();
+    } catch {
+      setError(
+        vi
+          ? "Không lưu được liên hệ. Vui lòng thử lại; thông tin đã nhập vẫn được giữ."
+          : "Unable to save your message. Your input is kept so you can retry.",
+      );
+    }
   }
   return (
     <div className="source-container">
@@ -29,6 +43,11 @@ export function ContactPage() {
               : "When we receive your email, we will try to respond as soon as possible to answer your question. Thank you very much."}
           </p>
           <form className="source-form" onSubmit={submit}>
+            {error && (
+              <p className="adm-error" role="alert">
+                {error}
+              </p>
+            )}
             <label>
               {vi ? "Tên:" : "Name:"}
               <input name="name" autoComplete="name" required maxLength={150} />

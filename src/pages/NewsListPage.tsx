@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { allArticles, getArticlesByCategory } from "@/data/newsRepository";
+import { usePublicArticles } from "@/data/demo-admin-store";
 import {
   ArticleLink,
   SourcePhoto,
@@ -19,10 +19,15 @@ export function NewsListPage({
 }) {
   const { locale } = useLocale();
   const vi = locale === "vi";
+  const articles = usePublicArticles();
   const [page, setPage] = useState(1);
-  useEffect(() => setPage(1), [fixedCategory, initialQuery]);
+  useEffect(() => setPage(1), [fixedCategory, initialQuery, articles]);
   const items = useMemo(() => {
-    const data = fixedCategory ? getArticlesByCategory(fixedCategory) : allArticles;
+    const key =
+      fixedCategory === "hoat-dong-msmv-dia-phuong" ? "hoat-dong-tai-dia-phuong" : fixedCategory;
+    const data = key
+      ? articles.filter((a) => a.category === key || a.categories?.includes(key))
+      : articles;
     const norm = (s: string) =>
       s
         .normalize("NFD")
@@ -32,7 +37,7 @@ export function NewsListPage({
     return data
       .filter((a) => norm(a.title).includes(norm(initialQuery)))
       .sort((a, b) => b.date.localeCompare(a.date));
-  }, [fixedCategory, initialQuery]);
+  }, [fixedCategory, initialQuery, articles]);
   const pages = Math.ceil(items.length / 10);
   const current = Math.min(page, pages || 1);
   return (

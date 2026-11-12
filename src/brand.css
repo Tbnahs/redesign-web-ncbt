@@ -1,0 +1,239 @@
+/* NCBT: orange is the primary brand color; red is reserved for destructive actions. */
+:root {
+  --brand-orange: #f18732;
+  --brand-orange-light: #ffb36b;
+  --brand-orange-pale: #fff4e7;
+  --brand-ink: #4c2b15;
+  --brand-link: #ad4c0a;
+  --primary-50: #fff7ed;
+  --primary-100: #ffedd5;
+  --primary-200: #fed7aa;
+  --primary-300: #fdba74;
+  --primary-400: #fb9a4c;
+  --primary-500: #ed7928;
+  --primary-600: #c45d12;
+  --primary-700: #a84e0e;
+  --primary-800: #88420e;
+  --primary-900: #6b360e;
+  --primary: #ed7928;
+  --primary-foreground: #4c2b15;
+  --ring: #f18732;
+  --navy-900: #3c332d;
+  --navy-800: #514136;
+  --navy-700: #69513e;
+  --navy-600: #856347;
+}
+.source-nav {
+  background: var(--brand-orange);
+  color: var(--brand-ink);
+}
+.source-nav-item > a:hover,
+.source-nav-item > a[data-active="true"] {
+  background: var(--brand-orange-light);
+  color: var(--brand-ink);
+}
+.source-nav .source-container a:hover {
+  color: var(--brand-ink);
+}
+.source-dropdown {
+  border-top-color: var(--brand-orange);
+}
+.source-dropdown > a:hover {
+  color: var(--brand-link);
+  background: #fff7ed;
+}
+.source-container a:hover {
+  color: var(--brand-link);
+}
+.source-cover:hover,
+.source-cover:hover h1 {
+  color: white;
+}
+.source-cover-copy > span {
+  background: var(--brand-orange);
+  color: var(--brand-ink);
+}
+.source-gs1 {
+  color: #d26c20;
+  border-bottom-color: #f5a158;
+}
+.source-rail-buttons button:hover,
+.source-social a,
+.source-pagination button[aria-current="page"],
+.source-button {
+  background: var(--brand-orange);
+  color: var(--brand-ink);
+  border-color: var(--brand-orange);
+}
+.source-button:hover {
+  background: #ff9b4c;
+  color: var(--brand-ink);
+}
+.source-counters {
+  background: #f59b4c;
+  color: var(--brand-ink);
+}
+.source-counters span {
+  color: var(--brand-ink);
+}
+.source-footer {
+  background: #fff2e3;
+  color: #65503f;
+  border-top: 4px solid var(--brand-orange);
+}
+.source-footer h2 {
+  color: #623818;
+}
+.source-footer-links a {
+  color: var(--brand-link);
+}
+.source-store {
+  color: var(--brand-ink);
+  border-color: #ebbd91;
+  background: #fffaf4;
+}
+.source-copyright {
+  color: #785c45;
+  border-top-color: #eed2b5;
+}
+.source-support {
+  background: #fff8ed;
+  border-color: #f3d9ba;
+}
+.source-article-body a {
+  color: var(--brand-link);
+}
+.source-language button:hover {
+  background: #fff1de;
+}
+.source-menu-networks a {
+  background: var(--brand-orange);
+  color: var(--brand-ink);
+}
+.source-menu-columns a:hover,
+.source-menu-mobile a:hover {
+  color: var(--brand-link);
+}
+.source-drawer-top {
+  background: var(--brand-orange);
+  color: var(--brand-ink);
+}
+.source-empty {
+  border-left-color: var(--brand-orange);
+  background: #fff8ee;
+}
+.source-menu-grid > div > a:first-child {
+  color: var(--brand-link);
+}
+.adm-shell {
+  --adm-primary: var(--brand-orange);
+  background: #fff7ee;
+}
+.adm-main,
+.adm-loading,
+.adm-login {
+  background: #fff7ee;
+}
+.adm-sidebar nav > button:hover,
+.adm-sidebar nav > button.active {
+  color: var(--brand-link);
+  background: #fff3e4;
+}
+.adm-sidebar nav > button.active svg {
+  color: #e88a3f;
+}
+.adm-sidebar nav > button svg {
+  color: #c3ab95;
+}
+.adm-submenu button.active,
+.adm-text-button,
+.adm-portal-link,
+.adm-article-title {
+  color: var(--brand-link);
+}
+.adm-user > svg,
+.adm-language summary,
+.adm-row-action.on {
+  color: #cf6d20;
+}
+.adm-search button {
+  border-color: #efa669;
+}
+.adm-demo-note {
+  background: #fff1dc;
+  color: #936134;
+  border-color: #f0d6b4;
+}
+.adm-button {
+  background: linear-gradient(110deg, #ffb168, #ef8129);
+  color: var(--brand-ink);
+}
+.adm-button.secondary {
+  background: linear-gradient(#f5f5f5, #e5e5e7);
+  color: #39424e;
+}
+.adm-button.danger {
+  background: #bf3f30;
+  color: white;
+}
+.adm-tag {
+  background: #ffad64;
+  color: var(--brand-ink);
+}
+.adm-table tbody tr:nth-child(odd) {
+  background: #fff5e9;
+}
+.adm-row-action:hover {
+  background: #ffe4c4;
+  color: #a84e0e;
+}
+.adm-pagination button[aria-current="page"] {
+  background: var(--brand-orange);
+  border-color: var(--brand-orange);
+  color: var(--brand-ink);
+}
+.adm-dashboard-title > span {
+  background: linear-gradient(45deg, #ffb568, #ee812b);
+  color: var(--brand-ink);
+  box-shadow: 0 4px 10px #efab6535;
+}
+.adm-stat {
+  background: linear-gradient(110deg, #ffcb96, #ffa65c);
+  color: var(--brand-ink);
+}
+.adm-stat.stat-1 {
+  background: linear-gradient(110deg, #ffb66e, #ef8d38);
+}
+.adm-stat.stat-2 {
+  background: linear-gradient(110deg, #ffe0b6, #f5b267);
+}
+.adm-stat > span {
+  font-weight: 400;
+}
+.adm-rich-status {
+  background: #f1954b;
+  color: var(--brand-ink);
+}
+.adm-rich-toolbar button:hover {
+  background: #ffedd5;
+  color: #a84e0e;
+}
+.adm-toast {
+  background: #fff2df;
+  color: #805425;
+  border-color: #efbd85;
+}
+.adm-avatar {
+  background: #ee8a3b;
+  color: var(--brand-ink);
+}
+.adm-login-card > a {
+  color: var(--brand-link);
+}
+.adm-row-action.delete {
+  color: #bd3d2d;
+}
+.adm-delete-title {
+  border-left-color: var(--brand-orange);
+  background: #fff5e8;
+}

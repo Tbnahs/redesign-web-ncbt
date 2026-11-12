@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { UkFlag, VietnamFlag } from "@/components/icons/FlagIcons";
 import { Link, useLocation } from "@tanstack/react-router";
 import { Globe, Menu, ChevronDown, Home, UserRound } from "lucide-react";
@@ -7,9 +7,11 @@ import { BrandLogo } from "@/components/common/BrandLogo";
 import { SearchField } from "./SearchField";
 import { WeatherWidget } from "./WeatherWidget";
 import { AccountDialog } from "./AccountDialog";
-import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { PortalMenu } from "./PortalMenu";
 import { useLocale, translateNavLabel } from "@/i18n";
 export function SiteHeader() {
+  const [adminSession, setAdminSession] = useState(false);
+  useEffect(() => setAdminSession(sessionStorage.getItem("ncbt-admin-auth") === "1"), []);
   const { locale, setLocale } = useLocale();
   const { pathname } = useLocation();
   const [menu, setMenu] = useState(false);
@@ -21,9 +23,18 @@ export function SiteHeader() {
         <BrandLogo />
         <div className="source-utilities">
           <div className="source-utility-top">
-            <button onClick={() => setAccount(true)} className="source-account">
+            <button
+              onClick={() => (adminSession ? window.location.assign("/admin") : setAccount(true))}
+              className="source-account"
+            >
               <UserRound size={15} />
-              {vi ? "Đăng nhập / Đăng ký" : "Sign in / Register"}
+              {adminSession
+                ? vi
+                  ? "Trang quản trị"
+                  : "Admin"
+                : vi
+                  ? "Đăng nhập / Đăng ký"
+                  : "Sign in / Register"}
             </button>
             <SearchField />
             <details className="source-language">
@@ -101,29 +112,16 @@ export function SiteHeader() {
           ))}
         </div>
       </nav>
-      <Dialog open={menu} onOpenChange={setMenu}>
-        <DialogContent className="source-menu-dialog">
-          <DialogTitle>{vi ? "Danh mục" : "Navigation"}</DialogTitle>
-          <DialogDescription>
-            {vi ? "Cổng thông tin NCBT" : "NCBT information portal"}
-          </DialogDescription>
-          <SearchField />
-          <div className="source-menu-grid">
-            {mainNav.map((item) => (
-              <div key={item.path}>
-                <Link to={item.path as "/"} onClick={() => setMenu(false)}>
-                  {translateNavLabel(item.label, locale)}
-                </Link>
-                {item.children?.map((c) => (
-                  <Link to={c.path as "/"} key={c.path} onClick={() => setMenu(false)}>
-                    {translateNavLabel(c.label, locale)}
-                  </Link>
-                ))}
-              </div>
-            ))}
-          </div>
-        </DialogContent>
-      </Dialog>
+      <PortalMenu
+        open={menu}
+        onOpenChange={setMenu}
+        adminSession={adminSession}
+        onAccount={() => {
+          setMenu(false);
+          if (adminSession) window.location.assign("/admin");
+          else setTimeout(() => setAccount(true), 150);
+        }}
+      />
       <AccountDialog open={account} onOpenChange={setAccount} />
     </header>
   );

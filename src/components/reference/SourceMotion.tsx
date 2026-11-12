@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import home from "@/data/source-home.json";
-import { getArticleBySlug } from "@/data/newsRepository";
+import { usePublicArticles } from "@/data/demo-admin-store";
 import { useLocale } from "@/i18n";
 import { ArticleLink, SourcePhoto, SourceHeading, sourceDate } from "./SourceNews";
 export function SourceLatest() {
+  const articles = usePublicArticles();
   const { locale } = useLocale();
   const vi = locale === "vi";
   const rail = useRef<HTMLDivElement>(null);
@@ -98,9 +99,10 @@ export function SourceLatest() {
           drag.current = null;
         }}
       >
-        {home.latestSlugs
-          .map(getArticleBySlug)
-          .filter((a) => !!a)
+        {articles
+          .slice()
+          .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+          .slice(0, 20)
           .map((a) => (
             <article key={a.slug}>
               <ArticleLink article={a}>

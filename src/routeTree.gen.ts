@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AdminRouteImport } from './routes/admin'
 import { Route as ELearningRouteImport } from './routes/e-learning'
 import { Route as GioiThieuRouteImport } from './routes/gioi-thieu'
 import { Route as HoatDongRouteImport } from './routes/hoat-dong'
@@ -46,6 +47,11 @@ import { Route as TruyXuatNguonGocTraCuuSanPhamRouteImport } from './routes/truy
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ELearningRoute = ELearningRouteImport.update({
@@ -216,6 +222,7 @@ const TruyXuatNguonGocTraCuuSanPhamRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/e-learning': typeof ELearningRoute
   '/gioi-thieu': typeof GioiThieuRouteWithChildren
   '/hoat-dong': typeof HoatDongRouteWithChildren
@@ -251,6 +258,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/e-learning': typeof ELearningRoute
   '/hoat-dong-msmv-dia-phuong': typeof HoatDongMsmvDiaPhuongRoute
   '/lien-he': typeof LienHeRoute
@@ -282,6 +290,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/e-learning': typeof ELearningRoute
   '/gioi-thieu': typeof GioiThieuRouteWithChildren
   '/hoat-dong': typeof HoatDongRouteWithChildren
@@ -319,6 +328,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/admin'
     | '/e-learning'
     | '/gioi-thieu'
     | '/hoat-dong'
@@ -354,6 +364,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/admin'
     | '/e-learning'
     | '/hoat-dong-msmv-dia-phuong'
     | '/lien-he'
@@ -384,6 +395,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/admin'
     | '/e-learning'
     | '/gioi-thieu'
     | '/hoat-dong'
@@ -420,6 +432,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdminRoute: typeof AdminRoute
   ELearningRoute: typeof ELearningRoute
   GioiThieuRoute: typeof GioiThieuRouteWithChildren
   HoatDongRoute: typeof HoatDongRouteWithChildren
@@ -441,6 +454,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/e-learning': {
@@ -759,6 +779,7 @@ const TruyXuatNguonGocRouteWithChildren =
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdminRoute: AdminRoute,
   ELearningRoute: ELearningRoute,
   GioiThieuRoute: GioiThieuRouteWithChildren,
   HoatDongRoute: HoatDongRouteWithChildren,
