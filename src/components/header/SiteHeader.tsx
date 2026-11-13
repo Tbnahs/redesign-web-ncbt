@@ -78,7 +78,13 @@ export function SiteHeader() {
               <b>128M</b>
               <small>Shares</small>
             </span>
-            <span className="source-gs1">GS1</span>
+            <img
+              className="source-gs1"
+              src="/branding/gs1-logo.png"
+              alt="GS1"
+              width="440"
+              height="368"
+            />
             <button onClick={() => setMenu(true)} aria-label={vi ? "Mở menu" : "Open menu"}>
               <Menu />
             </button>

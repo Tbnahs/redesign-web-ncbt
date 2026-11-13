@@ -198,7 +198,7 @@ export function AdminApp({
       <div className={`adm-shell ${collapsed ? "is-collapsed" : ""}`}>
         <aside className="adm-sidebar">
           <Link to="/" className="adm-logo">
-            <img src="/branding/ncbt-logo-original.jpg" alt="NCBT" />
+            <img src="/branding/ncbt-logo-final.jpg" alt="NCBT" />
           </Link>
           <nav aria-label={tr("Quản trị", "Administration")}>
             <button
@@ -428,7 +428,7 @@ function AdminLogin({ onLogin }: { onLogin: () => void }) {
   return (
     <div className="adm-login">
       <div className="adm-login-card">
-        <img src="/branding/ncbt-logo-original.jpg" alt="NCBT" />
+        <img src="/branding/ncbt-logo-final.jpg" alt="NCBT" />
         <h1>{vi ? "Đăng nhập quản trị" : "Admin sign in"}</h1>
         <p>
           {vi
