@@ -74,7 +74,8 @@ export function SiteFooter() {
               target="_blank"
               rel="noreferrer"
             >
-              ● App Store
+              <img src="/branding/apple.svg" width="15" height="15" alt="" aria-hidden="true" />
+              App Store
             </a>
           </div>
         </div>

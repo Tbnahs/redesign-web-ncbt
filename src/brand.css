@@ -263,3 +263,13 @@
 .source-footer .source-logo img {
   mix-blend-mode: multiply;
 }
+.source-store {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.source-store > img {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}

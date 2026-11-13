@@ -7,7 +7,7 @@ export const Route = createFileRoute("/hoat-dong-msmv-dia-phuong")({
   ),
   head: () =>
     siteHead({
-      title: "Hoạt động MSMV tại địa phương | Trung tâm Mã số, Mã vạch Quốc gia",
+      title: "Hoạt động MSMV tại địa phương | Trung tâm Mã số Mã vạch Truy xuất nguồn gốc quốc gia",
       description: "Tin tức hoạt động mã số, mã vạch tại các địa phương.",
     }),
 });

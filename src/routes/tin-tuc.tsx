@@ -8,7 +8,8 @@ export const Route = createFileRoute("/tin-tuc")({
   component: () => <Outlet />,
   head: () =>
     siteHead({
-      title: "Tin tức | Trung tâm Mã số, Mã vạch Quốc gia",
-      description: "Tin tức, sự kiện và thông báo mới nhất từ Trung tâm Mã số, Mã vạch Quốc gia.",
+      title: "Tin tức | Trung tâm Mã số Mã vạch Truy xuất nguồn gốc quốc gia",
+      description:
+        "Tin tức, sự kiện và thông báo mới nhất từ Trung tâm Mã số Mã vạch Truy xuất nguồn gốc quốc gia.",
     }),
 });

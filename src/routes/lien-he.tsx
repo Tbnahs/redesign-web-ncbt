@@ -5,7 +5,8 @@ export const Route = createFileRoute("/lien-he")({
   component: ContactPage,
   head: () =>
     siteHead({
-      title: "Liên hệ | Trung tâm Mã số, Mã vạch Quốc gia",
-      description: "Thông tin liên hệ Trung tâm Mã số, Mã vạch Quốc gia và gửi yêu cầu tư vấn.",
+      title: "Liên hệ | Trung tâm Mã số Mã vạch Truy xuất nguồn gốc quốc gia",
+      description:
+        "Thông tin liên hệ Trung tâm Mã số Mã vạch Truy xuất nguồn gốc quốc gia và gửi yêu cầu tư vấn.",
     }),
 });

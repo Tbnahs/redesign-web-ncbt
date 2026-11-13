@@ -5,7 +5,7 @@ export const Route = createFileRoute("/hoi-dap/cau-hoi-thuong-gap")({
   component: FaqPage,
   head: () =>
     siteHead({
-      title: "Câu hỏi thường gặp | Trung tâm Mã số, Mã vạch Quốc gia",
+      title: "Câu hỏi thường gặp | Trung tâm Mã số Mã vạch Truy xuất nguồn gốc quốc gia",
       description:
         "Câu trả lời cho các thắc mắc thường gặp về mã số mã vạch, truy xuất nguồn gốc và hoạt động của Trung tâm.",
     }),

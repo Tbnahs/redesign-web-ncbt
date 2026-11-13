@@ -8,7 +8,7 @@ export const Route = createFileRoute("/tim-kiem")({
   component: SearchPage,
   head: () =>
     siteHead({
-      title: "Tìm kiếm | Trung tâm Mã số, Mã vạch Quốc gia",
+      title: "Tìm kiếm | Trung tâm Mã số Mã vạch Truy xuất nguồn gốc quốc gia",
       description: "Tìm kiếm tin tức, câu hỏi và khóa học E-learning trong hệ thống.",
     }),
 });

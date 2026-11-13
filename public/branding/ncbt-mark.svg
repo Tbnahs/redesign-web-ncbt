@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <linearGradient id="orange" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#ff8617"/>
+      <stop offset="1" stop-color="#f2642b"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#orange)">
+    <rect x="5" y="8" width="17" height="17" rx="3"/>
+    <rect x="31" y="3" width="26" height="26" rx="3"/>
+    <path fill-rule="evenodd" d="M65 3h22a3 3 0 0 1 3 3v22a3 3 0 0 1-3 3H65a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3zm4 5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2z"/>
+    <rect x="71" y="12" width="10" height="10" rx="1"/>
+    <rect x="7" y="40" width="13" height="13" rx="2"/>
+    <path d="M36 36h16a3 3 0 0 1 3 3v16a3 3 0 0 1-3 3H36c-2 0-3 1-3 4v3a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h5c3 0 4-1 4-4V39a3 3 0 0 1 3-3z"/>
+    <rect x="62" y="34" width="28" height="28" rx="3"/>
+    <rect x="9" y="74" width="8" height="8" rx="1.5"/>
+    <rect x="37" y="72" width="13" height="13" rx="2"/>
+    <rect x="67" y="70" width="18" height="18" rx="3"/>
+  </g>
+</svg>

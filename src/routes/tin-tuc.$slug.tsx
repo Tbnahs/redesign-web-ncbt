@@ -13,11 +13,11 @@ export const Route = createFileRoute("/tin-tuc/$slug")({
     const article = getArticleBySlug(params.slug);
     return siteHead({
       title: article
-        ? `${article.title} | Trung tâm Mã số, Mã vạch Quốc gia`
-        : `${getCategoryLabel(params.slug)} | Tin tức`,
+        ? `${article.title} | Trung tâm Mã số Mã vạch Truy xuất nguồn gốc quốc gia`
+        : `${getCategoryLabel(params.slug)} | Trung tâm Mã số Mã vạch Truy xuất nguồn gốc quốc gia`,
       description:
         article?.summary ??
-        `Tin tức chuyên mục ${getCategoryLabel(params.slug)} từ Trung tâm Mã số, Mã vạch Quốc gia.`,
+        `Tin tức chuyên mục ${getCategoryLabel(params.slug)} từ Trung tâm Mã số Mã vạch Truy xuất nguồn gốc quốc gia.`,
       ...(article?.thumbnail.startsWith("https://") ? { image: article.thumbnail } : {}),
     });
   },

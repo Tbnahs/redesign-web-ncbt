@@ -5,7 +5,7 @@ export const Route = createFileRoute("/hoi-dap/tao-cau-hoi")({
   component: CreateQuestionPage,
   head: () =>
     siteHead({
-      title: "Tạo câu hỏi | Trung tâm Mã số, Mã vạch Quốc gia",
+      title: "Tạo câu hỏi | Trung tâm Mã số Mã vạch Truy xuất nguồn gốc quốc gia",
       description: "Gửi câu hỏi về mã số, mã vạch và các hoạt động của Trung tâm.",
     }),
 });

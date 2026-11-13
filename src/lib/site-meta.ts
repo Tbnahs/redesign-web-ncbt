@@ -27,6 +27,6 @@ export function homeHead() {
   return siteHead({
     title: "TRUNG TÂM MÃ SỐ MÃ VẠCH TRUY XUẤT NGUỒN GỐC QUỐC GIA",
     description:
-      "Tin tức, hoạt động, giải đáp và thông tin đào tạo của Trung tâm Mã số, Mã vạch Quốc gia.",
+      "Tin tức, hoạt động, giải đáp và thông tin đào tạo của Trung tâm Mã số Mã vạch Truy xuất nguồn gốc quốc gia.",
   });
 }

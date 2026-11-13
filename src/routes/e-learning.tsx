@@ -5,7 +5,7 @@ export const Route = createFileRoute("/e-learning")({
   component: ElearningPage,
   head: () =>
     siteHead({
-      title: "E-learning | Trung tâm Mã số, Mã vạch Quốc gia",
+      title: "E-learning | Trung tâm Mã số Mã vạch Truy xuất nguồn gốc quốc gia",
       description: "Các khóa đào tạo trực tuyến và chương trình đào tạo về mã số mã vạch.",
     }),
 });
