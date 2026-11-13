@@ -1,12 +1,10 @@
 import {
   ArrowUp,
   ChevronRight,
-  Facebook,
   Menu,
   MessageCircle,
-  Twitter,
-  Youtube,
 } from "lucide-react";
+import { FacebookLogo, XLogo, YouTubeLogo } from "@/components/icons/SocialIcons";
 import { Link } from "@tanstack/react-router";
 import { WeatherWidget } from "@/components/header/WeatherWidget";
 import { SharesCounter } from "@/components/common/SharesCounter";
@@ -57,27 +55,27 @@ export function BottomFixedBar() {
               target="_blank"
               rel="noreferrer"
               aria-label="Facebook"
-              className="flex h-8 w-8 items-center justify-center rounded-full border border-neutral-200 transition-colors hover:border-[#3385cd] hover:text-[#3385cd]"
+              className="source-social-link source-social-link--facebook source-social-link--compact"
             >
-              <Facebook className="h-4 w-4" aria-hidden="true" />
+              <FacebookLogo className="source-brand-logo" />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com"
               target="_blank"
               rel="noreferrer"
-              aria-label="Twitter"
-              className="flex h-8 w-8 items-center justify-center rounded-full border border-neutral-200 transition-colors hover:border-[#3385cd] hover:text-[#3385cd]"
+              aria-label="X"
+              className="source-social-link source-social-link--x source-social-link--compact"
             >
-              <Twitter className="h-4 w-4" aria-hidden="true" />
+              <XLogo className="source-brand-logo" />
             </a>
             <a
-              href="https://youtube.com"
+              href="https://www.youtube.com/channel/UCEHxZm8ljXO-St5-z0em3BA/featured"
               target="_blank"
               rel="noreferrer"
               aria-label="YouTube"
-              className="flex h-8 w-8 items-center justify-center rounded-full border border-neutral-200 transition-colors hover:border-[#3385cd] hover:text-[#3385cd]"
+              className="source-social-link source-social-link--youtube source-social-link--compact"
             >
-              <Youtube className="h-4 w-4" aria-hidden="true" />
+              <YouTubeLogo className="source-youtube-logo" />
             </a>
           </div>
 

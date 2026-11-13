@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { FacebookLogo, XLogo, YouTubeLogo } from "@/components/icons/SocialIcons";
 import type { ReactNode } from "react";
 import type { NewsArticle } from "@/types/content";
 import { usePublicArticles } from "@/data/demo-admin-store";
@@ -78,10 +79,15 @@ export function SourceSidebar() {
     <aside className="source-sidebar">
       <h3>{locale === "vi" ? "Kết nối với chúng tôi" : "Connect with us"}</h3>
       <div className="source-social">
-        <a href="https://www.facebook.com/GS1Vietnam" target="_blank" rel="noreferrer">
+        <a className="source-social-link source-social-link--facebook" href="https://www.facebook.com/GS1Vietnam" target="_blank" rel="noreferrer" aria-label="Facebook">
+          <FacebookLogo className="source-brand-logo" />
           f
         </a>
-        <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+        <a className="source-social-link source-social-link--x" href="https://x.com" target="_blank" rel="noreferrer" aria-label="X">
+          <XLogo className="source-brand-logo" />
+        </a>
+        <a className="source-social-link source-social-link--youtube" href="https://www.youtube.com/channel/UCEHxZm8ljXO-St5-z0em3BA/featured" target="_blank" rel="noreferrer" aria-label="YouTube">
+          <YouTubeLogo className="source-youtube-logo" />
           ▶
         </a>
         <a href="mailto:msmv@nbc.gov.vn">✉</a>

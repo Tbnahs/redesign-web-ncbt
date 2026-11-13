@@ -77,8 +77,11 @@
   background: #cc6538;
   color: var(--brand-ink);
 }
+.source-counters strong {
+  color: #fff;
+}
 .source-counters span {
-  color: var(--brand-ink);
+  color: #fff;
 }
 .source-footer {
   background: #fff4ed;
@@ -113,6 +116,53 @@
 .source-menu-networks a {
   background: var(--brand-orange);
   color: var(--brand-ink);
+}
+.source-header-social .source-social-link,
+.source-social .source-social-link,
+.source-menu-networks .source-social-link {
+  border-radius: 13px;
+  font-size: 0;
+}
+.source-header-social .source-social-link {
+  width: 42px;
+  height: 42px;
+}
+.source-social .source-social-link {
+  width: 46px;
+  height: 46px;
+}
+.source-menu-networks .source-social-link {
+  width: 40px;
+  height: 40px;
+}
+.source-header-social .source-social-link,
+.source-social .source-social-link,
+.source-menu-networks .source-social-link {
+  color: #fff;
+}
+.source-social-link--facebook {
+  background: #0866ff;
+}
+.source-social-link--x {
+  background: #000;
+}
+.source-social-link--youtube {
+  background: #fff;
+}
+.source-header-social .source-social-link--facebook,
+.source-social .source-social-link--facebook,
+.source-menu-networks .source-social-link--facebook:nth-child(1) {
+  background: #0866ff;
+}
+.source-header-social .source-social-link--x,
+.source-social .source-social-link--x,
+.source-menu-networks .source-social-link--x:nth-child(2) {
+  background: #000;
+}
+.source-header-social .source-social-link--youtube:last-child,
+.source-social .source-social-link--youtube,
+.source-menu-networks .source-social-link--youtube:nth-child(3) {
+  background: #fff;
 }
 .source-menu-columns a:hover,
 .source-menu-mobile a:hover {

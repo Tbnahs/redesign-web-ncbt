@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { UkFlag, VietnamFlag } from "@/components/icons/FlagIcons";
+import { FacebookLogo, XLogo, YouTubeLogo } from "@/components/icons/SocialIcons";
 import { Link, useLocation } from "@tanstack/react-router";
-import { Globe, Menu, ChevronDown, Home, UserRound } from "lucide-react";
+import { Globe, Menu, ChevronDown, Home } from "lucide-react";
 import { mainNav } from "@/config/navigation";
 import { BrandLogo } from "@/components/common/BrandLogo";
 import { SearchField } from "./SearchField";
@@ -23,19 +24,6 @@ export function SiteHeader() {
         <BrandLogo />
         <div className="source-utilities">
           <div className="source-utility-top">
-            <button
-              onClick={() => (adminSession ? window.location.assign("/admin") : setAccount(true))}
-              className="source-account"
-            >
-              <UserRound size={15} />
-              {adminSession
-                ? vi
-                  ? "Trang quản trị"
-                  : "Admin"
-                : vi
-                  ? "Đăng nhập / Đăng ký"
-                  : "Sign in / Register"}
-            </button>
             <SearchField />
             <details className="source-language">
               <summary aria-label={vi ? "Chọn ngôn ngữ" : "Choose language"}>
@@ -67,10 +55,15 @@ export function SiteHeader() {
             <Link to="/lien-he">{vi ? "LIÊN HỆ" : "CONTACT"}</Link>
             <WeatherWidget />
             <div className="source-header-social">
-              <a href="https://www.facebook.com/GS1Vietnam" aria-label="Facebook">
+              <a className="source-social-link source-social-link--facebook" href="https://www.facebook.com/GS1Vietnam" aria-label="Facebook">
+                <FacebookLogo className="source-brand-logo" />
                 f
               </a>
-              <a href="https://www.youtube.com/" aria-label="YouTube">
+              <a className="source-social-link source-social-link--x" href="https://x.com" aria-label="X">
+                <XLogo className="source-brand-logo" />
+              </a>
+              <a className="source-social-link source-social-link--youtube" href="https://www.youtube.com/channel/UCEHxZm8ljXO-St5-z0em3BA/featured" aria-label="YouTube" target="_blank" rel="noreferrer">
+                <YouTubeLogo className="source-youtube-logo" />
                 ▶
               </a>
             </div>
