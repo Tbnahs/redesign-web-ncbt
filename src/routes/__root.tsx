@@ -83,7 +83,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Trung tâm Mã số, Mã vạch Quốc gia" },
+      { title: "TRUNG TÂM MÃ SỐ MÃ VẠCH TRUY XUẤT NGUỒN GỐC QUỐC GIA" },
       { name: "description", content: "Cổng thông tin điện tử Trung tâm Mã số, Mã vạch Quốc gia." },
       { name: "author", content: "Trung tâm Mã số, Mã vạch Quốc gia" },
       { property: "og:title", content: "Trung tâm Mã số, Mã vạch Quốc gia" },
@@ -107,7 +107,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "stylesheet", href: adminCss },
       { rel: "stylesheet", href: brandCss },
-      { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
+      { rel: "icon", href: "/branding/ncbt-favicon.svg", type: "image/svg+xml" },
     ],
   }),
   shellComponent: RootShell,

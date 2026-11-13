@@ -255,3 +255,11 @@
   object-fit: cover;
   object-position: center;
 }
+
+/* Let the white JPEG background merge into the warm footer surface. */
+.source-footer {
+  isolation: isolate;
+}
+.source-footer .source-logo img {
+  mix-blend-mode: multiply;
+}

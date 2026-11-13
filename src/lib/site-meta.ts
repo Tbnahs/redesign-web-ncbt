@@ -25,7 +25,7 @@ export function siteHead({ title, description, image }: SitePageMeta) {
 
 export function homeHead() {
   return siteHead({
-    title: "Trung tâm Mã số, Mã vạch Quốc gia | Cổng thông tin",
+    title: "TRUNG TÂM MÃ SỐ MÃ VẠCH TRUY XUẤT NGUỒN GỐC QUỐC GIA",
     description:
       "Tin tức, hoạt động, giải đáp và thông tin đào tạo của Trung tâm Mã số, Mã vạch Quốc gia.",
   });
