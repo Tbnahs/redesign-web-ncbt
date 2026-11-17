@@ -390,45 +390,16 @@
   height: 56px;
   flex: 0 0 56px;
 }
-.weather-symbol > svg {
-  width: 44px;
-  height: 44px;
-  stroke-width: 1.7;
+.weather-symbol > svg,
+.weather-symbol > img {
+  display: block;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
 }
-.weather-symbol .weather-sun {
-  color: #e5a31a;
-  fill: #fff1b6;
-}
-.weather-symbol .weather-moon {
-  color: #7b85ba;
-  fill: #ecebff;
-}
-.weather-symbol .weather-cloud {
-  color: #5e7891;
-  fill: #c9d7e4;
-}
-.weather-symbol .weather-sun-detail,
-.weather-symbol .weather-moon-detail {
-  position: absolute;
-  top: 1px;
-  right: 0;
-  width: 34px;
-  height: 34px;
-  color: #e5a31a;
-  fill: #fff1b6;
-}
-.weather-symbol .weather-moon-detail {
-  color: #7b85ba;
-  fill: #ecebff;
-}
-.weather-symbol .weather-cloud-front {
-  position: absolute;
-  bottom: 2px;
-  left: 0;
-  width: 45px;
-  height: 40px;
-  color: #5e7891;
-  fill: #c9d7e4;
+.weather-symbol .weather-simple-sun {
+  width: 48px;
+  height: 48px;
 }
 .weather-city {
   display: flex;

@@ -1,31 +1,21 @@
-﻿import { Cloud, CloudFog, CloudLightning, CloudRain, CloudSnow, Moon, Sun } from "lucide-react";
+﻿import { weatherIcon } from "@/lib/weather-icon";
 export function WeatherSymbol({ code, isDay = true }: { code?: number; isDay?: boolean }) {
-  if (code === 0)
-    return (
-      <span className="weather-symbol" aria-hidden="true">
-        {isDay ? <Sun className="weather-sun" /> : <Moon className="weather-moon" />}
-      </span>
-    );
-  if (code === 1)
-    return (
-      <span className="weather-symbol" aria-hidden="true">
-        {isDay ? <Sun className="weather-sun-detail" /> : <Moon className="weather-moon-detail" />}
-        <Cloud className="weather-cloud-front" />
-      </span>
-    );
-  const Icon =
-    code === 45 || code === 48
-      ? CloudFog
-      : code !== undefined && code >= 95
-        ? CloudLightning
-        : code !== undefined && ((code >= 71 && code <= 77) || code === 85 || code === 86)
-          ? CloudSnow
-          : code !== undefined && ((code >= 51 && code <= 67) || (code >= 80 && code <= 82))
-            ? CloudRain
-            : Cloud;
   return (
     <span className="weather-symbol" aria-hidden="true">
-      <Icon className="weather-cloud" />
+      {code === 0 && isDay ? (
+        <svg className="weather-simple-sun" viewBox="0 0 48 48" focusable="false">
+          <circle cx="24" cy="24" r="13.5" fill="#f5b742" />
+          <path
+            d="M24 2v3M24 43v3M2 24h3M43 24h3M8.4 8.4l2.2 2.2M37.4 37.4l2.2 2.2M8.4 39.6l2.2-2.2M37.4 10.6l2.2-2.2"
+            fill="none"
+            stroke="#f5b742"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+          />
+        </svg>
+      ) : (
+        <img src={weatherIcon(code, isDay)} alt="" width="64" height="64" />
+      )}
     </span>
   );
 }
