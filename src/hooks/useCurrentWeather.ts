@@ -4,6 +4,8 @@ import type { Province } from "@/config/weather";
 export interface CurrentWeather {
   temperature: number;
   humidity: number;
+  code?: number;
+  isDay?: boolean;
 }
 
 export type WeatherState =
@@ -18,21 +20,41 @@ export function useCurrentWeather(province: Province): WeatherState {
 
     const url =
       `https://api.open-meteo.com/v1/forecast?latitude=${province.latitude}` +
-      `&longitude=${province.longitude}&current=temperature_2m,relative_humidity_2m&timezone=auto`;
+      `&longitude=${province.longitude}&current=temperature_2m,relative_humidity_2m,weather_code,is_day&timezone=auto`;
 
     fetch(url, { signal: controller.signal })
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
       })
-      .then((json: { current?: { temperature_2m?: unknown; relative_humidity_2m?: unknown } }) => {
-        const temperature = json.current?.temperature_2m;
-        const humidity = json.current?.relative_humidity_2m;
-        if (typeof temperature !== "number" || typeof humidity !== "number") {
-          throw new Error("Invalid weather payload");
-        }
-        setState({ status: "ready", data: { temperature, humidity } });
-      })
+      .then(
+        (json: {
+          current?: {
+            temperature_2m?: unknown;
+            relative_humidity_2m?: unknown;
+            weather_code?: unknown;
+            is_day?: unknown;
+          };
+        }) => {
+          const temperature = json.current?.temperature_2m;
+          const humidity = json.current?.relative_humidity_2m;
+          if (typeof temperature !== "number" || typeof humidity !== "number") {
+            throw new Error("Invalid weather payload");
+          }
+          setState({
+            status: "ready",
+            data: {
+              temperature,
+              humidity,
+              code:
+                typeof json.current?.weather_code === "number"
+                  ? json.current.weather_code
+                  : undefined,
+              isDay: json.current?.is_day !== 0,
+            },
+          });
+        },
+      )
       .catch((error: unknown) => {
         if (controller.signal.aborted) return;
         setState({ status: "error" });

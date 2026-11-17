@@ -52,7 +52,6 @@ export function SiteHeader() {
             </details>
           </div>
           <div className="source-utility-bottom">
-            <Link to="/lien-he">{vi ? "LIÊN HỆ" : "CONTACT"}</Link>
             <WeatherWidget />
             <div className="source-header-social">
               <a
