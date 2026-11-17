@@ -55,29 +55,49 @@ export function SiteHeader() {
             <Link to="/lien-he">{vi ? "LIÊN HỆ" : "CONTACT"}</Link>
             <WeatherWidget />
             <div className="source-header-social">
-              <a className="source-social-link source-social-link--facebook" href="https://www.facebook.com/msmvquocgia?locale=vi_VN" aria-label="Facebook">
+              <a
+                className="source-social-link source-social-link--facebook"
+                href="https://www.facebook.com/msmvquocgia?locale=vi_VN"
+                aria-label="Facebook"
+              >
                 <FacebookLogo className="source-brand-logo" />
-                f
               </a>
-              <a className="source-social-link source-social-link--x" href="https://x.com" aria-label="X">
+              <a
+                className="source-social-link source-social-link--x"
+                href="https://x.com"
+                aria-label="X"
+              >
                 <XLogo className="source-brand-logo" />
               </a>
-              <a className="source-social-link source-social-link--youtube" href="https://www.youtube.com/channel/UCEHxZm8ljXO-St5-z0em3BA/featured" aria-label="YouTube" target="_blank" rel="noreferrer">
+              <a
+                className="source-social-link source-social-link--youtube"
+                href="https://www.youtube.com/channel/UCEHxZm8ljXO-St5-z0em3BA/featured"
+                aria-label="YouTube"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <YouTubeLogo className="source-youtube-logo" />
-                ▶
               </a>
             </div>
             <span className="source-share-count">
               <b>128M</b>
               <small>Shares</small>
             </span>
-            <img
-              className="source-gs1"
-              src="/branding/gs1-logo.png"
-              alt="GS1"
-              width="440"
-              height="368"
-            />
+            <a
+              className="source-gs1-link"
+              href="https://gs1.gov.vn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GS1 Việt Nam (mở trong tab mới)"
+            >
+              <img
+                className="source-gs1"
+                src="/branding/gs1-logo.png"
+                alt="GS1"
+                width="440"
+                height="368"
+              />
+            </a>
             <button onClick={() => setMenu(true)} aria-label={vi ? "Mở menu" : "Open menu"}>
               <Menu />
             </button>

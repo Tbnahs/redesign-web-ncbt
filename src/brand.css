@@ -118,51 +118,75 @@
   color: var(--brand-ink);
 }
 .source-header-social .source-social-link,
+.source-header-social .source-social-link:last-child,
 .source-social .source-social-link,
 .source-menu-networks .source-social-link {
-  border-radius: 13px;
-  font-size: 0;
-}
-.source-header-social .source-social-link {
-  width: 42px;
-  height: 42px;
-}
-.source-social .source-social-link {
-  width: 46px;
-  height: 46px;
-}
-.source-menu-networks .source-social-link {
+  display: grid;
+  place-items: center;
   width: 40px;
   height: 40px;
-}
-.source-header-social .source-social-link,
-.source-social .source-social-link,
-.source-menu-networks .source-social-link {
-  color: #fff;
-}
-.source-social-link--facebook {
-  background: #0866ff;
-}
-.source-social-link--x {
-  background: #000;
-}
-.source-social-link--youtube {
+  flex: 0 0 40px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
   background: #fff;
+  font-size: 0;
+  box-shadow: 0 2px 5px rgb(15 23 42 / 5%);
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
 }
-.source-header-social .source-social-link--facebook,
-.source-social .source-social-link--facebook,
-.source-menu-networks .source-social-link--facebook:nth-child(1) {
-  background: #0866ff;
+.source-social-link.source-social-link--facebook {
+  color: #0866ff;
 }
-.source-header-social .source-social-link--x,
-.source-social .source-social-link--x,
-.source-menu-networks .source-social-link--x:nth-child(2) {
-  background: #000;
+.source-social-link.source-social-link--x {
+  color: #171717;
 }
-.source-header-social .source-social-link--youtube:last-child,
-.source-social .source-social-link--youtube,
-.source-menu-networks .source-social-link--youtube:nth-child(3) {
-  background: #fff;
+.source-social-link.source-social-link--youtube {
+  color: #f00;
+}
+.source-social-link .source-brand-logo,
+.source-social-link .source-youtube-logo {
+  width: 21px;
+  height: 21px;
+  stroke: none;
+}
+.source-social-link .source-youtube-logo {
+  width: 24px;
+  height: 24px;
+}
+.source-social-link:hover {
+  border-color: currentColor;
+  box-shadow: 0 4px 10px rgb(15 23 42 / 9%);
+  transform: translateY(-2px);
+}
+.source-social-link:active {
+  transform: translateY(0);
+}
+.source-social-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+.source-header-social {
+  gap: 8px;
+}
+.source-gs1-link {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+.source-gs1-link:focus-visible {
+  outline: 2px solid #002c6c;
+  outline-offset: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .source-social-link {
+    transition: none;
+  }
+  .source-social-link:hover {
+    transform: none;
+  }
 }
 .source-menu-columns a:hover,
 .source-menu-mobile a:hover {

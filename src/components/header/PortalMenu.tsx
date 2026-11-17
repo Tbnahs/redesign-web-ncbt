@@ -60,19 +60,26 @@ export function PortalMenu({
           </div>
           <div className="source-menu-bottom">
             <div className="source-menu-networks">
-              <a className="source-social-link source-social-link--facebook" href="https://www.facebook.com/msmvquocgia?locale=vi_VN" aria-label="Facebook">
+              <a
+                className="source-social-link source-social-link--facebook"
+                href="https://www.facebook.com/msmvquocgia?locale=vi_VN"
+                aria-label="Facebook"
+              >
                 <FacebookLogo className="source-brand-logo" />
-                f
               </a>
-              <a className="source-social-link source-social-link--x" href="https://x.com" aria-label="X">
+              <a
+                className="source-social-link source-social-link--x"
+                href="https://x.com"
+                aria-label="X"
+              >
                 <XLogo className="source-brand-logo" />
               </a>
-              <a className="source-social-link source-social-link--youtube"
+              <a
+                className="source-social-link source-social-link--youtube"
                 href="https://www.youtube.com/channel/UCEHxZm8ljXO-St5-z0em3BA/featured"
                 aria-label="YouTube"
               >
                 <YouTubeLogo className="source-youtube-logo" />
-                ▶
               </a>
               <a className="source-email-link" href="mailto:msmv@nbc.gov.vn" aria-label="Email">
                 ✉
