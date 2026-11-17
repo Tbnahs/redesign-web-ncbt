@@ -445,3 +445,69 @@
 .weather-reading-divider {
   color: #b5b5b5;
 }
+/* NBC reference search: one leading action, transparent field, 300px desktop width. */
+.source-search-field {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  max-width: 100%;
+  min-width: 0;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  color: #191919;
+}
+.source-utility-top .source-search-field {
+  flex: 0 1 300px;
+  width: 300px;
+  min-width: 0;
+  max-width: 300px;
+  height: 44px;
+}
+.source-search-field > button {
+  display: grid;
+  place-items: center;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 40px;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  padding: 0;
+  color: #b5b5b5;
+}
+.source-search-field > button:hover {
+  color: var(--brand-link);
+}
+.source-search-field > button:focus-visible {
+  outline: 2px solid var(--brand-orange);
+  outline-offset: 2px;
+}
+.source-search-field > input,
+.source-utility-top .source-search-field > input {
+  display: block;
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  height: 40px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 10px 8px;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 20px;
+  color: #191919;
+  text-transform: uppercase;
+}
+.source-search-field > input::placeholder {
+  color: #8c8c8c;
+  opacity: 1;
+}
+.source-search-field > input:focus-visible {
+  outline: none;
+  box-shadow: inset 0 -2px var(--brand-orange);
+}
+.source-utility-top {
+  border-bottom: 1px solid #f2f2f2;
+}
