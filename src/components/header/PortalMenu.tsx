@@ -60,7 +60,7 @@ export function PortalMenu({
           </div>
           <div className="source-menu-bottom">
             <div className="source-menu-networks">
-              <a className="source-social-link source-social-link--facebook" href="https://www.facebook.com/msmvquocgia" aria-label="Facebook">
+              <a className="source-social-link source-social-link--facebook" href="https://www.facebook.com/msmvquocgia?locale=vi_VN" aria-label="Facebook">
                 <FacebookLogo className="source-brand-logo" />
                 f
               </a>

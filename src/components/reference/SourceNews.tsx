@@ -79,7 +79,7 @@ export function SourceSidebar() {
     <aside className="source-sidebar">
       <h3>{locale === "vi" ? "Kết nối với chúng tôi" : "Connect with us"}</h3>
       <div className="source-social">
-        <a className="source-social-link source-social-link--facebook" href="https://www.facebook.com/GS1Vietnam" target="_blank" rel="noreferrer" aria-label="Facebook">
+        <a className="source-social-link source-social-link--facebook" href="https://www.facebook.com/msmvquocgia?locale=vi_VN" target="_blank" rel="noreferrer" aria-label="Facebook">
           <FacebookLogo className="source-brand-logo" />
           f
         </a>

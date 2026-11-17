@@ -55,7 +55,7 @@ export function SiteHeader() {
             <Link to="/lien-he">{vi ? "LIÊN HỆ" : "CONTACT"}</Link>
             <WeatherWidget />
             <div className="source-header-social">
-              <a className="source-social-link source-social-link--facebook" href="https://www.facebook.com/GS1Vietnam" aria-label="Facebook">
+              <a className="source-social-link source-social-link--facebook" href="https://www.facebook.com/msmvquocgia?locale=vi_VN" aria-label="Facebook">
                 <FacebookLogo className="source-brand-logo" />
                 f
               </a>

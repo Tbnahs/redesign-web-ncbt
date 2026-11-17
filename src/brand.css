@@ -295,6 +295,27 @@
 .source-logo img {
   filter: none;
 }
+.source-masthead {
+  align-items: center;
+}
+.source-masthead > .source-logo {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 0;
+}
+@media (max-width: 980px) {
+  .source-masthead {
+    min-height: 0;
+    height: 96px;
+  }
+}
+@media (max-width: 700px) {
+  .source-masthead {
+    height: 88px;
+  }
+}
 
 /* Keep the supplied logo intact; fit its artwork by cropping only white margins. */
 .source-logo img,

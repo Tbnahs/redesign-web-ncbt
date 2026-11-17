@@ -51,7 +51,7 @@ export function BottomFixedBar() {
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2 text-neutral-700">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/msmvquocgia?locale=vi_VN"
               target="_blank"
               rel="noreferrer"
               aria-label="Facebook"
