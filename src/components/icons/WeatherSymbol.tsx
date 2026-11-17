@@ -4,11 +4,11 @@ export function WeatherSymbol({ code, isDay = true }: { code?: number; isDay?: b
     <span className="weather-symbol" aria-hidden="true">
       {code === 0 && isDay ? (
         <svg className="weather-simple-sun" viewBox="0 0 48 48" focusable="false">
-          <circle cx="24" cy="24" r="13.5" fill="var(--brand-orange)" />
+          <circle cx="24" cy="24" r="13.5" fill="#ec6e4c" />
           <path
             d="M24 2v3M24 43v3M2 24h3M43 24h3M8.4 8.4l2.2 2.2M37.4 37.4l2.2 2.2M8.4 39.6l2.2-2.2M37.4 10.6l2.2-2.2"
             fill="none"
-            stroke="var(--brand-orange)"
+            stroke="#ec6e4c"
             strokeWidth="2.5"
             strokeLinecap="round"
           />
