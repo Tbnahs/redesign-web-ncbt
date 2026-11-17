@@ -117,10 +117,11 @@
   background: var(--brand-orange);
   color: var(--brand-ink);
 }
+.source-social-link,
 .source-header-social .source-social-link,
 .source-header-social .source-social-link:last-child,
 .source-social .source-social-link,
-.source-menu-networks .source-social-link {
+.source-menu-networks .source-social-link:nth-child(n) {
   display: grid;
   place-items: center;
   width: 40px;
@@ -136,13 +137,16 @@
     border-color 160ms ease,
     box-shadow 160ms ease;
 }
-.source-social-link.source-social-link--facebook {
+.source-social-link.source-social-link--facebook,
+.source-social-link.source-social-link--facebook:hover {
   color: #0866ff;
 }
-.source-social-link.source-social-link--x {
+.source-social-link.source-social-link--x,
+.source-social-link.source-social-link--x:hover {
   color: #171717;
 }
-.source-social-link.source-social-link--youtube {
+.source-social-link.source-social-link--youtube,
+.source-social-link.source-social-link--youtube:hover {
   color: #f00;
 }
 .source-social-link .source-brand-logo,
@@ -167,7 +171,9 @@
   outline: 2px solid currentColor;
   outline-offset: 3px;
 }
-.source-header-social {
+.source-header-social,
+.source-social,
+.source-menu-networks {
   gap: 8px;
 }
 .source-gs1-link {
