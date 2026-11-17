@@ -404,8 +404,8 @@
   fill: #ecebff;
 }
 .weather-symbol .weather-cloud {
-  color: #8c9eae;
-  fill: #edf1f5;
+  color: #5e7891;
+  fill: #c9d7e4;
 }
 .weather-symbol .weather-sun-detail,
 .weather-symbol .weather-moon-detail {
@@ -427,8 +427,8 @@
   left: 0;
   width: 45px;
   height: 40px;
-  color: #8c9eae;
-  fill: #edf1f5;
+  color: #5e7891;
+  fill: #c9d7e4;
 }
 .weather-city {
   display: flex;
