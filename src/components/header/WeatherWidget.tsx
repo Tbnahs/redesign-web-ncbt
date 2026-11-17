@@ -1,8 +1,8 @@
 import { useId, useState } from "react";
-import { ChevronDown, Cloud } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { defaultProvince, provinces, type Province } from "@/config/weather";
 import { useCurrentWeather } from "@/hooks/useCurrentWeather";
-import { weatherIcon } from "@/lib/weather-icon";
+import { WeatherSymbol } from "@/components/icons/WeatherSymbol";
 import { useLocale } from "@/i18n";
 export function WeatherWidget(_props: { compact?: boolean }) {
   const [province, setProvince] = useState<Province>(defaultProvince);
@@ -12,17 +12,10 @@ export function WeatherWidget(_props: { compact?: boolean }) {
   const vi = locale === "vi";
   return (
     <div className="weather-update">
-      {weather.status === "ready" ? (
-        <img
-          className="weather-icon"
-          src={weatherIcon(weather.data.code, weather.data.isDay)}
-          alt=""
-          width="64"
-          height="64"
-        />
-      ) : (
-        <Cloud className="weather-icon weather-icon-placeholder" aria-hidden="true" />
-      )}
+      <WeatherSymbol
+        code={weather.status === "ready" ? weather.data.code : undefined}
+        isDay={weather.status === "ready" ? weather.data.isDay : true}
+      />
       <div className="weather-city">
         <div className="weather-city-picker">
           <label className="sr-only" htmlFor={selectId}>
@@ -30,7 +23,6 @@ export function WeatherWidget(_props: { compact?: boolean }) {
           </label>
           <select
             id={selectId}
-            style={{ width: `calc(${province.name.length}ch + 20px)` }}
             value={province.name}
             onChange={(event) =>
               setProvince(provinces.find((p) => p.name === event.target.value) ?? defaultProvince)
@@ -42,6 +34,9 @@ export function WeatherWidget(_props: { compact?: boolean }) {
               </option>
             ))}
           </select>
+          <span className="weather-current-city" aria-hidden="true">
+            {province.name}
+          </span>
           <ChevronDown size={12} aria-hidden="true" />
         </div>
         <div className="weather-readings" role="status" aria-live="polite">
